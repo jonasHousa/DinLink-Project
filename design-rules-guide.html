@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Set viewport properties for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define the title of the web page -->
+    <title>DinLink | Design Rules Guiding</title>
+    <!-- Provide a brief description for search engines -->
+    <meta name="description" content="Dinlink: Your go-to resource for web developers seeking the best tools! Discover curated collections of fonts, icons,
+                images, and more to enhance your projects. Elevate your web development with handpicked tools for seamless design and
+                functionality. Explore the ultimate toolkit at Dinlink and supercharge your creativity today! ">
+    <!-- Specify keywords for search engines (may have limited impact) -->
+    <meta name="keywords"
+        content="Web development tools, Font resources for developers, Icon collections, High-quality images for websites, design resources, Web design assets,Developer toolkit, Creative assets for websites, Design resources for developers, Best web development tools, Iconography for websites, Professional fonts for web projects, Image libraries for developers, UI design elements, Code optimization tools, Responsive design resources, Code editors, Version control systems, Task runners, Build tools, Content management systems, Design collaboration platforms, Programming languages, Frameworks, Frontend development tools, Backend development tools, Database management systems, Color palettes, UI design patterns, Prototyping tools, Wireframing tools, Typography resources, Icon sets, Vector graphics, User-centered design, Information architecture, Interaction design, Usability testing, User research, Accessibility guidelines, WCAG standards, Tutorials, Online courses, Web development communities, Blogs, Articles, Books, Freelancing tips, Remote work tools, Productivity techniques, Portfolio building, Career development">
+    <!-- Additional meta tags -->
+    <meta property="og:title" content="DinLink | Your Ultimate Web Development Toolkit">
+    <!-- Open Graph description: Used by social media platforms when the page is shared -->
+    <meta property="og:description"
+        content="Discover curated collections of fonts, icons, images, and more for web developers. Elevate your projects with the best web development tools and resources. Explore the ultimate toolkit at DinLink and supercharge your creativity today! #WebDevelopment #DesignResources #UIUX #Creativity">
+    <!-- Open Graph image: Used by social media platforms when the page is shared -->
+    <meta property="og:image" content="https://dinlink.se/image.jpg">
+    <!-- Robots meta tag: Specifies whether search engines should index and follow the page -->
+    <meta name="robots" content="index, follow">
+    <!-- Canonical link tag: Specifies the preferred URL of the page  MUST CHANGE IN EACH PAGE -->
+    <link rel="canonical" href="https://dinlink.se/design-rules-guide.html">
+    <!-- Alternate link tag: Specifies alternate language versions of the page -->
+    <link rel="alternate" hreflang="en" href="https://example.com/en">
+    <!-- Favicon for the website -->
+    <link rel="icon" type="image/x-icon" href="/FAVICON.jpg">
+    <!-- Link to custom stylesheets for page styling CSS -->
+    <link rel="stylesheet" href="assets/sass/dinlink-style.css">
+    <link rel="stylesheet" href="assets/sass/dinlink-Media-query.css">
+    <link rel="stylesheet" href="assets/sass/dinlink-global-elements.css">
+    <!-- Link to font icon library -->
+    <link rel="stylesheet" href="assets/fonts/fontIcon/css/all.css">
+    <!-- Link to Google Fonts for custom typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- SECTION HEADER START -->
+    <section id="header" class="header sticky">
+        <div class="header-content container flex">
+            <a href="/index.html" id='logo' class="logo bold" title="DinLink | Your Ultimate Web Development Toolkit">
+                <h1>DinLink</h1>
+            </a>
+            <!-- FIRST NAV -->
+            <nav class="first-nav main-nav capitalize flex">
+                <ul class=" sidebarNavigation    fw-500">
+                    <div class="side-menu-header ">
+                        <h2 class="side-menu-header-heading">menu</h2>
+                        <a href="#" onclick="hideSidebar()"><i
+                                class="fa-solid fa-xmark sidebarHamburgerMenuHide "></i></a>
+                    </div>
+
+                    <li class=" dropdown relative">
+                        <a href="#">guiding corner</a>
+                        <ul class="submenu">
+                            <li><a href="/design-rules-guide.html"> Design Rules</a></li>
+                            <li><a href="/design-guiding.html"> Design Guide</a></li>
+                            <li><a href="/Design-Conversion-guide.html"> Design Conversion</a></li>
+                            <li><a href="/ui-ux.html"> UI / UX</a></li>
+                            <li><a href="/clean-code.html"> Clean Code</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/ai-tools.html">AI tools</a></li>
+                    <li><a href="/sdrh-section.html">Developers tools</a></li>
+                    <li><a href="/free-download.html">download Center</a></li>
+                    <li><a href="/seo.html">SEO</a></li>
+                    <li><a href="/speed-test.html">Speed & Test</a></li>
+                    <li><a href="/freelance.html">freelance</a></li>
+                    <li><a href="#footer-line">contact dinlink</a></li>
+                </ul>
+
+                <ul class="navigation flex fw-500">
+                    <li class="hideOnMobile dropdown relative">
+                        <a href="#">guiding corner</a>
+                        <ul class="submenu">
+                            <li><a href="/design-rules-guide.html"> Design Rules</a></li>
+                            <li><a href="/design-guiding.html"> Design Guide</a></li>
+                            <li><a href="/Design-Conversion-guide.html"> Design Conversion</a></li>
+                            <li><a href="/ui-ux.html"> UI / UX</a></li>
+                            <li><a href="/clean-code.html"> Clean Code</a></li>
+                        </ul>
+                    </li>
+                    <li class="hideOnMobile"><a href="/ai-tools.html">AI tools</a></li>
+                    <li class="hideOnMobile"><a href="/sdrh-section.html">Developers tools</a></li>
+                    <li class="hideOnMobile"><a href="/free-download.html">download Center</a></li>
+                    <li class="hideOnMobile"><a href="/seo.html">SEO</a></li>
+                    <li class="hideOnMobile"><a href="/speed-test.html">Speed & Test</a></li>
+                    <li class="hideOnMobile"><a href="/freelance.html">freelance</a></li>
+                    <li class="hideOnMobile"><a href="#footer-line">contact dinlink</a></li>
+                </ul>
+                <div onclick=" showSidebar()"><a href="#"><i class="fa-solid fa-bars sidebarHamburgerMenuShow"></i></a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- SECOND NAV -->
+        <div class="  secondary-nav relative">
+            <div class="container  ">
+                <nav class="secondary-menu  flex capitalize ">
+
+                    <nav class="breadcrumb-navigation">
+                        <ul class="path-breadcrumb-navigation flex">
+                            <li><a href="index.html" class="category capitalizes"> home &gt;
+                            <li><a href="  Design-Mentor-Hub.html " class="category capitalizes"> Design Mentor
+                                    Hub &gt;</a>
+                                <!-- Use &gt; for greater-than symbol --></li>
+                            <li><a href="#" class="subcategory capitalize">Design Rules </a></li>
+                        </ul>
+                    </nav>
+
+                    <ul class=" navigation flex fw-500">
+                        <li><a href="/html.html">HTML</a></li>
+                        <li><a href="/css.html">CSS</a></li>
+                        <li><a href="/javascript.html">JS</a></li>
+                        <li><a href="/nodejs.html">NODEJS</a></li>
+                        <li><a href="/wordpress.html">WORDPRESS</a></li>
+                        <li><a href="/php.html">PHP</a></li>
+                        <li><a href="/react.html">REACT</a></li>
+                        <li><a href="/api.html">API</a></li>
+                        <li><a href="/database.html">DATABASE</a></li>
+                    </ul>
+                </nav>
+
+                <div class="sidebar-secondary-nav">
+                    <div class="container">
+                        <div class="custom-dropdown">
+                            <select class="side-bar-secondary-navigation" onchange="navigateSidebar(this)">
+                                <option value="" selected disabled hidden>Developer Playground</option>
+                                <option value=""></option>
+                                <option value="/html.html">HTML</option>
+                                <option value="/css.html">CSS</option>
+                                <option value="/javascript.html">JS</option>
+                                <option value="/nodejs.html">NODEJS</option>
+                                <option value="/wordpress.html">WORDPRESS</option>
+                                <option value="/php.html">PHP</option>
+                                <option value="/react.html">REACT</option>
+                                <option value="/api.html">API</option>
+                                <option value="/database.html">DATABASE</option>
+                                <option value=""></option>
+
+                            </select>
+                            <span class="custom-dropdown-icon">&#9660;</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- SECTION HEADER END -->
+
+    <!--SECTION DESIGN RULES SHOW CASE START -->
+    <section id="dsign-rules-guiding-section" class="multi-section-showcase  relative">
+        <article class="sectionBlock ">
+            <div class="shadow-dark ">
+                <div class="mixin-feature-section  container  absolute">
+                    <div class="textContainer  ">
+                        <h2 class="textContainer-header uppercase ">DESIGN RULES </h2>
+                        <h3 class="textContainer-sup-header capitalize ">
+                            Complete Guide To Crafting Exceptional User Experiences
+                        </h3>
+                        <p class="textContainer-description">
+                            your essential resource for mastering design principles and standards. Explore a curated
+                            collection of rules,
+                            guidelines, and best practices to create visually stunning and user-friendly designs.
+                        </p>
+                        <a href="#html-content" class="container-btn rem-1 capitalize"> find out</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!--SECTION DESIGN RULES SHOW CASE END -->
+
+    <!-- SECTION CONTENT START -->
+    <section id="section-content" class=" section-single-page-containers">
+        <header class="section-title-content white-space">
+            <i class="fa-solid fa-pen-ruler  section-icon"></i>
+            <h2 class='section-title uppercase'>Design Rules Hub</h2>
+            <div class=' section-title-line'></div>
+            <p class="section-title-descreption capitalize pt-1">
+                Embark on a journey through the HTML5 landscape, where tutorials and tools converge to empower
+                developers on their quest
+                for web mastery. <br>Explore, create, and innovate with ease at your fingertips.
+                to life
+            </p>
+        </header>
+        <div class="container ">
+            <article class="section-info-guiding ">
+                <h2 class="info-guiding-title">DinLinks's Comprehensive Design Guidelines for Web Designers</h2>
+
+                <!-- Advice with sup   -->
+                <button class="accordion uppercase">TYPOGRAPHY : MASTERY CRAFTING WORDS INTO ART</button>
+                <section class="panel">
+                    <article class="panel-content   ">
+                        <p class="panel-text">
+                            Typography is not just about choosing fonts; it's about crafting a visual language that
+                            enhances readability and evokes
+                            emotions.
+                            Typography serves as the cornerstone of visual communication, enhancing readability and
+                            aesthetic appeal.
+                            <br>
+                            <br>
+                            COMPREHENSIVE DESIGN GUIDELINES FOR TYPOGRAPHY:
+                        </p>
+
+                        <div class="sub-panel-text-content">
+                            <div class="sup-sup-panel-text-content">
+                                <h3 class="panel-title"> 1.Optimal Font Size Selection:</h3>
+                                <p class="panel-text">
+                                    The font size directly impacts readability. Aim for a size between 15 and 25 pixels
+                                    to ensure content remains legible
+                                    across various devices and screen sizes.
+                                </p>
+                            </div>
+                            <div class="sup-sup-panel-text-content">
+                                <h3 class="panel-title"> 2.Headline Emphasis for Impact:</h3>
+                                <p class="panel-text">
+                                    Headlines serve as gateways to content. Utilize significantly larger font sizes to
+                                    draw attention and create hierarchy
+                                    within your design.
+                                </p>
+                            </div>
+                            <div class="sup-sup-panel-text-content">
+                                <h3 class="panel-title"> 3.Enhanced Readability with Spacing:</h3>
+                                <p class="panel-text">
+                                    Line spacing, also known as leading, significantly impacts readability. Aim for
+                                    spacing between 120% and 150% of the
+                                    font size to enhance readability and visual comfort, especially for longer content.
+                                </p>
+                            </div>
+                            <div class="sup-sup-panel-text-content">
+                                <h3 class="panel-title"> 4.Ideal Character Count for Clarity:</h3>
+                                <p class="panel-text">
+                                    Keeping the number of characters per line between 45 to 90 ensures optimal
+                                    readability. This prevents lines from
+                                    becoming too long, reducing eye strain and improving comprehension.
+                                </p>
+                            </div>
+                            <div class="sup-sup-panel-text-content">
+                                <h3 class="panel-title"> 5.Thoughtful Font Selection:</h3>
+                                <p class="panel-text">
+                                    Choose fonts that align with the brand identity and content tone. Consider factors
+                                    like serif or sans-serif, x-height,
+                                    and stroke width to enhance visual appeal and readability.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+
+                <!-- Advice with sup   -->
+                <button class="accordion uppercase">Mastering the Art of Color : Elevating Design with Masterful
+                    Color</button>
+                <section class="panel">
+                    <article class="panel-content   ">
+                        <p class="panel-text">
+                            Colors have the power to evoke emotions and influence user behavior. Crafting a cohesive
+                            color palette is crucial for
+                            establishing brand identity and guide user attention effectively.
+                            <br>
+                            <br>
+                            COMPREHENSIVE GUIDELINES FOR MASTERING COLOR PALETTES FOR IMPACTFUL DESIGNS:
+                        </p>
+
+                        <div class="sub-panel-text-content">
+                            <div class="sup-sup-panel-text-content">
+                                <h3 class="panel-title"> 1.Primary Color Dominance:</h3>
+                                <p class="panel-text">
+                                    Select a primary color that represents the brand's personality and values. This
+                                    color should be used consistently
+                                    throughout the design to maintain brand recognition and visual coherence.
+                                </p>
+                            </div>
+                            <div class="sup-sup-panel-text-content">
+                                <h3 class="panel-title"> 2.Color Exploration with Tools:</h3>
+                                <p class="panel-text">
+                                    Utilize color theory principles and online tools to expand your palette while
+                                    ensuring harmony and contrast. Tools like
+                                    Adobe Color and Coolors can help in creating balanced color schemes.
+                                </p>
+                            </div>
+                            <div class="sup-sup-panel-text-content">
+                                <h3 class="panel-title"> 3.Accessibility Considerations:</h3>
+                                <p class="panel-text">
+                                    Ensure color choices meet accessibility standards, especially for users with visual
+                                    impairments. Provide sufficient
+                                    color contrast between text and background to improve readability and inclusivity.
+                                </p>
+                            </div>
+                            <div class="sup-sup-panel-text-content">
+                                <h3 class="panel-title"> 4.Beyond Black:</h3>
+                                <p class="panel-text">
+                                    Exploring Alternatives: While black is a default choice, consider using alternative
+                                    dark shades to add depth and
+                                    sophistication to your design. Experiment with charcoal, navy, or dark gray for a
+                                    modern twist.
+                                </p>
+                            </div>
+                            <div class="sup-sup-panel-text-content">
+                                <h3 class="panel-title"> 5.Strategically Choose Colors for Impactful Design:</h3>
+                                <p class="panel-text">
+                                    Use color strategically to direct user attention, convey hierarchy, and create
+                                    visual interest. Employ color psychology
+                                    principles to evoke specific emotions or associations that align with the brand
+                                    message.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+
+                <!-- Advice with sup   -->
+                <button class="accordion uppercase">IMAGINATION IN IMAGE UTILIZATION</button>
+                <section class="panel">
+                    <article class="panel-content   ">
+                        <p class="panel-text">
+                            Images play a vital role in communicating brand values and enhancing user engagement.
+                            Integrating images effectively
+                            requires careful c onsideration of content relevance, quality, and placement.
+                            <br>
+                            <br>
+                            COMPREHENSIVE GUIDELINES FOR MASTERING IMAGE COMPOSITION AND IMPACTFUL DESIGN:
+                        </p>
+
+                        <div class="sub-panel-text-content">
+                            <div class="sup-sup-panel-text-content">
+                                <h3 class="panel-title"> 1. Optimize Image Relevance and Context:</h3>
+                                <p class="panel-text">
+                                    Choose images aligned with brand identity and content message while enhancing web
+                                    performance. Seamlessly integrate text
+                                    onto images to reinforce brand messaging and ensure a cohesive user experience.
+                                </p>
+                            </div>
+                            <div class="sup-sup-panel-text-content">
+                                <h3 class="panel-title"> 2. Optimization for Performance:</h3>
+                                <p class="panel-text">
+                                    Utilize compression techniques and responsive image solutions to minimize load times
+                                    and bandwidth consumption, ensuring
+                                    seamless loading across devices. Experiment with overlaying images to enhance visual
+                                    appeal and storytelling
+                                    opportunities while maintaining optimal performance.
+                                </p>
+                            </div>
+                            <div class="sup-sup-panel-text-content">
+                                <h3 class="panel-title"> 3. Enhancing Text-Image Harmony:</h3>
+                                <p class="panel-text">
+                                    Prioritize readability when overlaying text on images by selecting suitable fonts,
+                                    colors, and contrast levels.
+                                    Experiment with placement and transparency for a harmonious balance. Utilize
+                                    designated boxes or containers to create
+                                    clear text-image relationships, this enhances readability and ensures that textual
+                                    content remains visually integrated
+                                    with the imagery.
+                                </p>
+                            </div>
+                            <div class="sup-sup-panel-text-content">
+                                <h3 class="panel-title"> 4. Ensuring Consistency in Style and Tone:</h3>
+                                <p class="panel-text">
+                                    Maintain visual coherence by adhering to a consistent style and tone across all
+                                    images. Implement techniques like
+                                    blurring to unify the aesthetic and reinforce brand identity while adding depth to
+                                    the visual narrative.
+                                </p>
+                            </div>
+                            <div class="sup-sup-panel-text-content">
+                                <h3 class="panel-title"> 5. Responsive Design Considerations:</h3>
+                                <p class="panel-text">
+                                    Ensure images adapt seamlessly to different screen sizes and orientations. Use
+                                    responsive design principles to scale and
+                                    crop images dynamically based on device specifications and user interactions.
+                                </p>
+                            </div>
+                            <div class="sup-sup-panel-text-content">
+                                <h3 class="panel-title"> Adaptive Imagery:</h3>
+                                <p class="panel-text">
+                                    Employ methods such as the floor fade effect to bolster flexibility while preserving
+                                    visual allure and legibility."
+                                </p>
+                            </div>
+
+
+
+                        </div>
+                    </article>
+                </section>
+
+
+                <!-- Advice with sup   -->
+                <button class="accordion uppercase">WORKING WITH ICONS: Guiding User Journeys through Intuitive
+                    Icons</button>
+                <section class="panel">
+                    <article class="panel-content   ">
+                        <p class="panel-text">
+                            Utilizing icons effectively requires thoughtful consideration of design principles and user
+                            expectations. Icons serve as
+                            intuitive visual cues that enhance navigation and user interaction, guiding users seamlessly
+                            through their digital
+                            journeys.
+                            <br>
+                            <br>
+                            COMPREHENSIVE GUIDELINES FOR MASTERING ICON DESIGN AND IMPACTFUL USAGE:
+                        </p>
+
+                        <div class="sub-panel-text-content">
+                            <div class="sup-sup-panel-text-content">
+                                <h3 class="panel-title">1. Ensure Clarity and Recognition:</h3>
+                                <p class="panel-text">
+                                    Choose icons that are universally recognizable and intuitively convey their intended
+                                    meaning. Prioritize simplicity and
+                                    clarity to ensure instant comprehension by users.
+                                </p>
+                            </div>
+                            <div class="sup-sup-panel-text-content">
+                                <h3 class="panel-title">2. Maintain Consistency Across Platforms:</h3>
+                                <p class="panel-text">
+                                    Ensure consistency in iconography across different platforms and devices. Use
+                                    familiar icon styles and metaphors to
+                                    guarantee a seamless user experience across web and mobile interfaces.
+                                </p>
+                            </div>
+                            <div class="sup-sup-panel-text-content">
+                                <h3 class="panel-title"> 3. Enhance Clarity with Icon-Text Pairing:</h3>
+                                <p class="panel-text">
+                                    Combine icons with text labels to provide additional context and improve
+                                    comprehension, especially for complex actions
+                                    or features. Ensure that icon-text pairs maintain visual balance and alignment
+                                    within the design.
+                                </p>
+                            </div>
+                            <div class="sup-sup-panel-text-content">
+                                <h3 class="panel-title"> 4. Optimize Scalability and Accessibility:</h3>
+                                <p class="panel-text">
+                                    Select icon formats that support scalability without compromising visual quality.
+                                    Opt for vector-based icon fonts or
+                                    SVGs to ensure crisp rendering across various screen resolutions and zoom levels.
+                                </p>
+                            </div>
+                            <div class="sup-sup-panel-text-content">
+                                <h3 class="panel-title"> 5. Iterate Based on User Feedback:</h3>
+                                <p class="panel-text">
+                                    Gather user feedback and conduct usability testing to evaluate the effectiveness of
+                                    iconography in guiding user
+                                    interactions. Iterate on icon designs based on user insights and performance metrics
+                                    to continually enhance usability
+                                    and accessibility.
+                                </p>
+                            </div>
+                            <div class="sup-sup-panel-text-content">
+                                <h3 class="panel-title"> 6. Embrace Icon Fonts for Optimal Design Flexibility:</h3>
+                                <p class="panel-text">
+                                    Utilize icon fonts for their superior scalability and accessibility across diverse
+                                    screen resolutions and zoom levels.
+                                    By opting for icon fonts, you ensure sharp rendering and easy recognition of icons,
+                                    enhancing the overall user
+                                    experience.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+
+                <!-- Advice with sup   -->
+                <button class="accordion uppercase">SPACING AND LAYOUT : CRAFTING SPACE AND LAYOUT FOR SEAMLESS USER
+                    EXPERIENCE</button>
+                <section class="panel">
+                    <article class="panel-content   ">
+                        <p class="panel-text">
+                            Whitespace, or negative space, plays a crucial role in guiding user attention and creating
+                            visual hierarchy within a
+                            design. Effective use of space and layout principles enhances readability, comprehension,
+                            and overall user experience.
+                            <br>
+                            <br>
+                            COMPREHENSIVE GUIDELINES FOR OPTIMIZING SPACING AND LAYOUT DESIGN:
+                        </p>
+
+                        <div class="sub-panel-text-content">
+                            <div class="sup-sup-panel-text-content">
+                                <h3 class="panel-title"> 1. Whitespace Utilization for Visual Harmony:</h3>
+                                <p class="panel-text">
+                                    Utilize whitespace strategically to create visual separation between elements and
+                                    groups of elements, fostering a sense
+                                    of balance and harmony within the design. Avoid excessive whitespace that may lead
+                                    to cluttered layouts and hinder
+                                    content discovery.
+                                </p>
+                            </div>
+                            <div class="sup-sup-panel-text-content">
+                                <h3 class="panel-title"> 2. Hierarchy Defined through Spacing and Scale:</h3>
+                                <p class="panel-text">
+                                    Whitespace serves as the canvas for establishing hierarchy and relationships between
+                                    elements on your website. Employ
+                                    variations in spacing, scale, and typography to communicate hierarchical
+                                    relationships and direct users' attention.
+                                    Utilize larger fonts, increased spacing, or contrasting colors to emphasize critical
+                                    elements and content sections,
+                                    ensuring clarity and facilitating intuitive navigation.
+                                </p>
+                            </div>
+                            <div class="sup-sup-panel-text-content">
+                                <h3 class="panel-title"> 3. Grid-Based Layouts for Consistency:</h3>
+                                <p class="panel-text">
+                                    Implement grid-based layout systems to ensure consistency and alignment across
+                                    diverse screen sizes and devices. Utilize
+                                    grids as a structural framework for organizing content elements, ensuring visual
+                                    harmony within the design.
+                                    Additionally, strategically integrate whitespace within the grid structure to
+                                    enhance overall consistency and facilitate
+                                    seamless navigation.
+                                </p>
+                            </div>
+                            <div class="sup-sup-panel-text-content">
+                                <h3 class="panel-title"> 4. Optimizing Whitespace for Responsive Design:</h3>
+                                <p class="panel-text">
+                                    Implement responsive design techniques, including fluid grids, flexible images, and
+                                    media queries, to create adaptive
+                                    layouts prioritizing user experience across devices. Pay close attention to
+                                    whitespace adjustments across device
+                                    resolutions to maintain visual appeal and functionality.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </article>
+        </div><!-- closing tag for container div -->
+    </section>
+    <!-- SECTION CONTENT END -->
+
+    <!--  SECTION CONTACT US START  -->
+    <section id="contact" class="contact-us  relative">
+        <div class="shadow-dark">
+            <div class="contact-us-content container  absolute ">
+                <div class="subscripe-form ">
+                    <form action="subscribe.php" method="post">
+                        <caption>
+                            <h2 class="form-title rem-2">SUBSCRIBE TO NEWSLETTERS</h2>
+                            <!--                             <h3>Don't miss an update to this site!</h3>
+ --> <!-- <h4>Get the latest content to your inbox every month. No spam, we hate it too.</h4> -->
+                            <!--                    <div class="form-name">
+                                <label for="name"></label>
+                                <input type="text" id="name" name="name" required placeholder="Full Name:">
+                            </div> -->
+                            <!--                             <div class="form-email">
+                                <label for="email"></label>
+                                <input type="email" id="email" name="email" required placeholder="E mail:">
+                            </div>
+                            <button class="btn  send-btn" type="submit">Subscribe</button> -->
+                        </caption>
+                    </form>
+
+                    <div class="social-media">
+                        <h2 class="social-media-sup-title capitalize"> Contact DinLink at <span><a class="mail-address"
+                                    href="mailto:info@dinlink.com">info@dinlink.com</a></span>
+                        </h2>
+                        <ul class="social-media-icons ">
+                            <li class="facebook"><a href=""> <i class="fa-brands fa-facebook-f social-icon"></i></a>
+                            </li>
+                            <li class="instagram"><a href=""><i class="fa-brands fa-instagram  social-icon"></i></a><img
+                                    src="" alt="">
+                            </li>
+                            <li class="linkedin"><a href=""><i
+                                        class="fa-brands fa-linkedin-in  social-icon"></i></a><img src="" alt="">
+                            </li>
+                            <li class="x"><a href=""><i class="fa-brands fa-x-twitter  social-icon"></i></a><img src=""
+                                    alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  SECTION CONTACT US END  -->
+
+    <!-- SECTION FOOTER START-->
+    <footer id="footer-line" class="footer">
+        <div class="container flex">
+            <span class="copy-right ">All Copy Right Reserved &copy; Dinlink.se 2024</span>
+            <span class="author "><a href="http://jonashousa.com/" target="_blank">DESIGNED BY JONAS HOUSA</a></span>
+        </div>
+        <!--SCROLL TO TOP BOTTOM START-->
+        <a href="#" id="scroll-to-top-link" class="scroll-to-top" onclick="scrollToTop(); return false; "
+            aria-label="Scroll to top"><i class="fa-solid fa-arrow-up-from-bracket"></i>
+        </a>
+        <!--SCROLL TO TOP BOTTOM END-->
+    </footer>
+    <!-- SECTION FOOTER END-->
+
+    <!-- JAVASCRIPT LINKS  -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/slides.js"></script>
+    <script src="assets/js/smoothScrollPage.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.7.3/smooth-scrollbar.js"></script>
+
+</body>
+
+</html>

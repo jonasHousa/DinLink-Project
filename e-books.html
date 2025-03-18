@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Set viewport properties for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define the title of the web page -->
+    <title>DinLink | E- Books Guide</title>
+    <!-- Provide a brief description for search engines -->
+    <meta name="description" content="Dinlink: Your go-to resource for web developers seeking the best tools! Discover curated collections of fonts, icons,
+                images, and more to enhance your projects. Elevate your web development with handpicked tools for seamless design and
+                functionality. Explore the ultimate toolkit at Dinlink and supercharge your creativity today! ">
+    <!-- Specify keywords for search engines (may have limited impact) -->
+    <meta name="keywords"
+        content="Web development tools, Font resources for developers, Icon collections, High-quality images for websites, design resources, Web design assets,Developer toolkit, Creative assets for websites, Design resources for developers, Best web development tools, Iconography for websites, Professional fonts for web projects, Image libraries for developers, UI design elements, Code optimization tools, Responsive design resources, Code editors, Version control systems, Task runners, Build tools, Content management systems, Design collaboration platforms, Programming languages, Frameworks, Frontend development tools, Backend development tools, Database management systems, Color palettes, UI design patterns, Prototyping tools, Wireframing tools, Typography resources, Icon sets, Vector graphics, User-centered design, Information architecture, Interaction design, Usability testing, User research, Accessibility guidelines, WCAG standards, Tutorials, Online courses, Web development communities, Blogs, Articles, Books, Freelancing tips, Remote work tools, Productivity techniques, Portfolio building, Career development">
+    <!-- Additional meta tags -->
+    <meta property="og:title" content="DinLink | Your Ultimate Web Development Toolkit">
+    <!-- Open Graph description: Used by social media platforms when the page is shared -->
+    <meta property="og:description"
+        content="Discover curated collections of fonts, icons, images, and more for web developers. Elevate your projects with the best web development tools and resources. Explore the ultimate toolkit at DinLink and supercharge your creativity today! #WebDevelopment #DesignResources #UIUX #Creativity">
+    <!-- Open Graph image: Used by social media platforms when the page is shared -->
+    <meta property="og:image" content="https://dinlink.se/image.jpg">
+    <!-- Robots meta tag: Specifies whether search engines should index and follow the page -->
+    <meta name="robots" content="index, follow">
+    <!-- Canonical link tag: Specifies the preferred URL of the page  MUST CHANGE IN EACH PAGE -->
+    <link rel="canonical" href="https://dinlink.se/e-books.html">
+    <!-- Alternate link tag: Specifies alternate language versions of the page -->
+    <link rel="alternate" hreflang="en" href="https://example.com/en">
+    <!-- Favicon for the website -->
+    <link rel="icon" type="image/x-icon" href="/FAVICON.jpg">
+    <!-- Link to custom stylesheets for page styling CSS -->
+    <link rel="stylesheet" href="assets/sass/dinlink-style.css">
+    <link rel="stylesheet" href="assets/sass/dinlink-Media-query.css">
+    <link rel="stylesheet" href="assets/sass/dinlink-global-elements.css">
+    <!-- Link to font icon library -->
+    <link rel="stylesheet" href="assets/fonts/fontIcon/css/all.css">
+    <!-- Link to Google Fonts for custom typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- SECTION HEADER START -->
+    <section id="header" class="header sticky">
+        <div class="header-content container flex">
+            <a href="/index.html" id='logo' class="logo bold" title="DinLink | Your Ultimate Web Development Toolkit">
+                <h1>DinLink</h1>
+            </a>
+            <!-- First Nav -->
+            <nav class="first-nav main-nav capitalize flex">
+                <ul class=" sidebarNavigation    fw-500">
+                    <div class="side-menu-header ">
+                        <h2 class="side-menu-header-heading">menu</h2>
+                        <a href="#" onclick="hideSidebar()"><i
+                                class="fa-solid fa-xmark sidebarHamburgerMenuHide "></i></a>
+                    </div>
+
+                    <li class=" dropdown relative">
+                        <a href="#">guiding corner</a>
+                        <ul class="submenu">
+                            <li><a href="/design-rules-guide.html"> Design Rules</a></li>
+                            <li><a href="/design-guiding.html"> Design Guide</a></li>
+                            <li><a href="/Design-Conversion-guide.html"> Design Conversion</a></li>
+                            <li><a href="/ui-ux.html"> UI / UX</a></li>
+                            <li><a href="/clean-code.html"> Clean Code</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/ai-tools.html">AI tools</a></li>
+                    <li><a href="/sdrh-section.html">Developers tools</a></li>
+                    <li><a href="/free-download.html">download Center</a></li>
+                    <li><a href="/seo.html">SEO</a></li>
+                    <li><a href="/speed-test.html">Speed & Test</a></li>
+                    <li><a href="/freelance.html">freelance</a></li>
+                    <li><a href="#footer-line">contact dinlink</a></li>
+                </ul>
+
+                <ul class="navigation flex fw-500">
+                    <li class="hideOnMobile dropdown relative">
+                        <a href="#">guiding corner</a>
+                        <ul class="submenu">
+                            <li><a href="/design-rules-guide.html"> Design Rules</a></li>
+                            <li><a href="/design-guiding.html"> Design Guide</a></li>
+                            <li><a href="/Design-Conversion-guide.html"> Design Conversion</a></li>
+                            <li><a href="/ui-ux.html"> UI / UX</a></li>
+                            <li><a href="/clean-code.html"> Clean Code</a></li>
+                        </ul>
+                    </li>
+                    <li class="hideOnMobile"><a href="/ai-tools.html">AI tools</a></li>
+                    <li class="hideOnMobile"><a href="/sdrh-section.html">Developers tools</a></li>
+                    <li class="hideOnMobile"><a href="/free-download.html">download Center</a></li>
+                    <li class="hideOnMobile"><a href="/seo.html">SEO</a></li>
+                    <li class="hideOnMobile"><a href="/speed-test.html">Speed & Test</a></li>
+                    <li class="hideOnMobile"><a href="/freelance.html">freelance</a></li>
+                    <li class="hideOnMobile"><a href="#footer-line">contact dinlink</a></li>
+                </ul>
+                <div onclick=" showSidebar()"><a href="#"><i class="fa-solid fa-bars sidebarHamburgerMenuShow"></i></a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Secondary Nav -->
+        <div class="  secondary-nav relative">
+            <div class="container  ">
+                <nav class="secondary-menu  flex capitalize ">
+
+                    <nav class="breadcrumb-navigation">
+                        <ul class="path-breadcrumb-navigation flex">
+                            <li><a href="sdrh-section.html" class="category capitalizes">Developer's Toolbox &gt;</a>
+                                <!-- Use &gt; for greater-than symbol --></li>
+                            <li><a href="#" class="subcategory capitalize">E-Book </a></li>
+                        </ul>
+                    </nav>
+
+                    <ul class=" navigation flex fw-500">
+                        <li><a href="/html.html">HTML</a></li>
+                        <li><a href="/css.html">CSS</a></li>
+                        <li><a href="/javascript.html">JS</a></li>
+                        <li><a href="/nodejs.html">NODEJS</a></li>
+                        <li><a href="/wordpress.html">WORDPRESS</a></li>
+                        <li><a href="/php.html">PHP</a></li>
+                        <li><a href="/react.html">REACT</a></li>
+                        <li><a href="/api.html">API</a></li>
+                        <li><a href="/database.html">DATABASE</a></li>
+                    </ul>
+                </nav>
+
+                <div class="sidebar-secondary-nav">
+                    <div class="container">
+                        <div class="custom-dropdown">
+                            <select class="side-bar-secondary-navigation" onchange="navigateSidebar(this)">
+                                <option value="" selected disabled hidden>Developer Playground</option>
+                                <option value=""></option>
+                                <option value="/html.html">HTML</option>
+                                <option value="/css.html">CSS</option>
+                                <option value="/javascript.html">JS</option>
+                                <option value="/nodejs.html">NODEJS</option>
+                                <option value="/wordpress.html">WORDPRESS</option>
+                                <option value="/php.html">PHP</option>
+                                <option value="/react.html">REACT</option>
+                                <option value="/api.html">API</option>
+                                <option value="/database.html">DATABASE</option>
+                                <option value=""></option>
+
+                            </select>
+                            <span class="custom-dropdown-icon">&#9660;</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- SECTION HEADER END -->
+
+    <!--SECTION E-BOOK SHOW CASE START -->
+    <section id="e-book" class="multi-section-showcase  relative">
+        <article class="sectionBlock ">
+            <div class="shadow-dark ">
+                <div class="mixin-feature-section  container  absolute">
+                    <div class="textContainer  ">
+                        <h2 class="textContainer-header uppercase ">E-BOOKS </h2>
+                        <h3 class="textContainer-sup-header capitalize ">Top E-Book Sites for Web
+                            Developers and Designers.
+                        </h3>
+                        <p class="textContainer-description">
+                            Discover a wealth of knowledge with our curated selection of e-book sites catering to web
+                            developers and designers. From
+                            in-depth guides on front-end development to expert insights on UX/UI design principles,
+                            these platforms offer invaluable
+                            resources to enhance your skills and stay ahead in the ever-evolving tech landscape.
+                        </p>
+                        <a href="#html-content" class="container-btn rem-1 capitalize"> find out</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!--SECTION E-BOOK SHOW CASE END -->
+
+    <!-- SECTION CONTENT START -->
+    <section id="section-content" class="section-content-containers">
+        <header class="section-title-content white-space">
+            <i class="fa-solid fa-book  section-icon"></i>
+            <h2 class='section-title uppercase'>Premier E-Book Platforms </h2>
+            <div class=' section-title-line'></div>
+            <p class="section-title-descreption capitalize pt-1">
+                Dive into a world of boundless learning opportunities with our handpicked collection of e-book platforms
+                tailored for
+                web developers and designers. <br> Explore comprehensive guides on front-end mastery and expert
+                perspectives on UX/UI design fundamentals.
+            </p>
+        </header>
+
+        <article class="section-content-containers-content">
+            <div class="container">
+                <div class="section-feature-content grid-300-fit ">
+
+                    <!-- Smashing Magazine -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Smashing E-Books </h2>
+                                <span class="premium capitalize   ">premium</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/smashingmagazine.jpg  "
+                                alt="Smashing E-Books   ">
+                        </header>
+                        <p class="feature-text ">
+                            Offers a range of e-books on web design, front-end development, and UX/UI design topics.
+                        </p>
+                        <footer>
+                            <a href="   https://www.smashingmagazine.com/ebooks/  " class="btn " target="_blank">Find
+                                Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  Jon Duckett-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize "> Jon Duckett</h2>
+                                <span class="premium capitalize   ">premium</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/JonDuckett.jpg  " alt=" Jon Duckett  ">
+                        </header>
+                        <p class="feature-text ">
+                            WELCOME TO A NICER WAY TO LEARN ABOUT HTML & CSS.It's not just for programmers, it's written
+                            and presented to make it easy for designers, bloggers, content and
+                            e-commerce managers
+                        </p>
+                        <footer>
+                            <a href="  https://htmlandcssbook.com/   " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!-- clean code -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize "> clean code</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/cleancode.jpg  " alt="  clean code ">
+                        </header>
+                        <p class="feature-text ">
+                            Even bad code can function. But if code isn't clean, it can bring a development organization
+                            to its knees. Every year,
+                            countless hours and significant resources are lost because of poorly written code.
+                        </p>
+                        <footer>
+                            <a href=" https://www.oreilly.com/library/view/clean-code-a/9780136083238/ " class="btn "
+                                target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  JS Design patterns-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">JS Design patterns </h2>
+                                <span class="premium capitalize   ">premium</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/JSDesignPatterns.jpg  "
+                                alt=" JS Design patterns  ">
+                        </header>
+                        <p class="feature-text ">
+                            Do you want to write beautiful, structured, and maintainable JavaScript by applying modern
+                            design patterns to the
+                            language? Do you want clean, efficient, manageable code?
+                        </p>
+                        <footer>
+                            <a href=" https://www.oreilly.com/library/view/learning-javascript-design/9781098139865/ "
+                                class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  PHP & MYSQL-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">PHP & MYSQL </h2>
+                                <span class="premium capitalize   ">premium</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/PHPANDSQL.jpg  " alt=" PHP & MYSQL  ">
+                        </header>
+                        <p class="feature-text ">
+                            If you want to learn to build websites from scratch, or work with existing tools written in
+                            PHP (like WordPress), then
+                            we wrote this book for you.
+                        </p>
+                        <footer>
+                            <a href=" https://phpandmysql.com/ " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  A Book Apart-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">A Book Apart </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/Apart.jpg  " alt="  A Book Apart  ">
+                        </header>
+                        <p class="feature-text ">
+                            Publishes concise, expertly written e-books on web design and development topics.
+                        </p>
+                        <footer>
+                            <a href="   https://abookapart.com/  " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  Leanpub-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize "> Leanpub</h2>
+                                <span class="premium capitalize   ">premium</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/Leanpub.png  " alt=" Leanpub ">
+                        </header>
+                        <p class="feature-text ">
+                            Offers a platform for authors to self-publish e-books on programming, web development, and
+                            design.
+                        </p>
+                        <footer>
+                            <a href="   https://leanpub.com/bookstore?type=book  " class="btn " target="_blank">Find
+                                Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  GoalKicker books-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize "> GoalKicker books</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/GoalKicker-books.png  "
+                                alt=" GoalKicker books  ">
+                        </header>
+                        <p class="feature-text ">
+                            Free Programming Books on Android development, C, C#, CSS, HTML5, iOS development, Java,
+                            JavaScript, PowerShell, PHP,
+                            Python, SQL Sever and more.
+                        </p>
+                        <footer>
+                            <a href=" https://books.goalkicker.com/ " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  Packt-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize "> Packt</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/Packt.png  " alt="  Packt ">
+                        </header>
+                        <p class="feature-text ">
+                            Provides e-books and video courses on web development, design, and technology-related
+                            topics.
+                        </p>
+                        <footer>
+                            <a href="  https://www.packtpub.com/   " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!-- GitHub  -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">GitHub Free Ebooks </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/GitHub.png  " alt=" GitHub   ">
+                        </header>
+                        <p class="feature-text ">
+                            Curates a list of free e-books on programming, web development, and design, available on
+                            GitHub.
+                        </p>
+                        <footer>
+                            <a href="  https://github.com/EbookFoundation/free-programming-books/tree/main/books   "
+                                class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!-- SitePoint  -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">SitePoint </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/sitepoint.png  " alt=" SitePoint   ">
+                        </header>
+                        <p class="feature-text ">
+                            Provides access to a library of e-books and courses on web development, design, and business
+                            topics.
+                        </p>
+                        <footer>
+                            <a href=" https://www.sitepoint.com/premium/library/    " class="btn " target="_blank">Find
+                                Out</a>
+                        </footer>
+                    </article>
+
+                    <!-- InVision  Library -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">InVision Library </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/InVision.png  "
+                                alt=" InVision  Library   ">
+                        </header>
+                        <p class="feature-text ">
+                            Offers e-books, guides, and resources for UX/UI designers and design teams.
+                        </p>
+                        <footer>
+                            <a href="   https://www.invisionapp.com/inside-design/design-better-epub/  " class="btn "
+                                target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!-- freefrontend -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize "> freefrontend</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/freefrontend.png  "
+                                alt="freefrontend   ">
+                        </header>
+                        <p class="feature-text ">
+                            Welcome to our article showcasing a curated collection of CSS Book Effects! In this
+                            compilation, we have gathered a wide
+                            array of free HTML and CSS code examples that demonstrate various book-related effects.
+                        </p>
+                        <footer>
+                            <a href="  https://freefrontend.com/css-book-effects/   " class="btn " target="_blank">Find
+                                Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  speckyboy-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">speckyboy </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/speckyboy.jpg  " alt=" speckyboy  ">
+                        </header>
+                        <p class="feature-text ">
+                            50 Free eBooks for Web Designers & Developers.The best part? All of these books are
+                            completely free to download! We’ve curated this collection of our favorite free
+                            eBooks for your convenience.
+                        </p>
+                        <footer>
+                            <a href=" https://speckyboy.com/free-web-design-ebooks/    " class="btn "
+                                target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!-- medium -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">medium </h2>
+                                <span class="premium capitalize   ">premium</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/medium.png  " alt=" medium  ">
+                        </header>
+                        <p class="feature-text ">
+                            Top Free eBooks for Web Designers & Web Developers
+                        </p>
+                        <footer>
+                            <a href="  https://medium.com/web-development-zone/top-free-ebooks-for-web-designers-web-developers-f8c6a70465ad   "
+                                class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  Z-Library -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Z-Library </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/Z-Library.jpeg  " alt=" Z-Library   ">
+                        </header>
+                        <p class="feature-text ">
+                            Z-Library. The world's largest ebook library | Ebooks library. Find books Download Free
+                            Online books store on Z-Library.
+                        </p>
+                        <footer>
+                            <a href=" https://1lib.sk/ " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!-- SECTION CONTENT END -->
+
+    <!--  SECTION CONTACT US START  -->
+    <section id="contact" class="contact-us  relative">
+        <div class="shadow-dark">
+            <div class="contact-us-content container  absolute ">
+                <div class="subscripe-form ">
+                    <form action="subscribe.php" method="post">
+                        <caption>
+                            <h2 class="form-title rem-2">SUBSCRIBE TO NEWSLETTERS</h2>
+                            <!--                             <h3>Don't miss an update to this site!</h3>
+ --> <!-- <h4>Get the latest content to your inbox every month. No spam, we hate it too.</h4> -->
+                            <!--                    <div class="form-name">
+                                <label for="name"></label>
+                                <input type="text" id="name" name="name" required placeholder="Full Name:">
+                            </div> -->
+                            <!--                             <div class="form-email">
+                                <label for="email"></label>
+                                <input type="email" id="email" name="email" required placeholder="E mail:">
+                            </div>
+                            <button class="btn  send-btn" type="submit">Subscribe</button> -->
+                        </caption>
+                    </form>
+
+                    <div class="social-media">
+                        <h2 class="social-media-sup-title capitalize"> Contact DinLink at <span><a class="mail-address"
+                                    href="mailto:info@dinlink.com">info@dinlink.com</a></span>
+                        </h2>
+                        <ul class="social-media-icons ">
+                            <li class="facebook"><a href=""> <i class="fa-brands fa-facebook-f social-icon"></i></a>
+                            </li>
+                            <li class="instagram"><a href=""><i class="fa-brands fa-instagram  social-icon"></i></a><img
+                                    src="" alt="">
+                            </li>
+                            <li class="linkedin"><a href=""><i
+                                        class="fa-brands fa-linkedin-in  social-icon"></i></a><img src="" alt="">
+                            </li>
+                            <li class="x"><a href=""><i class="fa-brands fa-x-twitter  social-icon"></i></a><img src=""
+                                    alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  SECTION CONTACT US END  -->
+
+    <!-- SECTION FOOTER START-->
+    <footer id="footer-line" class="footer">
+        <div class="container flex">
+            <span class="copy-right ">All Copy Right Reserved &copy; Dinlink.se 2024</span>
+            <span class="author "><a href="http://jonashousa.com/" target="_blank">DESIGNED BY JONAS HOUSA</a></span>
+        </div>
+        <!--SCROLL TO TOP BOTTOM START-->
+        <a href="#" id="scroll-to-top-link" class="scroll-to-top" onclick="scrollToTop(); return false; "
+            aria-label="Scroll to top"><i class="fa-solid fa-arrow-up-from-bracket"></i>
+        </a>
+        <!--SCROLL TO TOP BOTTOM END-->
+    </footer>
+    <!-- SECTION FOOTER END-->
+
+    <!-- JAVASCRIPT LINKS  -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/slides.js"></script>
+    <script src="assets/js/smoothScrollPage.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.7.3/smooth-scrollbar.js"></script>
+
+</body>
+
+</html>
