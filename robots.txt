@@ -1,7 +1,0 @@
-# Allow Facebook's bot to scrape all content
-User-agent: facebookexternalhit
-Allow: /
-
-# Block other bots from scraping private content (optional)
-User-agent: *
-Disallow: /private/
