@@ -1,0 +1,1476 @@
+@import 'vars';
+
+@media (max-width: 1280px) {
+    .section-title-content {
+        .section-icon {
+            color: $main-nav-hover-color;
+        }
+    }
+
+    .hero-text-line-1 {
+        color: #000;
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    ///  HEADER SECTION
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    .header {
+        .header-content {
+
+            .main-nav {
+                .hideOnMobile {
+                    display: none;
+                }
+
+                .sidebarHamburgerMenuShow {
+                    display: block;
+                }
+            }
+        }
+
+        .secondary-nav {
+
+            .sidebar-secondary-nav {
+                position: absolute;
+                top: 30%;
+                right: 5%;
+                display: block;
+            }
+
+            .secondary-menu {
+                .navigation {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    ///  SHOW CASE HERO
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    .showcase-hero {
+        .hero-text-box {
+            .hero-text-line-1 {
+                font-size: 2.8rem;
+                color: white;
+            }
+
+            .hero-text-line-2 {
+                font-size: 1.5rem;
+            }
+
+            .hero-text-line-3 {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    ///  SECTION AI GUIDING
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    .section-ai {
+        .mixin-feature-section {
+            .textContainer {
+                width: 60%;
+
+                .aislide {
+                    left: 7%;
+                }
+
+                .seo-btn {
+                    left: 7%;
+                }
+            }
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    ///  SECTION FREELANCE GUIDE
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    .freelance-section {
+
+        .featureSection {
+            background-color: rgba(0, 0, 0, 0.6);
+
+            .textContainer {
+                .textContainer-header {
+                    font-size: 2.2rem;
+                }
+
+                .textContainer-sup-header {
+                    font-size: 0.9rem;
+                    margin-top: -5px;
+                }
+
+                .textContainer-description {
+                    margin-top: 1px;
+                    font-size: 0.8rem;
+                    font-size: 100;
+                }
+
+                .freelance-btn {
+                    font-size: 0.8rem;
+                    padding: 13px 60px;
+                    margin-top: 10px;
+                }
+            }
+
+            .content-media {
+                width: 27%;
+            }
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    ///  SECTION FREELANCE [  MAIN PAGE  ]
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    .freelance-main-page {
+
+        padding: 200px 0;
+
+        .section-title-content {
+            padding-top: 0;
+        }
+
+        .section-feature-content {
+
+            .design-guiding-feature {
+                padding: 25px;
+
+                .feature-header-title {
+                    font-weight: 500;
+                    font-size: 1rem;
+                    margin-bottom: -7px;
+                }
+
+                .feature-sub-title {
+                    font-size: 0.8rem;
+                    font-weight: 400;
+                    margin-top: 5px;
+                }
+
+                .feature-text {
+                    font-weight: 300;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    //  SECTION CONTACT US
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    .contact-us {
+
+        .contact-us-content {
+            width: 50%;
+            padding: 50px 30px;
+            border-radius: 10px;
+            top: 61%;
+            left: 28%;
+            transform: translate(-50%, -50%);
+
+            .subscripe-form {
+                h2 {
+                    font-size: 1.5rem;
+                }
+
+                h3 {
+                    font-size: 1.2rem;
+                }
+
+                h4 {
+                    font-size: 0.8rem;
+                }
+
+                .form-name,
+                .form-email {
+                    input {
+                        padding-left: 15px;
+                        font-size: 0.8rem;
+                        width: 420px;
+                        height: 50px;
+                        margin-top: 7px;
+                        border-radius: 7px;
+                        transition: border-color 0.5s;
+                        caret-color: $main-nav-hover-color;
+                        outline-color: $main-nav-hover-color;
+
+                        &:focus {
+                            outline: none;
+                            border: 3px solid $main-nav-hover-color;
+                        }
+                    }
+                }
+
+
+                .social-media {
+                    .social-media-sup-title {
+                        color: $white-color;
+                        font-size: 0.8rem;
+                        margin-top: 25px;
+                        font-weight: 400;
+
+                        .mail-address {
+                            color: $main-nav-hover-color;
+                        }
+                    }
+
+                    .social-media-icons {
+                        display: flex;
+                        gap: 10px;
+                        margin-top: 5px;
+
+                        .facebook:hover .social-icon {
+                            color: #3b5998;
+                            /* Change to Facebook color on hover */
+                        }
+
+                        .instagram:hover .social-icon {
+                            color: #e4405f;
+                            /* Change to Instagram color on hover */
+                        }
+
+                        .linkedin:hover .social-icon {
+                            color: #0077b5;
+                            /* Change to LinkedIn color on hover */
+                        }
+
+                        .x:hover .social-icon {
+                            color: #000;
+                            /* Change to Twitter color on hover */
+                        }
+
+                        .social-icon {
+                            font-size: 1.2rem;
+                            padding: 15px;
+                            background-color: #edf0f3;
+                            color: $text-color;
+                            border-radius: 10px;
+                            width: 50px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    ////  SECTION FOOTER 
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    .footer {
+        height: 45px;
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    /// Botton
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    .container-btn,
+    .seo-btn,
+    .btn-404 {
+        font-size: 0.8rem;
+        padding: 13px 60px;
+        margin-top: 10px;
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    /// Singel Page
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    .section-single-page-containers {
+        .section-title-content {
+            .section-title-descreption {
+                padding: 0 20px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .multi-section-showcase {
+        height: 85vh;
+
+        .sectionBlock {
+
+            .shadow-dark {
+
+                .mixin-feature-section {
+                    justify-content: space-between;
+                    width: 100%;
+                    top: 50%;
+                    left: 44%;
+                    transform: translate(-50%, -50%);
+
+                    .textContainer {
+
+                        background-color: rgba(0, 0, 0, 0.6);
+                        width: 85%;
+                        padding: 40px 60px 40px 100px;
+                        border-radius: 10px;
+
+                        .textContainer-header {
+                            color: rgb(255, 255, 255);
+                            font-size: 2.2rem;
+                            font-weight: 900;
+                        }
+
+                        .textContainer-sup-header {
+                            margin-top: -5px;
+                            color: $main-nav-hover-color;
+                            font-size: 0.9rem;
+                        }
+
+                        .textContainer-description {
+                            color: $white-color;
+                            width: 100%;
+                            font-size: 0.7rem;
+                        }
+                    }
+
+                    .imageContainer {
+                        .content-media {
+                            width: 100%;
+                            margin-right: -100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .section-title-content {
+        .section-icon {
+            color: $main-nav-hover-color;
+        }
+    }
+
+    .hero-text-line-1 {
+        color: #d40404;
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    ///    MULTI PAGES SETTING  MIXIN
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    .mixin-feature-section {
+        top: 50%;
+        left: 43%;
+
+        .textContainer {
+            width: 90%;
+
+            .textContainer-header {
+                font-size: 2rem;
+            }
+
+            .textContainer-sup-header {
+                margin-top: -5px;
+            }
+
+            .textContainer-description {
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    //  SECTION CONTACT US
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    .contact-us {
+
+        .contact-us-content {
+            width: 60%;
+            padding: 50px 30px;
+            border-radius: 10px;
+            top: 61%;
+            left: 33%;
+            transform: translate(-50%, -50%);
+
+            .subscripe-form {
+                h2 {
+                    font-size: 1.5rem;
+                }
+
+                h3 {
+                    font-size: 1.2rem;
+                }
+
+                h4 {
+                    font-size: 0.8rem;
+                }
+
+                .form-name,
+                .form-email {
+                    input {
+                        padding-left: 15px;
+                        font-size: 0.8rem;
+                        width: 420px;
+                        height: 50px;
+                        margin-top: 7px;
+                        border-radius: 7px;
+                        transition: border-color 0.5s;
+                        caret-color: $main-nav-hover-color;
+                        outline-color: $main-nav-hover-color;
+
+                        &:focus {
+                            outline: none;
+                            border: 3px solid $main-nav-hover-color;
+                        }
+                    }
+                }
+
+
+                .social-media {
+                    .social-media-sup-title {
+                        color: $white-color;
+                        font-size: 0.8rem;
+                        margin-top: 25px;
+                        font-weight: 400;
+
+                        .mail-address {
+                            color: $main-nav-hover-color;
+                        }
+                    }
+
+                    .social-media-icons {
+                        display: flex;
+                        gap: 10px;
+                        margin-top: 5px;
+
+                        .facebook:hover .social-icon {
+                            color: #3b5998;
+                            /* Change to Facebook color on hover */
+                        }
+
+                        .instagram:hover .social-icon {
+                            color: #e4405f;
+                            /* Change to Instagram color on hover */
+                        }
+
+                        .linkedin:hover .social-icon {
+                            color: #0077b5;
+                            /* Change to LinkedIn color on hover */
+                        }
+
+                        .x:hover .social-icon {
+                            color: #000;
+                            /* Change to Twitter color on hover */
+                        }
+
+                        .social-icon {
+                            font-size: 1.2rem;
+                            padding: 15px;
+                            background-color: #edf0f3;
+                            color: $text-color;
+                            border-radius: 10px;
+                            width: 50px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .multi-section-showcase {
+        height: 85vh;
+
+        .sectionBlock {
+
+            .shadow-dark {
+
+                .mixin-feature-section {
+                    justify-content: space-between;
+                    width: 100%;
+                    top: 50%;
+                    left: 44%;
+                    transform: translate(-50%, -50%);
+
+                    .textContainer {
+
+                        background-color: rgba(0, 0, 0, 0.6);
+                        width: 85%;
+                        padding: 40px 60px 40px 100px;
+                        border-radius: 10px;
+
+                        .textContainer-header {
+                            color: rgb(255, 255, 255);
+                            font-size: 2.2rem;
+                            font-weight: 900;
+                        }
+
+                        .textContainer-sup-header {
+                            margin-top: -5px;
+                            color: $main-nav-hover-color;
+                            font-size: 0.9rem;
+                        }
+
+                        .textContainer-description {
+                            color: $white-color;
+                            width: 100%;
+                            font-size: 0.7rem;
+                        }
+                    }
+
+                    .imageContainer {
+                        .content-media {
+                            width: 100%;
+                            margin-right: -100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .section-title-content {
+        .section-icon {
+            color: $main-nav-hover-color;
+        }
+    }
+
+    .hero-text-line-1 {
+        color: #04d420;
+    }
+
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    ///  SECTION DESIGN GUIDE
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    .design-guiding-section {
+        padding: 200px 0;
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    ///  SECTION AI GUIDING
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    .section-ai {
+
+        .mixin-feature-section {
+            .textContainer {
+                width: 90%;
+
+                .aislide {
+                    position: absolute;
+                    left: 13%;
+                }
+
+                .seo-btn {
+                    top: 55%;
+                    left: 13%;
+                }
+            }
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    ///  SECTION FREELANCE GUIDE
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    .freelance-section {
+        .featureSection {
+            .textContainer {
+                .textContainer-header {
+                    font-size: 1.9rem;
+                }
+            }
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    ///    MULTI PAGES SETTING  MIXIN
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    .mixin-feature-section {
+        left: 39%;
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    ///  SECTION TITLE
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    .section-title-content {
+
+        .section-icon {
+            font-size: 1.5rem;
+        }
+
+        .section-title-descreption {
+            font-weight: 300;
+            font-size: 0.7rem;
+        }
+
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    //  ADVANCID AND GUIDING CPANEL
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    .section-single-page-containers {
+        .section-title-content {
+            padding: 15px 0;
+
+            .cpanel-sub-navigation {
+
+                .btn {
+                    padding: 10px;
+                }
+
+                .btn-cpanel {
+                    width: 100%;
+                    border-color: rgb(212, 207, 207);
+                }
+
+                margin: 10px 40px;
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+                gap: 5px;
+            }
+        }
+
+        .section-info-guiding {
+
+            .info-guiding-title {
+                font-size: 0.8rem;
+            }
+
+            // collapsible accordion
+            .accordion {
+                font-size: 0.8rem;
+            }
+
+            .panel {
+
+                .panel-content {
+                    display: block;
+                    padding: 10px 0;
+                    height: 100%;
+
+                    .sup-sup-panel-text-content {
+                        padding-left: 30px;
+
+                    }
+
+                    .panel-text {
+                        padding: 20px 20px 20px 50px;
+                        text-align: justify;
+                        font-size: 0.8rem;
+                        max-width: 97%;
+                        line-height: 1.6;
+                        color: $text-color;
+                    }
+
+                    .sub-panel-text-content {
+
+                        h3 {
+                            font-size: 0.9rem;
+                            font-weight: 400;
+                            color: rgb(230, 22, 91);
+                            padding-left: 20px;
+                        }
+
+                        .panel-text {
+                            padding: 0 0 20px 20px;
+                            text-align: justify;
+                            font-size: 0.9rem;
+                            max-width: 85%;
+                            color: $text-color;
+                        }
+                    }
+
+                    .video-iframe {
+                        height: 100%;
+                        margin-left: 50px;
+                    }
+
+                }
+            }
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    //  ADVANCID AND GUIDING PAGES SETTING
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+
+    .section-info-guiding {
+
+        .info-guiding-title {
+            font-size: 0.8rem;
+        }
+
+        // collapsible accordion
+        .accordion {
+            font-size: 0.8rem;
+        }
+
+        .panel {
+
+            .panel-content {
+                display: block;
+                padding: 10px 0;
+                height: 100%;
+
+                .sup-sup-panel-text-content {
+                    padding-left: 30px;
+
+                }
+
+                .panel-text {
+                    font-size: 0.8rem;
+                    max-width: 97%;
+                    line-height: 1.6;
+                    color: $text-color;
+                }
+
+                .sub-panel-text-content {
+
+                    h3 {
+                        font-size: 0.9rem;
+                        font-weight: 400;
+                        color: rgb(230, 22, 91);
+                        padding-left: 40px;
+                    }
+
+                    .panel-text {
+                        text-align: justify;
+                        font-size: 0.9rem;
+                        max-width: 85%;
+                        color: $text-color;
+                    }
+                }
+
+                .video-iframe {
+                    height: 100%;
+                    margin-left: 50px;
+                }
+
+            }
+        }
+    }
+
+
+
+
+
+
+
+}
+
+@media (max-width: 900px) {
+    .multi-section-showcase {
+        height: 85vh;
+
+        .sectionBlock {
+
+            .shadow-dark {
+
+                .mixin-feature-section {
+                    justify-content: space-between;
+                    width: 100%;
+                    top: 50%;
+                    left: 44%;
+                    transform: translate(-50%, -50%);
+
+                    .textContainer {
+
+                        background-color: rgba(0, 0, 0, 0.6);
+                        width: 85%;
+                        padding: 40px 60px 40px 100px;
+                        border-radius: 10px;
+
+                        .textContainer-header {
+                            color: rgb(255, 255, 255);
+                            font-size: 2.2rem;
+                            font-weight: 900;
+                        }
+
+                        .textContainer-sup-header {
+                            margin-top: -5px;
+                            color: $main-nav-hover-color;
+                            font-size: 0.9rem;
+                        }
+
+                        .textContainer-description {
+                            color: $white-color;
+                            width: 100%;
+                            font-size: 0.7rem;
+                        }
+                    }
+
+                    .imageContainer {
+                        .content-media {
+                            width: 100%;
+                            margin-right: -100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .section-title-content {
+        .section-icon {
+            color: $main-nav-hover-color;
+        }
+    }
+
+    .hero-text-line-1 {
+        color: #0704d4;
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    ///  SHOW CASE HERO
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    .showcase-hero {
+        .hero-text-box {
+            .hero-text-line-1 {
+                font-size: 2.8rem;
+            }
+
+            .hero-text-line-2 {
+                font-size: 1.2rem;
+            }
+
+            .hero-text-line-3 {
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    ///  MIXIN
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    .mixin-feature-section {
+        .textContainer {
+            width: 100%;
+
+            .textContainer-header {
+                font-size: 2rem;
+                font-weight: 900;
+            }
+
+            .textContainer-sup-header {
+                font-size: 0.9rem;
+                margin-bottom: 2PX;
+            }
+
+            .textContainer-description {
+                font-size: 0.8rem;
+                margin-top: -3px;
+            }
+        }
+    }
+
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    ///  SECTION FREELANCE GUIDE
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    .freelance-section {
+
+        .featureSection {
+
+            .textContainer {
+                .textContainer-header {
+                    font-size: 2rem;
+                }
+
+                .textContainer-sup-header {
+                    font-size: 0.9rem;
+                    margin-top: -5px;
+                }
+
+                .textContainer-description {
+                    margin-top: 0.8px;
+                    font-size: 0.8rem;
+                    font-size: 100;
+                }
+
+                .freelance-btn {
+                    font-size: 0.8rem;
+                    padding: 13px 60px;
+                    margin-top: 10px;
+                }
+            }
+
+            .content-media {
+                display: none;
+            }
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    //  SECTION CONTACT US
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    .contact-us {
+
+        .contact-us-content {
+            width: 100%;
+            padding: 50px 30px;
+            border-radius: 10px;
+            top: 61%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .subscripe-form {
+                h2 {
+                    font-size: 1.5rem;
+                }
+
+                h3 {
+                    font-size: 1.2rem;
+                }
+
+                h4 {
+                    font-size: 0.8rem;
+                }
+
+                .form-name,
+                .form-email {
+                    input {
+                        padding-left: 15px;
+                        font-size: 0.8rem;
+                        width: 420px;
+                        height: 50px;
+                        margin-top: 7px;
+                        border-radius: 7px;
+                        transition: border-color 0.5s;
+                        caret-color: $main-nav-hover-color;
+                        outline-color: $main-nav-hover-color;
+
+                        &:focus {
+                            outline: none;
+                            border: 3px solid $main-nav-hover-color;
+                        }
+                    }
+                }
+
+
+                .social-media {
+                    .social-media-sup-title {
+                        color: $white-color;
+                        font-size: 0.8rem;
+                        margin-top: 25px;
+                        font-weight: 400;
+
+                        .mail-address {
+                            color: $main-nav-hover-color;
+                        }
+                    }
+
+                    .social-media-icons {
+                        display: flex;
+                        gap: 10px;
+                        margin-top: 5px;
+
+                        .facebook:hover .social-icon {
+                            color: #3b5998;
+                            /* Change to Facebook color on hover */
+                        }
+
+                        .instagram:hover .social-icon {
+                            color: #e4405f;
+                            /* Change to Instagram color on hover */
+                        }
+
+                        .linkedin:hover .social-icon {
+                            color: #0077b5;
+                            /* Change to LinkedIn color on hover */
+                        }
+
+                        .x:hover .social-icon {
+                            color: #000;
+                            /* Change to Twitter color on hover */
+                        }
+
+                        .social-icon {
+                            font-size: 1.2rem;
+                            padding: 15px;
+                            background-color: #edf0f3;
+                            color: $text-color;
+                            border-radius: 10px;
+                            width: 50px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .multi-section-showcase {
+        height: 85vh;
+
+        .sectionBlock {
+
+            .shadow-dark {
+
+                .mixin-feature-section {
+                    justify-content: space-between;
+                    width: 100%;
+                    top: 50%;
+                    left: 44%;
+                    transform: translate(-50%, -50%);
+
+                    .textContainer {
+
+                        background-color: rgba(0, 0, 0, 0.6);
+                        width: 100%;
+                        padding: 40px 60px 40px 100px;
+                        border-radius: 10px;
+
+                        .textContainer-header {
+                            color: rgb(255, 255, 255);
+                            font-size: 2rem;
+                            font-weight: 900;
+                        }
+
+                        .textContainer-sup-header {
+                            margin-top: -5px;
+                            color: $main-nav-hover-color;
+                            font-size: 0.8rem;
+                        }
+
+                        .textContainer-description {
+                            color: $white-color;
+                            width: 100%;
+                            font-size: 0.7rem;
+                        }
+                    }
+
+                    .imageContainer {
+                        .content-media {
+                            width: 100%;
+                            margin-right: -100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .section-title-content {
+        .section-icon {
+            color: $main-nav-hover-color;
+        }
+    }
+
+    .hero-text-line-1 {
+        color: #d404ca;
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    ///  SHOW CASE HERO
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    .showcase-hero {
+        .hero-text-box {
+            .hero-text-line-1 {
+                font-size: 2rem;
+            }
+
+            .hero-text-line-2 {
+                font-size: 1rem;
+            }
+
+            .hero-text-line-3 {
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    ///  SECTION AI GUIDING
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    .section-ai {
+        height: 100vh;
+        overflow: hidden;
+
+        .shadow-dark {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .mixin-feature-section {
+            .textContainer {
+                background-color: rgba(0, 0, 0, 0.6);
+                width: 130%;
+                padding: 220px 60px 40px 100px;
+                border-radius: 10px;
+
+                .aislide {
+                    position: absolute;
+                    top: 25%;
+                    left: 20%;
+                    width: 100%;
+                    opacity: 0;
+                    transition: opacity 0.7s ease-in-out;
+
+                    .textContainer-header {
+                        font-size: 1.5rem;
+                        font-weight: 900;
+                    }
+
+                    .textContainer-sup-header {
+                        font-size: 1rem;
+                        margin-bottom: -2px;
+                    }
+
+                    .textContainer-description {
+                        font-size: 0.8rem;
+                        margin-top: -3px;
+                    }
+                }
+
+                .aislide.active {
+                    opacity: 5;
+                }
+
+                .seo-btn {
+                    position: absolute;
+                    top: 50%;
+                    left: 20%;
+                }
+            }
+
+        }
+
+
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    ///  MIXIN
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    .mixin-feature-section {
+        .textContainer {
+            width: 130%;
+
+            .textContainer-header {
+                font-size: 2rem;
+                font-weight: 900;
+            }
+
+            .textContainer-sup-header {
+                font-size: 0.7rem;
+                margin-bottom: 2PX;
+            }
+
+            .textContainer-description {
+                font-size: 0.7rem;
+                margin-top: -3px;
+            }
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    ///  SECTION FREELANCE GUIDE
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    .freelance-section {
+
+        .featureSection {
+            width: 120%;
+
+            .textContainer {
+                .textContainer-header {
+                    font-size: 1.5rem;
+                }
+
+                .textContainer-sup-header {
+                    font-size: 0.7rem;
+                    margin-top: -5px;
+                }
+
+                .textContainer-description {
+                    margin-top: 0.1px;
+                    font-size: 0.6rem;
+                    font-size: 100;
+                    width: 120%;
+                }
+
+                .freelance-btn {
+                    font-size: 0.7rem;
+                    padding: 13px 60px;
+                    margin-top: 10px;
+                }
+            }
+
+            .content-media {
+                display: none;
+            }
+        }
+    }
+
+    ///    MULTI PAGES SETTING  MIXIN
+    .mixin-feature-section {
+        justify-content: space-between;
+        width: 100%;
+        top: 50%;
+        left: 33%;
+        transform: translate(-50%, -50%);
+
+        .textContainer {
+
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 130%;
+            padding: 40px 60px 40px 100px;
+            border-radius: 10px;
+
+            .textContainer-header {
+                color: $white-color;
+                font-size: 1.5rem;
+                font-weight: 900;
+            }
+
+            .textContainer-sup-header {
+                margin-top: -5px;
+                color: $main-nav-hover-color;
+                font-size: 0.7rem;
+            }
+
+            .textContainer-description {
+                color: $white-color;
+                width: 100%;
+                font-size: 0.7rem;
+            }
+        }
+
+        .imageContainer {
+            .content-media {
+                width: 100%;
+                margin-right: -100px;
+            }
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    //  SECTION CONTACT US
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    .contact-us {
+
+        .contact-us-content {
+            width: 100%;
+            padding: 50px 30px;
+            border-radius: 10px;
+            top: 61%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .subscripe-form {
+                h2 {
+                    font-size: 1.5rem;
+                }
+
+                h3 {
+                    font-size: 1.2rem;
+                }
+
+                h4 {
+                    font-size: 0.8rem;
+                }
+
+                .form-name,
+                .form-email {
+                    input {
+                        padding-left: 15px;
+                        font-size: 0.8rem;
+                        width: 370px;
+                        height: 50px;
+                        margin-top: 7px;
+                        border-radius: 7px;
+                        transition: border-color 0.5s;
+                        caret-color: $main-nav-hover-color;
+                        outline-color: $main-nav-hover-color;
+
+                        &:focus {
+                            outline: none;
+                            border: 3px solid $main-nav-hover-color;
+                        }
+                    }
+                }
+
+
+                .social-media {
+                    .social-media-sup-title {
+                        color: $white-color;
+                        font-size: 0.8rem;
+                        margin-top: 25px;
+                        font-weight: 400;
+
+                        .mail-address {
+                            color: $main-nav-hover-color;
+                        }
+                    }
+
+                    .social-media-icons {
+                        display: flex;
+                        gap: 10px;
+                        margin-top: 5px;
+
+                        .facebook:hover .social-icon {
+                            color: #3b5998;
+                            /* Change to Facebook color on hover */
+                        }
+
+                        .instagram:hover .social-icon {
+                            color: #e4405f;
+                            /* Change to Instagram color on hover */
+                        }
+
+                        .linkedin:hover .social-icon {
+                            color: #0077b5;
+                            /* Change to LinkedIn color on hover */
+                        }
+
+                        .x:hover .social-icon {
+                            color: #000;
+                            /* Change to Twitter color on hover */
+                        }
+
+                        .social-icon {
+                            font-size: 1.2rem;
+                            padding: 15px;
+                            background-color: #edf0f3;
+                            color: $text-color;
+                            border-radius: 10px;
+                            width: 50px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .section-content-containers-content {
+        .section-info-guiding {
+            .info-guiding-title {
+                font-size: 0.7rem;
+            }
+
+            .accordion {
+                font-size: 0.7rem;
+            }
+
+            .panel {
+
+
+                .panel-text {
+                    font-size: 0.7rem;
+                }
+
+
+                .sub-panel-text-content {
+                    .panel-title {
+                        font-size: 0.7rem;
+                    }
+
+                    .panel-text {
+                        font-size: 0.7rem;
+                    }
+                }
+
+
+            }
+        }
+    }
+
+}
+
+@media (max-width: 600px) {}
+
+@media (max-width: 480px) {
+    .multi-section-showcase {
+        height: 85vh;
+
+        .sectionBlock {
+
+            .shadow-dark {
+
+                .mixin-feature-section {
+                    justify-content: space-between;
+                    width: 100%;
+                    top: 50%;
+                    left: 44%;
+                    transform: translate(-50%, -50%);
+
+                    .textContainer {
+
+                        background-color: rgba(0, 0, 0, 0.6);
+                        width: 100%;
+                        padding: 40px 60px 40px 100px;
+                        border-radius: 10px;
+
+                        .textContainer-header {
+                            color: rgb(255, 255, 255);
+                            font-size: 2rem;
+                            font-weight: 900;
+                        }
+
+                        .textContainer-sup-header {
+                            margin-top: -5px;
+                            color: $main-nav-hover-color;
+                            font-size: 0.8rem;
+                        }
+
+                        .textContainer-description {
+                            color: $white-color;
+                            width: 100%;
+                            font-size: 0.7rem;
+                        }
+                    }
+
+                    .imageContainer {
+                        .content-media {
+                            width: 100%;
+                            margin-right: -100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .section-title-content {
+        .section-icon {
+            color: $main-nav-hover-color;
+        }
+    }
+
+    .hero-text-line-1 {
+        color: #646464;
+    }
+
+    ////////////////////////////////////////////////////////////////////
+    ///  SHOW CASE HERO
+    ////////////////////////////////////////////////////////////////////
+    .showcase-hero {
+        .hero-text-box {
+            .hero-text-line-1 {
+                font-size: 3rem;
+            }
+
+            .hero-text-line-2 {
+                font-size: 1.6rem;
+            }
+
+            .hero-text-line-3 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .section-title-content {
+        .section-icon {
+            color: $main-nav-hover-color;
+        }
+    }
+
+    .hero-text-line-1 {
+        color: #046fd4;
+    }
+
+
+}

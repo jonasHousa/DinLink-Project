@@ -1,0 +1,91 @@
+////////////////////////////////////////////////////////////////////////////////
+///    Design Guide Animation-
+////////////////////////////////////////////////////////////////////////////////
+
+/// /* Hide design guiding features initially */
+.design-guiding-feat {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    /* Apply transition effects */
+}
+
+/* Show design guiding features */
+.feat-show {
+    opacity: 1;
+}
+
+/* Slide from left */
+.slide-from-left {
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(-50px);
+    /* Start off-screen to the left */
+}
+
+/* Slide from right */
+.slide-from-right {
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(50px);
+    /* Start off-screen to the right */
+}
+
+/* Slide from bottom */
+.slide-from-bottom {
+    transition: transform 0.5s ease-in-out;
+    transform: translateY(50px);
+    /* Start off-screen to the bottom */
+}
+
+/* Apply animation when the feature comes into view */
+.feat-show.slide-from-left {
+    transform: translateX(0);
+    /* Reset transform */
+}
+
+.feat-show.slide-from-right {
+    transform: translateX(0);
+    /* Reset transform */
+}
+
+.feat-show.slide-from-bottom {
+    transform: translateY(0);
+    /* Reset transform */
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///   FEATURE CARD ANIMATION UP WHEN SCROLLING
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/* Hide feat elements initially */
+.feat {
+    opacity: 0;
+    transform: translateY(50px);
+    /* Start off-screen to the bottom */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    /* Apply transition effects */
+}
+
+/* Show feat elements */
+.feat-show {
+    opacity: 1;
+    transform: translateY(0);
+    /* Reset transform */
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///   FEATURE CARD ANIMATION UP WHEN HOVER
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// Feature-card-effect  UP
+.feature-card-effect {
+    transition: transform 0.4s ease-in;
+    -webkit-transition: transform 0.4s ease-in;
+    -moz-transition: transform 0.4s ease-in;
+    -ms-transition: transform 0.4s ease-in;
+    -o-transition: transform 0.4s ease-in;
+}
+
+.feature-card-effect:hover {
+    transform: translateY(-7px);
+    -webkit-transform: translateY(-7px);
+    -moz-transform: translateY(-7px);
+    -ms-transform: translateY(-7px);
+    -o-transform: translateY(-7px);
+}

@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Set viewport properties for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define the title of the web page -->
+    <title>DinLink | ARTIFICIAL INTELLIGENCE</title>
+    <!-- Provide a brief description for search engines -->
+    <meta name="description" content="Dinlink: Your go-to resource for web developers seeking the best tools! Discover curated collections of fonts, icons,
+                images, and more to enhance your projects. Elevate your web development with handpicked tools for seamless design and
+                functionality. Explore the ultimate toolkit at Dinlink and supercharge your creativity today! ">
+    <!-- Specify keywords for search engines (may have limited impact) -->
+    <meta name="keywords"
+        content="Web development tools, Font resources for developers, Icon collections, High-quality images for websites, design resources, Web design assets,Developer toolkit, Creative assets for websites, Design resources for developers, Best web development tools, Iconography for websites, Professional fonts for web projects, Image libraries for developers, UI design elements, Code optimization tools, Responsive design resources, Code editors, Version control systems, Task runners, Build tools, Content management systems, Design collaboration platforms, Programming languages, Frameworks, Frontend development tools, Backend development tools, Database management systems, Color palettes, UI design patterns, Prototyping tools, Wireframing tools, Typography resources, Icon sets, Vector graphics, User-centered design, Information architecture, Interaction design, Usability testing, User research, Accessibility guidelines, WCAG standards, Tutorials, Online courses, Web development communities, Blogs, Articles, Books, Freelancing tips, Remote work tools, Productivity techniques, Portfolio building, Career development">
+    <!-- Additional meta tags -->
+    <meta property="og:title" content="DinLink | Your Ultimate Web Development Toolkit">
+    <!-- Open Graph description: Used by social media platforms when the page is shared -->
+    <meta property="og:description"
+        content="Discover curated collections of fonts, icons, images, and more for web developers. Elevate your projects with the best web development tools and resources. Explore the ultimate toolkit at DinLink and supercharge your creativity today! #WebDevelopment #DesignResources #UIUX #Creativity">
+    <!-- Open Graph image: Used by social media platforms when the page is shared -->
+    <meta property="og:image" content="https://dinlink.se/image.jpg">
+    <!-- Robots meta tag: Specifies whether search engines should index and follow the page -->
+    <meta name="robots" content="index, follow">
+    <!-- Canonical link tag: Specifies the preferred URL of the page  MUST CHANGE IN EACH PAGE -->
+    <link rel="canonical" href="https://dinlink.se/ai-tools.html">
+    <!-- Alternate link tag: Specifies alternate language versions of the page -->
+    <link rel="alternate" hreflang="en" href="https://example.com/en">
+    <!-- Favicon for the website -->
+    <link rel="icon" type="image/x-icon" href="/FAVICON.jpg">
+    <!-- Link to custom stylesheets for page styling CSS -->
+    <link rel="stylesheet" href="assets/sass/dinlink-style.css">
+    <link rel="stylesheet" href="assets/sass/dinlink-Media-query.css">
+    <link rel="stylesheet" href="assets/sass/dinlink-global-elements.css">
+    <!-- Link to font icon library -->
+    <link rel="stylesheet" href="assets/fonts/fontIcon/css/all.css">
+    <!-- Link to Google Fonts for custom typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- SECTION HEADER START -->
+    <section id="header" class="header sticky">
+        <div class="header-content container flex">
+            <a href="/index.html" id='logo' class="logo bold" title="DinLink | Your Ultimate Web Development Toolkit">
+                <h1>DinLink</h1>
+            </a>
+            <!-- FIRST NAV -->
+            <nav class="first-nav main-nav capitalize flex">
+                <ul class=" sidebarNavigation    fw-500">
+                    <div class="side-menu-header ">
+                        <h2 class="side-menu-header-heading">menu</h2>
+                        <a href="#" onclick="hideSidebar()"><i
+                                class="fa-solid fa-xmark sidebarHamburgerMenuHide "></i></a>
+                    </div>
+
+                    <li class=" dropdown relative">
+                        <a href="#">guiding corner</a>
+                        <ul class="submenu">
+                            <li><a href="/design-rules-guide.html"> Design Rules</a></li>
+                            <li><a href="/design-guiding.html"> Design Guide</a></li>
+                            <li><a href="/Design-Conversion-guide.html"> Design Conversion</a></li>
+                            <li><a href="/ui-ux.html"> UI / UX</a></li>
+                            <li><a href="/clean-code.html"> Clean Code</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/ai-tools.html">AI tools</a></li>
+                    <li><a href="/sdrh-section.html">Developers tools</a></li>
+                    <li><a href="/free-download.html">download Center</a></li>
+                    <li><a href="/seo.html">SEO</a></li>
+                    <li><a href="/speed-test.html">Speed & Test</a></li>
+                    <li><a href="/freelance.html">freelance</a></li>
+                    <li><a href="#footer-line">contact dinlink</a></li>
+                </ul>
+
+                <ul class="navigation flex fw-500">
+                    <li class="hideOnMobile dropdown relative">
+                        <a href="#">guiding corner</a>
+                        <ul class="submenu">
+                            <li><a href="/design-rules-guide.html"> Design Rules</a></li>
+                            <li><a href="/design-guiding.html"> Design Guide</a></li>
+                            <li><a href="/Design-Conversion-guide.html"> Design Conversion</a></li>
+                            <li><a href="/ui-ux.html"> UI / UX</a></li>
+                            <li><a href="/clean-code.html"> Clean Code</a></li>
+                        </ul>
+                    </li>
+                    <li class="hideOnMobile"><a href="/ai-tools.html">AI tools</a></li>
+                    <li class="hideOnMobile"><a href="/sdrh-section.html">Developers tools</a></li>
+                    <li class="hideOnMobile"><a href="/free-download.html">download Center</a></li>
+                    <li class="hideOnMobile"><a href="/seo.html">SEO</a></li>
+                    <li class="hideOnMobile"><a href="/speed-test.html">Speed & Test</a></li>
+                    <li class="hideOnMobile"><a href="/freelance.html">freelance</a></li>
+                    <li class="hideOnMobile"><a href="#footer-line">contact dinlink</a></li>
+                </ul>
+                <div onclick=" showSidebar()"><a href="#"><i class="fa-solid fa-bars sidebarHamburgerMenuShow"></i></a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- SECOND NAV -->
+        <div class="  secondary-nav relative">
+            <div class="container  ">
+                <nav class="secondary-menu  flex capitalize ">
+
+                    <nav class="breadcrumb-navigation">
+                        <ul class="path-breadcrumb-navigation flex">
+                            <li><a href="index.html" class="category capitalizes">Home &gt;</a>
+                                <!-- Use &gt; for greater-than symbol --></li>
+                            <li><a href="#" class="subcategory capitalize"> AI Tools</a></li>
+                        </ul>
+                    </nav>
+
+                    <ul class=" navigation flex fw-500">
+                        <li><a href="/html.html">HTML</a></li>
+                        <li><a href="/css.html">CSS</a></li>
+                        <li><a href="/javascript.html">JS</a></li>
+                        <li><a href="/nodejs.html">NODEJS</a></li>
+                        <li><a href="/wordpress.html">WORDPRESS</a></li>
+                        <li><a href="/php.html">PHP</a></li>
+                        <li><a href="/react.html">REACT</a></li>
+                        <li><a href="/api.html">API</a></li>
+                        <li><a href="/database.html">DATABASE</a></li>
+                    </ul>
+                </nav>
+
+                <div class="sidebar-secondary-nav">
+                    <div class="container">
+                        <div class="custom-dropdown">
+                            <select class="side-bar-secondary-navigation" onchange="navigateSidebar(this)">
+                                <option value="" selected disabled hidden>Developer Playground</option>
+                                <option value=""></option>
+                                <option value="/html.html">HTML</option>
+                                <option value="/css.html">CSS</option>
+                                <option value="/javascript.html">JS</option>
+                                <option value="/nodejs.html">NODEJS</option>
+                                <option value="/wordpress.html">WORDPRESS</option>
+                                <option value="/php.html">PHP</option>
+                                <option value="/react.html">REACT</option>
+                                <option value="/api.html">API</option>
+                                <option value="/database.html">DATABASE</option>
+                                <option value=""></option>
+
+                            </select>
+                            <span class="custom-dropdown-icon">&#9660;</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- SECTION HEADER END -->
+
+    <!--SECTION AI SHOW CASE START -->
+    <section id="ai-section" class="multi-section-showcase  relative">
+        <div class="sectionBlock ">
+            <div class="shadow-dark ">
+                <div class="mixin-feature-section  container  absolute">
+                    <div class="textContainer  ">
+                        <h2 class="textContainer-header uppercase ">AI Tools Directory </h2>
+                        <h3 class="textContainer-sup-header capitalize ">Crafting Intelligent Solutions with Tools,
+                            Models, and Data
+                        </h3>
+                        <p class="textContainer-description">
+                            Your essential resource for developing intelligent solutions. Explore a curated selection of
+                            <br>
+                            AI tools, models, datasets,
+                            and resources to unlock the potential of artificial intelligence in your projects.
+
+                        </p>
+                        <a href="#html-content" class="container-btn rem-1 capitalize"> find out</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SECTION AI SHOW CASE END -->
+
+    <!-- SECTION CONTENT START -->
+    <section id="section-content" class="section-content-containers">
+        <header class="section-title-content white-space">
+            <i class="fa-solid fa-robot  section-icon"></i>
+            <h2 class='section-title uppercase'> [ AI ] Artificial intelligence Hub</h2>
+            <div class=' section-title-line'></div>
+            <p class="section-title-descreption capitalize pt-1">
+                your gateway to AI tools, models, and datasets for crafting intelligent solutions. <br> Explore curated
+                resources to unleash
+                the power of artificial intelligence in your projects.
+            </p>
+        </header>
+
+        <div class="section-content-containers-content">
+            <div class="container">
+                <div class="section-feature-content grid-300-fit ">
+
+                    <!--  ChatGPT -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">ChatGPT </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/chat-gpt.png  " alt=" ChatGPT   ">
+                        </header>
+                        <p class="feature-text ">
+                            ChatGPT is an AI model developed by OpenAI for natural language processing, enabling
+                            developers to create chatbots and
+                            virtual assistants capable of engaging in meaningful conversations with users.
+                        </p>
+                        <footer>
+                            <a href=" https://chat.openai.com/ " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--GPT-4   -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">GPT-4 </h2>
+                                <span class="premium capitalize   ">premium</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/chat-gpt.png  " alt="  GPT-4 ">
+                        </header>
+                        <p class="feature-text ">
+                            GPT-4, an advanced language model developed by OpenAI, can generate human-like text through
+                            a chat interface based on
+                            text prompts.
+                        </p>
+                        <footer>
+                            <a href=" https://openai.com/gpt-4 " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+
+
+                    <!-- ChatGPT API -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">ChatGPT API </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/chat-gpt-ai.png  " alt=" ChatGPT API  ">
+                        </header>
+                        <p class="feature-text ">
+                            The ChatGPT API provides developers with access to OpenAI's powerful language model,
+                            enabling them to integrate
+                            conversational AI capabilities into their websites and applications.
+                        </p>
+                        <footer>
+                            <a href="https://openai.com/chatgpt  " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+
+                    <!-- google bard -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">google bard </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/brad.jpg  " alt=" google bard  ">
+                        </header>
+                        <p class="feature-text ">
+                            Bard is now Gemini. Get help with writing, planning, learning, and more from Google AI.
+                        </p>
+                        <footer>
+                            <a href=" https://gemini.google.com/app " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+
+                    <!--  DeepAI-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">DeepAI </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/DeepAI.jpg  " alt="  DeepAI ">
+                        </header>
+                        <p class="feature-text ">
+                            DeepA is an AI platform offering powerful solutions for natural language processing, image
+                            recognition, and data
+                            analysis.
+                        </p>
+                        <footer>
+                            <a href="https://deepai.org/  " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  GitHub Copilot-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">GitHub Copilot </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/GitHub.png  " alt=" GitHub Copilot  ">
+                        </header>
+                        <p class="feature-text ">
+                            GitHub Copilot, powered by OpenAI Codex,
+                            It’s one of the best AI tools for bug fixing, learning new languages, and accelerating the
+                            coding process overall.
+                        </p>
+                        <footer>
+                            <a href=" https://github.com/features/copilot " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+
+                    <!-- Canva -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Canva </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/canva.jpeg  " alt=" Canva  ">
+                        </header>
+                        <p class="feature-text ">
+                            Empower your creativity with easy-to-use design tools. Access millions of images and
+                            graphics to enhance your designs.
+                        </p>
+                        <footer>
+                            <a href="    https://www.canva.com/ " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!-- grammarly -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">grammarly </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/grammarly.png  " alt=" grammarly  ">
+                        </header>
+                        <p class="feature-text ">
+                            Work with an AI writing partner that helps you find the words you need⁠—⁠to write that
+                            tricky email, to get your point
+                            across, to keep your work moving.
+                        </p>
+                        <footer>
+                            <a href=" https://www.grammarly.com/ " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+
+                    <!--  ContentBot-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">ContentBot </h2>
+                                <span class="premium capitalize   ">premium</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/ContentBot.png  " alt=" ContentBot ">
+                        </header>
+                        <p class="feature-text ">
+                            Create customAI Content Workflows, run through Imports, or simply use our AI Writer.
+                        </p>
+                        <footer>
+                            <a href=" https://contentbot.ai/ " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+
+                    <!--  Divi AI-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Divi AI </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/diviai.jpg  " alt=" Divi AI  ">
+                        </header>
+                        <p class="feature-text ">
+                            It can generate text and images, improve upon existing images, rewrite existing copy, and
+                            even make suggestions based on
+                            surrounding content. Divi AI can generate content with one click.
+                        </p>
+                        <footer>
+                            <a href=" https://divi.express/divi-ai/ " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+
+                    <!-- Hostinger AI -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Hostinger AI </h2>
+                                <span class="premium capitalize   ">premium</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/hostinger.png  " alt=" Hostinger AI  ">
+                        </header>
+                        <p class="feature-text ">
+                            Hostinger AI Website Builder is a revolutionary tool that combines the power of AI with an
+                            easy-to-use site builder to
+                            help you launch a brand-new website with amazing speed and design
+                        </p>
+                        <footer>
+                            <a href=" https://www.hostinger.com/ai-website-builder?session=102f412ca4e51c4e057cbaeb91ff37 "
+                                class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!-- Framer -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Framer </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/Framer.png  " alt=" Framer  ">
+                        </header>
+                        <p class="feature-text ">
+                            It works much like Webflow, where you can create a design in Figma, and then import it
+                            directly into the platform.
+                            However, the difference is that Framer takes a fraction of the time.
+                        </p>
+                        <footer>
+                            <a href="https://framer.com/  " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+
+                    <!--  CodeWP-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize "> CodeWP</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/CodeWP.jpg  " alt=" CodeWP  ">
+                        </header>
+                        <p class="feature-text ">
+                            Make WordPress Easy With AI.
+                            AI chat and coding tools trained specifically for WordPress creators.
+                        </p>
+                        <footer>
+                            <a href=" https://codewp.ai/?via=98 " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+
+                    <!--  Font Joy-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize "> Font Joy</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/FontJoy.jpg  " alt="  Font Joy ">
+                        </header>
+                        <p class="feature-text ">
+                            This next AI web design tool, Font Joy, is a stellar choice for pairing Google fonts. As a
+                            web designer, looking for the
+                            best font pairings for your new web project is time-consuming.
+                        </p>
+                        <footer>
+                            <a href=" https://fontjoy.com/ " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+
+                    <!-- Midjourney -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Midjourney </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/midjourney.png  " alt="  Midjourney ">
+                        </header>
+                        <p class="feature-text ">
+                            An independent research lab exploring new mediums of thought and expanding the imaginative
+                            powers of the human species.
+                        </p>
+                        <footer>
+                            <a href="   https://www.midjourney.com/home  " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  AB Testing AI-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">AB Testing AI </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/ABTestingAI.jpg  "
+                                alt="  AB Testing AI ">
+                        </header>
+                        <p class="feature-text ">
+                            This is where AB Testing AI comes in. It allows you to input a URL and watch as AI breaks
+                            down every aspect of your
+                            landing page, offering variations to improve it.
+                        </p>
+                        <footer>
+                            <a href=" https://abtesting.ai/pricing/ " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+
+                    <!--  Alli AI-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Alli AI </h2>
+                                <span class="premium capitalize   ">premium</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/AlliAI.png  " alt="  Alli AI ">
+                        </header>
+                        <p class="feature-text ">
+                            Attention Agencies and SEO teams: No Coding Required. Works with any CMS. Make thousands to
+                            millions of code and content
+                            changes in minutes.
+                        </p>
+                        <footer>
+                            <a href=" https://www.alliai.com/ " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!-- Dynamic Yield -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Dynamic Yield </h2>
+                                <span class="premium capitalize   ">premium</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/DynamicYield.png  "
+                                alt="  Dynamic Yield ">
+                        </header>
+                        <p class="feature-text ">
+                            Dynamic Yield is an AI-powered personalization tool that optimizes user interactions across
+                            websites and platforms,
+                            offering tailored solutions through its Experience OS.
+                        </p>
+                        <footer>
+                            <a href=" https://www.dynamicyield.com/ " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+
+                    <!--  Appy Pie-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Appy Pie AI Chatbot Builder </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/AppyPie.jpg  " alt=" Appy Pie  ">
+                        </header>
+                        <p class="feature-text ">
+                            Appy Pie's AI chatbot builder, powered by OpenAI's GPT-3, seamlessly adds custom chat
+                            features to websites in three easy
+                            steps.
+                        </p>
+                        <footer>
+                            <a href=" https://www.appypie.com/chatbot/builder " class="btn " target="_blank">Find
+                                Out</a>
+                        </footer>
+                    </article>
+
+                    <!-- synthesia -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize "> synthesia</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/synthesia.jpeg  " alt=" synthesia  ">
+                        </header>
+                        <p class="feature-text ">
+                            Turn text to video in minutes
+                            Create studio-quality videos with AI avatars and voiceovers in 130+ languages. It’s as easy
+                            as making a slide deck.
+                        </p>
+                        <footer>
+                            <a href=" https://www.synthesia.io/ " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+
+
+
+
+
+                </div><!-- closing tag for section-feature-content div -->
+                <footer> <!-- "More..." Link -->
+                    <!--         <a href="free-download.html" class="btn-more">More...</a>
+    -->
+                </footer>
+            </div><!-- closing tag for container div -->
+        </div>
+    </section>
+    <!-- SECTION CONTENT END -->
+
+    <!--  SECTION CONTACT US START  -->
+    <section id="contact" class="contact-us  relative">
+        <div class="shadow-dark">
+            <div class="contact-us-content container  absolute ">
+                <div class="subscripe-form ">
+                    <form action="subscribe.php" method="post">
+                        <caption>
+                            <h2 class="form-title rem-2">SUBSCRIBE TO NEWSLETTERS</h2>
+                            <!--                             <h3>Don't miss an update to this site!</h3>
+ --> <!-- <h4>Get the latest content to your inbox every month. No spam, we hate it too.</h4> -->
+                            <!--                    <div class="form-name">
+                                <label for="name"></label>
+                                <input type="text" id="name" name="name" required placeholder="Full Name:">
+                            </div> -->
+                            <!--                             <div class="form-email">
+                                <label for="email"></label>
+                                <input type="email" id="email" name="email" required placeholder="E mail:">
+                            </div>
+                            <button class="btn  send-btn" type="submit">Subscribe</button> -->
+                        </caption>
+                    </form>
+
+                    <div class="social-media">
+                        <h2 class="social-media-sup-title capitalize"> Contact DinLink at <span><a class="mail-address"
+                                    href="mailto:info@dinlink.com">info@dinlink.com</a></span>
+                        </h2>
+                        <ul class="social-media-icons ">
+                            <li class="facebook"><a href=""> <i class="fa-brands fa-facebook-f social-icon"></i></a>
+                            </li>
+                            <li class="instagram"><a href=""><i class="fa-brands fa-instagram  social-icon"></i></a><img
+                                    src="" alt="">
+                            </li>
+                            <li class="linkedin"><a href=""><i
+                                        class="fa-brands fa-linkedin-in  social-icon"></i></a><img src="" alt="">
+                            </li>
+                            <li class="x"><a href=""><i class="fa-brands fa-x-twitter  social-icon"></i></a><img src=""
+                                    alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  SECTION CONTACT US END  -->
+
+    <!-- SECTION FOOTER START-->
+    <footer id="footer-line" class="footer">
+        <div class="container flex">
+            <span class="copy-right ">All Copy Right Reserved &copy; Dinlink.se 2024</span>
+            <span class="author "><a href="http://jonashousa.com/" target="_blank">DESIGNED BY JONAS HOUSA</a></span>
+        </div>
+        <!--SCROLL TO TOP BOTTOM START-->
+        <a href="#" id="scroll-to-top-link" class="scroll-to-top" onclick="scrollToTop(); return false; "
+            aria-label="Scroll to top"><i class="fa-solid fa-arrow-up-from-bracket"></i>
+        </a>
+        <!--SCROLL TO TOP BOTTOM END-->
+    </footer>
+    <!-- SECTION FOOTER END-->
+
+    <!-- JAVASCRIPT LINKS  -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/slides.js"></script>
+    <script src="assets/js/smoothScrollPage.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.7.3/smooth-scrollbar.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,631 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///  IMPORT  VARIABEL'S
+///////////////////////////////////////////////////////////////////////////////////////////////////
+@import 'vars';
+@import 'utilities';
+@import'global';
+@import'button';
+@import'animations';
+@import'subscribe';
+@import'sections_bg';
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///  HEADER SECTION
+///////////////////////////////////////////////////////////////////////////////////////////////////
+.header {
+    background-color: $black-color;
+
+    //// First Navigation Bar ////////////////
+    .header-content {
+        padding: 30px 0;
+
+        .logo {
+            font-size: 1.4rem;
+            background-image: $logo-color;
+            cursor: pointer;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-coclor: transparent;
+        }
+
+        .main-nav {
+
+
+
+            .navigation li:not(:last-child) a::after {
+                content: " | ";
+                color: orange;
+                padding-left: 10px;
+            }
+
+            /* Initially hide the submenu */
+            .submenu {
+                display: none;
+                opacity: 0;
+                position: absolute;
+                left: 0;
+                width: 210px;
+                /* Background color of submenu */
+                padding: 20px 20px 10px 20px;
+                background-color: rgba(0, 0, 0, 0.8);
+                /* Apply transition effect */
+                transition: opacity 0.5s ease;
+                border-radius: 0 0 15px 15px;
+
+                li {
+                    margin-bottom: 10px;
+                }
+
+                a {
+                    padding: 7px 20px;
+                }
+
+                a:hover {
+                    background: $btn-background-hover-color-orange;
+                    color: white;
+                    width: 100%;
+                    border-radius: 5px;
+                }
+            }
+
+            .dropdown:hover .submenu {
+                display: block;
+                opacity: 1;
+            }
+
+            .dropdown .submenu li a::after {
+                content: "  ";
+                /* Remove the content */
+            }
+
+            .dropdown .submenu li a:active {
+                background: $btn-hover-color;
+            }
+
+            a {
+                color: $white-color;
+                font-weight: 500;
+                font-size: 0.9rem;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: $main-nav-hover-color ;
+                }
+            }
+        }
+
+    }
+
+
+    ///  Secound Navigation Bar ///////////////////
+    .secondary-nav {
+        background-image: $main-line-color;
+        height: 55px;
+
+        .navigation li:not(:last-child) a::after {
+            content: " | ";
+            padding-left: 10px;
+        }
+
+        .secondary-menu {
+            ul {
+                justify-content: end;
+                height: 55px;
+
+                a {
+                    color: rgb(202, 200, 200);
+                    border-bottom: 1px solid transparent;
+                    font-weight: 500z;
+                    font-size: 0.9rem;
+                    transition: color 0.3s;
+
+                    &:hover {
+                        color: white;
+                    }
+                }
+            }
+
+            ///  BREADCRUMB NAVIGATION  ///////////////////
+            .breadcrumb-navigation {
+                .path-breadcrumb-navigation {
+                    gap: 0.5rem;
+                    align-items: center;
+                    justify-content: center;
+
+                    a {
+                        color: rgb(170, 169, 169);
+                        font-size: 0.7rem;
+
+                        &:hover {
+                            color: rgb(255, 255, 255);
+                        }
+                    }
+
+                    .subcategory {
+                        color: white;
+                        font-size: 0.7rem;
+                        pointer-events: none;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///  SHOW CASE HERO
+///////////////////////////////////////////////////////////////////////////////////////////////////
+.showcase-hero {
+    height: 84vh;
+
+    .showcase-hero-content {
+        position: relative;
+        width: 100%;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /*---Slide Show ------------*/
+    .slide {
+        position: absolute;
+        top: 35%;
+        left: 0%;
+        width: 100%;
+        opacity: 0;
+        transition: opacity 0.7s ease-in-out;
+    }
+
+    .slide.active {
+        opacity: 5;
+    }
+
+    .hero-text-box {
+        color: $white-color;
+
+        .hero-text-line-3 {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///  SECTION DESIGN GUIDE
+///////////////////////////////////////////////////////////////////////////////////////////////////
+.design-guiding-section {
+    padding: 250px 0;
+    background-color: $gray-light-color;
+
+    .section-feature-content {
+        margin-top: 70px;
+
+        .design-guiding-feature {
+            border: 1px solid rgb(216, 214, 214);
+            background: rgb(245, 245, 245);
+            padding: 30px;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $white-color;
+            }
+
+            &:hover .btn {
+                background: $btn-background-hover-color-orange;
+                color: $white-color;
+            }
+
+            .feature-header-title {
+                font-weight: 900;
+                color: rgb(92, 92, 91);
+                margin-bottom: -7px;
+            }
+
+            .feature-sub-title {
+                font-size: 0.8rem;
+                font-weight: 500;
+                color: rgb(236, 145, 55);
+            }
+
+            .feature-text {
+                height: 100%;
+                color: $text-color;
+                font-weight: 300;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///  SECTION AI GUIDING
+///////////////////////////////////////////////////////////////////////////////////////////////////
+.section-ai {
+    height: 100vh;
+    overflow: hidden;
+
+    .shadow-dark {
+        background-color: rgba(196, 25, 25, 0.5);
+    }
+
+    .textContainer {
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 60%;
+        padding: 250px 60px 40px 100px;
+        border-radius: 10px;
+
+        .aislide {
+            position: absolute;
+            top: 22%;
+            left: 7%;
+            width: 100%;
+            opacity: 0;
+            transition: opacity 0.7s ease-in-out;
+        }
+
+        .aislide.active {
+            opacity: 5;
+        }
+
+        .seo-btn {
+            position: absolute;
+            top: 55%;
+            left: 7%;
+        }
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///  SECTION DEVELOPER RESOURCES HUB
+///////////////////////////////////////////////////////////////////////////////////////////////////
+.developers-resourses-hub {
+    background-color: $gray-light-color;
+    padding: 100px 0;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///  SECTION DOWNLOAD CENTER
+///////////////////////////////////////////////////////////////////////////////////////////////////
+.download-center-section {
+    background-color: $white-color;
+    padding: 100px 0;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///  SECTION FREELANCE GUIDE
+///////////////////////////////////////////////////////////////////////////////////////////////////
+.freelance-section {
+    height: 100vh;
+
+    .featureSection {
+        justify-content: space-between;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 40PX;
+        border-radius: 10px;
+
+        .textContainer {
+
+            .textContainer-header {
+                color: $white-color;
+                font-size: 3rem;
+                font-weight: 900;
+            }
+
+            .textContainer-sup-header {
+                margin-top: -10px;
+                color: $main-nav-hover-color;
+                font-size: 1.5rem;
+            }
+
+            .textContainer-description {
+                margin-top: -3px;
+                color: $white-color;
+            }
+        }
+
+        .content-media {
+            width: 25%;
+        }
+
+    }
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///  SECTION SEO GUIDE & HTML
+///////////////////////////////////////////////////////////////////////////////////////////////////
+.seo-section {
+    height: 100vh;
+    overflow: hidden;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///  SECTION SPEED AND TEST
+///////////////////////////////////////////////////////////////////////////////////////////////////
+.speed-test-section {
+    background-color: $white-color;
+    padding: 100px 0;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///  SECTION CONTACT US
+///////////////////////////////////////////////////////////////////////////////////////////////////
+.contact-us {
+    height: 100vh;
+    overflow: hidden;
+
+    .contact-us-content {
+        background-color: rgba(0, 0, 0, 0.2);
+        width: 50%;
+        padding: 50px 30px;
+        border-radius: 10px;
+        top: 61%;
+        left: 28%;
+        transform: translate(-50%, -50%);
+
+        .subscripe-form {
+            h2 {
+                color: $white-color;
+                font-weight: 900;
+            }
+
+            h3 {
+                color: $white-color;
+                font-size: 1.5rem;
+            }
+
+            h4 {
+                color: $main-nav-hover-color;
+                font-weight: 400;
+                margin-top: -5px;
+            }
+
+            .form-name,
+            .form-email {
+                input {
+                    padding-left: 15px;
+                    font-size: 0.9rem;
+                    width: 520px;
+                    height: 50px;
+                    margin-top: 7px;
+                    border-radius: 7px;
+                    transition: border-color 0.5s;
+                    caret-color: $main-nav-hover-color;
+                    outline-color: $main-nav-hover-color;
+
+                    &:focus {
+                        outline: none;
+                        border: 3px solid $main-nav-hover-color;
+                    }
+                }
+            }
+
+
+            .social-media {
+                .social-media-sup-title {
+                    color: $white-color;
+                    font-size: 0.8rem;
+                    margin-top: 25px;
+                    font-weight: 400;
+
+                    .mail-address {
+                        color: $main-nav-hover-color;
+                    }
+                }
+
+                .social-media-icons {
+                    display: flex;
+                    gap: 10px;
+                    margin-top: 5px;
+
+                    .facebook:hover .social-icon {
+                        color: #3b5998;
+                        /* Change to Facebook color on hover */
+                    }
+
+                    .instagram:hover .social-icon {
+                        color: #e4405f;
+                        /* Change to Instagram color on hover */
+                    }
+
+                    .linkedin:hover .social-icon {
+                        color: #0077b5;
+                        /* Change to LinkedIn color on hover */
+                    }
+
+                    .x:hover .social-icon {
+                        color: #000;
+                        /* Change to Twitter color on hover */
+                    }
+
+                    .social-icon {
+                        font-size: 1.2rem;
+                        padding: 15px;
+                        background-color: #edf0f3;
+                        color: $text-color;
+                        border-radius: 10px;
+                        width: 50px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///  FOOTER
+///////////////////////////////////////////////////////////////////////////////////////////////////
+.footer {
+    height: 45px;
+    background-image: $main-line-color;
+
+    .copy-right,
+    .author {
+        font-size: 0.8rem;
+        padding-top: 15px;
+        color: #b1acac;
+
+        a {
+            color: #e9e7e7;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///  404 PAGE NOT FOUND
+///////////////////////////////////////////////////////////////////////////////////////////////////
+#page-not-found {
+
+
+    .textContainer {
+        background-color: rgba(0, 0, 0, 0.9);
+
+        .middle-line {
+            text-decoration: line-through;
+            text-decoration-color: rgb(255, 255, 255);
+        }
+
+        .section-icon {
+            font-size: 2.3rem;
+            color: red;
+        }
+
+        .mail-address {
+            color: $main-nav-hover-color;
+            font-size: 1rem;
+            font-weight: 600;
+
+            &:hover {
+                color: rgb(219, 95, 188);
+            }
+        }
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//  ADVANCID AND GUIDING PAGES SETTING
+///////////////////////////////////////////////////////////////////////////////////////////////////
+.section-info-guiding {
+    border: 1px solid rgb(216, 214, 214);
+    background: rgb(245, 245, 245);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+
+    .info-guiding-title {
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: rgb(255, 255, 255);
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+        background-color: rgb(12, 12, 12, 0.9);
+    }
+
+    // collapsible accordion
+    .accordion {
+        background-color: #f5f3f3;
+        text-transform: uppercase;
+        color: gray;
+        font-size: 0.9rem;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.9s;
+    }
+
+    .panel {
+        padding: 0 18px;
+        background-color: $gray-light-color;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-out;
+        border: 0.5px solid rgb(219, 219, 219);
+
+        p {
+            color: rgb(92, 92, 91);
+            font-weight: 300;
+            font-size: 0.9rem;
+            padding: 20px 0;
+        }
+
+        .video-iframe {
+            margin: 5px 0;
+        }
+    }
+
+    /* Style the active class (used when the accordion is clicked on) */
+    .active,
+    .accordion:hover {
+        background: $btn-background-hover-color-orange;
+        color: $white-color;
+    }
+}
+
+.section-single-page-containers {
+    background-color: $gray-light-color;
+    padding: 50px 0;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///  cPanel  PAGES SETTING
+///////////////////////////////////////////////////////////////////////////////////////////////////
+.cPanel-WHM-Guiding-area {
+    margin-bottom: 20px;
+
+    .cPanel-WHM-feature {
+        align-items: center;
+        padding: 50px 0;
+
+        .cpanel-whm-image {
+            width: 100px;
+            margin-bottom: 15px;
+        }
+
+        .feature-text {
+            font-size: 0.8rem;
+
+        }
+
+        .btn {
+            width: 200px;
+        }
+    }
+}
+
+.cpanel-documentation-section {
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 10px;
+
+    .section-feature-content {
+
+        .section-title-content {
+            padding: 40px 0;
+        }
+
+        .feature-header-title {
+            font-size: 1rem;
+        }
+
+        .feature-text {
+            margin-top: 7px;
+            font-size: 0.8rem;
+        }
+    }
+
+}

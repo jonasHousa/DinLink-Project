@@ -1,0 +1,225 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///  SECTION TITLE
+///////////////////////////////////////////////////////////////////////////////////////////////////
+.section-title-content {
+    color: $text-color;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    .section-icon {
+        color: $main-nav-hover-color;
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+    }
+
+    .section-title {
+        font-weight: 300;
+        font-size: 1rem;
+        margin-bottom: -5px;
+    }
+
+    .section-title-descreption {
+        font-weight: 300;
+        font-size: 0.8rem;
+        margin-top: 5px;
+    }
+
+    .section-title-line {
+        position: relative;
+        display: inline-block;
+        width: 100px;
+        height: 1px;
+        background: $main-nav-hover-color
+    }
+
+    .section-title-line::before {
+        content: '';
+        width: 0.5rem;
+        height: 0.5rem;
+        background: white;
+        border-radius: 50%;
+        border: 1px solid $main-nav-hover-color;
+        position: absolute;
+        top: calc(100% + (-2.5px - 3px));
+        left: 50%;
+        transform: translatex(-50%);
+        z-index: 2;
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///  SECTION CONTENT AND .FEATURE SETTING
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+.section-content-containers {
+    background-color: $gray-light-color;
+    padding: 100px 0;
+
+    .feature {
+        border: 1px solid rgb(216, 214, 214);
+        background: rgb(245, 245, 245);
+        padding: 20px;
+        border-radius: 10px;
+        cursor: default;
+
+        &:hover {
+            background-color: $white-color;
+            border: 1px solid rgb(217, 189, 161);
+        }
+
+        &:hover .btn {
+            background: $btn-background-hover-color-orange;
+            color: $white-color;
+        }
+
+        &:hover .btn:active {
+            background: $btn-hover-color;
+            box-shadow: $shadow-1;
+        }
+
+        .feature-icon-img {
+            width: 12%;
+            border-radius: 10px;
+            margin-top: -5px;
+        }
+
+        .feature-header-content {
+            margin-top: 5px;
+
+            .feature-header-title {
+                margin-bottom: -5px;
+                font-size: 1.1rem;
+                font-weight: 600;
+                color: rgb(92, 92, 91);
+            }
+
+            .feature-sub-title {
+                font-size: 0.8rem;
+                height: 100%;
+                font-weight: 500;
+                color: rgb(236, 145, 55);
+            }
+        }
+
+        .feature-text {
+            height: 100%;
+            color: $text-color;
+            font-weight: 300;
+            font-size: 0.8rem;
+            margin-bottom: -5px;
+        }
+    }
+
+    ///  FEATURE SECTION TITLE AND LINE [ ECOMMERCE PAGE ]
+    .section-title-sup-title {
+        font-size: 0.9rem;
+        color: rgb(143, 142, 141);
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 35px 0 10px 0;
+        border-bottom: 1px solid rgb(209, 209, 209);
+        padding: 0 0 7px 15px;
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///  SHADOW 
+///////////////////////////////////////////////////////////////////////////////////////////////////
+.shadow-dark,
+.shadow-light,
+.shadow-dark-light {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+
+}
+
+.shadow-dark {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.shadow-dark-light {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.shadow-light {
+    background-color: rgb(219, 216, 218, 0.5);
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///  GRID 
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+.grid-auto-fill {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.grid-auto-fill-350 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1rem;
+}
+
+.grid-300-fit {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    grid-gap: 10px;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///  FLEX SETTING 
+///////////////////////////////////////////////////////////////////////////////////////////////////
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///  NOTE ..OOBS
+///////////////////////////////////////////////////////////////////////////////////////////////////
+.premium,
+.obs-note {
+    background: $btn-background-hover-color-orange;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 0.6rem;
+    padding: 2px 5px;
+
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///  SUBSCRIBE PHP PAGES SETTINGS
+///////////////////////////////////////////////////////////////////////////////////////////////////
+.success-message {
+    color: #009900;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.error-message {
+    color: #ff0000;
+    font-weight: bold;
+}

@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Set viewport properties for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define the title of the web page -->
+    <title>DinLink | Your Ultimate Web Development Toolkit</title>
+    <!-- Provide a brief description for search engines -->
+    <meta name="description" content="Dinlink: Your go-to resource for web developers seeking the best tools! Discover curated collections of fonts, icons,
+                images, and more to enhance your projects. Elevate your web development with handpicked tools for seamless design and
+                functionality. Explore the ultimate toolkit at Dinlink and supercharge your creativity today! ">
+    <!-- Specify keywords for search engines (may have limited impact) -->
+    <meta name="keywords"
+        content="Web development tools, Font resources for developers, Icon collections, High-quality images for websites, design resources, Web design assets,Developer toolkit, Creative assets for websites, Design resources for developers, Best web development tools, Iconography for websites, Professional fonts for web projects, Image libraries for developers, UI design elements, Code optimization tools, Responsive design resources, Code editors, Version control systems, Task runners, Build tools, Content management systems, Design collaboration platforms, Programming languages, Frameworks, Frontend development tools, Backend development tools, Database management systems, Color palettes, UI design patterns, Prototyping tools, Wireframing tools, Typography resources, Icon sets, Vector graphics, User-centered design, Information architecture, Interaction design, Usability testing, User research, Accessibility guidelines, WCAG standards, Tutorials, Online courses, Web development communities, Blogs, Articles, Books, Freelancing tips, Remote work tools, Productivity techniques, Portfolio building, Career development">
+    <!-- Additional meta tags -->
+    <meta property="og:title" content="DinLink | Your Ultimate Web Development Toolkit">
+    <!-- Open Graph description: Used by social media platforms when the page is shared -->
+    <meta property="og:description"
+        content="Discover curated collections of fonts, icons, images, and more for web developers. Elevate your projects with the best web development tools and resources. Explore the ultimate toolkit at DinLink and supercharge your creativity today! #WebDevelopment #DesignResources #UIUX #Creativity">
+    <!-- Open Graph image: Used by social media platforms when the page is shared -->
+    <meta property="og:image" content="https://dinlink.se/image.jpg">
+    <!-- Robots meta tag: Specifies whether search engines should index and follow the page -->
+    <meta name="robots" content="index, follow">
+    <!-- Canonical link tag: Specifies the preferred URL of the page  MUST CHANGE IN EACH PAGE -->
+    <link rel="canonical" href="https://dinlink.se">
+    <!-- Alternate link tag: Specifies alternate language versions of the page -->
+    <link rel="alternate" hreflang="en" href="https://example.com/en">
+    <!-- Favicon for the website -->
+    <link rel="icon" type="image/x-icon" href="/FAVICON.jpg">
+    <!-- Link to custom stylesheets for page styling CSS -->
+    <link rel="stylesheet" href="assets/sass/dinlink-style.css">
+    <link rel="stylesheet" href="assets/sass/dinlink-Media-query.css">
+    <link rel="stylesheet" href="assets/sass/dinlink-global-elements.css">
+    <!-- Link to font icon library -->
+    <link rel="stylesheet" href="assets/fonts/fontIcon/css/all.css">
+    <!-- Link to Google Fonts for custom typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- SECTION HEADER START -->
+    <section id="header" class=" header sticky">
+        <div class="header-content container  flex">
+            <a href="/index.html" id='logo' class="logo  bold" title="DinLink | Your Ultimate Web Development Toolkit">
+                <h1>DinLink</h1>
+            </a>
+            <!-- FIRST NAV -->
+            <nav class="first-nav main-nav capitalize flex">
+                <ul class=" sidebarNavigation    fw-500">
+                    <div class="side-menu-header ">
+                        <h2 class="side-menu-header-heading">menu</h2>
+                        <a href="#" onclick="hideSidebar()"><i
+                                class="fa-solid fa-xmark sidebarHamburgerMenuHide "></i></a>
+                    </div>
+
+                    <li class=" dropdown relative">
+                        <a href="#">guiding corner</a>
+                        <ul class="submenu">
+                            <li><a href="/design-rules-guide.html"> Design Rules</a></li>
+                            <li><a href="/design-guiding.html"> Design Guide</a></li>
+                            <li><a href="/Design-Conversion-guide.html"> Design Conversion</a></li>
+                            <li><a href="/ui-ux.html"> UI / UX</a></li>
+                            <li><a href="/clean-code.html"> Clean Code</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/ai-tools.html">AI tools</a></li>
+                    <li><a href="/sdrh-section.html">Developers tools</a></li>
+                    <li><a href="/free-download.html">download Center</a></li>
+                    <li><a href="/seo.html">SEO</a></li>
+                    <li><a href="/speed-test.html">Speed & Test</a></li>
+                    <li><a href="/freelance.html">freelance</a></li>
+                    <li><a href="#footer-line">contact dinlink</a></li>
+                </ul>
+
+                <ul class="navigation flex fw-500">
+                    <li class="hideOnMobile dropdown relative">
+                        <a href="#">guiding corner</a>
+                        <ul class="submenu">
+                            <li><a href="/design-rules-guide.html"> Design Rules</a></li>
+                            <li><a href="/design-guiding.html"> Design Guide</a></li>
+                            <li><a href="/Design-Conversion-guide.html"> Design Conversion</a></li>
+                            <li><a href="/ui-ux.html"> UI / UX</a></li>
+                            <li><a href="/clean-code.html"> Clean Code</a></li>
+                        </ul>
+                    </li>
+                    <li class="hideOnMobile"><a href="/ai-tools.html">AI tools</a></li>
+                    <li class="hideOnMobile"><a href="/sdrh-section.html">Developers tools</a></li>
+                    <li class="hideOnMobile"><a href="/free-download.html">download Center</a></li>
+                    <li class="hideOnMobile"><a href="/seo.html">SEO</a></li>
+                    <li class="hideOnMobile"><a href="/speed-test.html">Speed & Test</a></li>
+                    <li class="hideOnMobile"><a href="/freelance.html">freelance</a></li>
+                    <li class="hideOnMobile"><a href="#footer-line">contact dinlink</a></li>
+                </ul>
+                <div onclick=" showSidebar()"><a href="#"><i class="fa-solid fa-bars sidebarHamburgerMenuShow"></i></a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- SECOND NAV -->
+        <div class="  secondary-nav">
+            <div class="container ">
+                <nav class="secondary-menu  capitalize">
+                    <ul class=" navigation flex fw-500">
+                        <li><a href="/html.html">HTML</a></li>
+                        <li><a href="/css.html">CSS</a></li>
+                        <li><a href="/javascript.html">JS</a></li>
+                        <li><a href="/nodejs.html">NODEJS</a></li>
+                        <li><a href="/wordpress.html">WORDPRESS</a></li>
+                        <li><a href="/php.html">PHP</a></li>
+                        <li><a href="/react.html">REACT</a></li>
+                        <li><a href="/api.html">API</a></li>
+                        <li><a href="/database.html">DATABASE</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION HEADER END -->
+
+    <!--SECTION SHOW CASE START -->
+    <section id="section-showcase-hero" class="showcase-hero relative ">
+        <div class="shadow-dark">
+            <div class="showcase-hero-content  center">
+                <!-- Slide 01-->
+                <div class=" slide hero-text-box  ">
+                    <h2 class="hero-text-line-1 rem-4 bold uppercase">AI Toolbox!</h2>
+                    <h3 class="hero-text-line-2 rem-2 capitalize">Empowering Developers with Cutting-Edge AI Tools</h3>
+                    <h3 class="hero-text-line-3 capitalize">Next-Gen AI Toolkit: Unleash the Power of Artificial
+                        Intelligence in
+                        Development</h3>
+                </div>
+                <!-- Slide 02-->
+                <div class="slide hero-text-box   ">
+                    <h2 class="hero-text-line-1 rem-4 bold uppercase">SAVE YOUR TIME!</h2>
+                    <h3 class="hero-text-line-2 rem-2 capitalize">Unlock Your Creativity with Free Images, Icons and
+                        Fonts</h3>
+                </div>
+                <!-- Slide 03-->
+                <div class="slide active hero-text-box   ">
+                    <h2 class="hero-text-line-1 rem-4 bold uppercase">descover more!</h2>
+                    <h3 class="hero-text-line-2 rem-2 capitalize">Elevate Your Web Development with Free Design Assets
+                    </h3>
+                    <h3 class="hero-text-line-3 capitalize">discover the future of image creation: AI- Powerd tools for
+                        developers
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SECTION SHOW CASE END-->
+
+    <!-- SECTION DESIGN GUIDING START -->
+    <section id="section-design-guide" class="design-guiding-section">
+        <div class="container">
+            <header class="section-title-content ">
+                <i class=" fa-solid fa-road section-icon"></i>
+                <h2 class='section-title uppercase'>before you design</h2>
+                <div class=' section-title-line'></div>
+                <p class="section-title-descreption capitalize pt-1">
+                    unleashing the power trio: design rules UI/UX, and clean code for developers creating
+                    exceptional applications <br>
+                    that not only meet technical standards but also users.
+                </p>
+            </header>
+
+            <div class="section-feature-content grid-300-fit m-t-0-5x ">
+                <!--Design Rules-->
+                <article class="design-guiding-feature flex-col slide-from-left">
+                    <header class=" ">
+                        <div class="design-guiding-feature-header ">
+                            <h2 class="feature-header-title"><span class="capital-letter rem-2 uppercase">D</span><span
+                                    class="rem-1">esign
+                                    Mentor Hub</span>
+                            </h2>
+                            <span class="feature-sub-title capitalize   ">Creative Navigator</span>
+                        </div>
+                    </header>
+                    <p class="feature-text">
+                        Expertly curated resources and personalized guidance for designers, covering essential
+                        design rules, insightful guiding
+                        principles, and effective design conversion techniques.
+                    </p>
+                    <footer>
+                        <a href="Design-Mentor-Hub.html" class="btn">Learn more</a>
+                    </footer>
+                </article>
+
+                <!-- UI / UX -->
+                <article class="design-guiding-feature flex-col slide-from-bottom">
+                    <header class=" ">
+                        <div class="design-guiding-feature-header ">
+                            <h2 class="feature-header-title"><span class="capital-letter rem-2 uppercase">u</span><span
+                                    class="rem-1">I /
+                                    UX</span>
+                            </h2>
+                            <span class="feature-sub-title   capitalize ">crafting engaging</span>
+                        </div>
+                    </header>
+                    <p class="feature-text">
+                        (User Interface/User Experience) encompasses the design and interaction aspects of
+                        digital
+                        products or services. It
+                        focuses on creating intuitive, visually appealing interfaces that optimize user
+                        satisfaction, engagement, and overall
+                        usability.
+                    </p>
+                    <footer>
+                        <a href="ui-ux.html" class="btn">Learn more</a>
+                    </footer>
+                </article>
+                <!--Clean Code-->
+                <article class="design-guiding-feature flex-col slide-from-right">
+                    <header class=" ">
+                        <div class="design-guiding-feature-header ">
+                            <h2 class="feature-header-title"><span class="capital-letter rem-2 uppercase">c</span><span
+                                    class="rem-1">lean
+                                    Code</span>
+                            </h2>
+                            <span class="feature-sub-title  capitalize ">principles of clean code</span>
+                        </div>
+                    </header>
+                    <p class="feature-text">
+                        Refers to well-structured and readable programming code that is easy to understand,
+                        maintain, and modify. It adheres to
+                        coding best practices, principles, and standards, fostering collaboration and efficiency
+                        in
+                        software development.
+                    </p>
+                    <footer>
+                        <a href="clean-code.html" class="btn">Learn more</a>
+                    </footer>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION DESIGN GUIDING END -->
+
+
+    <!-- SECTION AI GUIDING START -->
+    <section id="section-ai-section" class="section-ai  relative">
+        <div class="shadow-dark">
+            <div class="showcase-hero-content    absolute   ">
+                <!-- Slide 01-->
+                <div class=" aislide hero-text-box  active ">
+                    <h2 class="hero-text-line-1  bold uppercase">AI Toolbox!</h2>
+                    <h3 class="hero-text-line-2  capitalize">Unlock Creativity:
+                    </h3>
+                    <h3 class="hero-text-line-3 capitalize">Our AI-powered tools inspire innovative design solutions
+                    </h3>
+                </div>
+                <!-- Slide 02-->
+                <div class=" aislide hero-text-box  ">
+                    <h2 class="hero-text-line-1 rem- uppercase">AI Toolbox!</h2>
+                    <h3 class="hero-text-line-2 capitalize">Streamline Development:
+                    </h3>
+                    <h3 class="hero-text-line-3 capitalize">Accelerate your workflow with intelligent automation.
+                    </h3>
+                </div>
+                <!-- Slide 03-->
+                <div class=" aislide hero-text-box  ">
+                    <h2 class="hero-text-line-1  bold uppercase">AI Toolbox!</h2>
+                    <h3 class="hero-text-line-2 rem-2 capitalize">Enhanced Efficiency:
+                    </h3>
+                    <h3 class="hero-text-line-3 capitalize">Boost productivity with precision and accuracy.
+                    </h3>
+                </div>
+                <!-- Slide 03-->
+                <div class=" aislide hero-text-box  ">
+                    <h2 class="hero-text-line-1  bold uppercase">AI Toolbox!</h2>
+                    <h3 class="hero-text-line-2  capitalize">Empowering Designers:
+                    </h3>
+                    <h3 class="hero-text-line-3 capitalize">Transform your visions into reality with cutting-edge AI
+                        technology.
+                    </h3>
+                </div>
+                <!-- AI BOTTON-->
+                <a class="  ai-btn " href="ai-tools.html">Find out your tools that you need</a>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION AI GUIDING END -->
+
+    <!-- SECTION DEVELOPER RESOURCES HUB START -->
+    <section id="sdrh-section" class="developers-resourses-hub">
+        <header class="section-title-content white-space">
+            <i class="fa-solid fa-screwdriver-wrench section-icon"></i>
+            <h2 class='section-title uppercase'>developers- esourses hub</h2>
+            <div class=' section-title-line'></div>
+            <p class="section-title-descreption capitalize pt-1">
+                Ignite Your Development Journey with a Symphony of UI/UX Brilliance, Pristine Code Artistry, Colorful
+                Inspirations, and Limitless Possibilities. <br>Videos are dynamic multimedia elements that bring content
+                to life
+            </p>
+        </header>
+        <div class="developers-resourses-hub-content">
+            <div class="container">
+                <div class="section-feature-content grid-300-fit ">
+                    <!--FONTS-->
+                    <article class="feature flex-col feat feature-card-effect ">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Fonts</h2>
+                                <span class="feature-sub-title capitalize   ">Font Oasis</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/font.png" alt="Font">
+                        </header>
+                        <p class="feature-text ">
+                            Fonts are diverse styles of typefaces that can be categorized into serif,
+                            sans-serif, script, decorative, and display
+                            fonts, each with its own unique characteristics and purposes in web and graphic design.
+                        </p>
+                        <footer>
+                            <footer>
+                                <a href="/fonts.html" class="btn ">learn more</a>
+                            </footer>
+                        </footer>
+                    </article>
+                    <!--ICONS-->
+                    <article class="feature flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Icon</h2>
+                                <span class="feature-sub-title capitalize   ">Iconic Insights</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/gift.png" alt="Icon">
+                        </header>
+                        <p class="feature-text ">
+                            Icons are small, visual representations that convey meaning and enhance
+                            user experience by providing intuitive and recognizable symbols for actions, categories, and
+                            concepts on websites and applications.
+                        </p>
+                        <footer>
+                            <footer>
+                                <a href="icons.html" class="btn ">learn more</a>
+                            </footer>
+                        </footer>
+                    </article>
+                    <!--COLOR-->
+                    <article class="feature flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Color</h2>
+                                <span class="feature-sub-title capitalize   ">color vortex</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/paint-palette.png" alt="Color">
+                        </header>
+                        <p class="feature-text ">Experience the harmonious symphony of colors, where colors blend in
+                            perfect unity, creating mesmerizing designs that
+                            resonate with visual brilliance.
+                        </p>
+                        <footer>
+                            <a href="color.html" class="btn ">learn more</a>
+                        </footer>
+                    </article>
+                    <!--IMAGES-->
+                    <article class="feature flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">images</h2>
+                                <span class="feature-sub-title capitalize   ">visual vistas</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/gallery.png" alt="Image">
+                        </header>
+                        <p class="feature-text ">Images are visual representations that captivate, communicate, and
+                            evoke
+                            emotions, enriching content and enhancing the
+                            overall visual appeal of websites and designs.
+                        </p>
+                        <footer>
+                            <a href="images.html" class="btn ">learn more</a>
+                        </footer>
+                    </article>
+                    <!--VIDEO-->
+                    <article class="feature flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">video</h2>
+                                <span class="feature-sub-title capitalize   ">visual symphony</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/old-video-camera.png" alt="Video">
+                        </header>
+                        <p class="feature-text ">Videos are dynamic multimedia elements that bring content to life,
+                            engaging and captivating audiences through moving
+                            images, sound, and storytelling.
+                        </p>
+                        <footer>
+                            <a href="videos.html" class="btn ">learn more</a>
+                        </footer>
+                    </article>
+                    <!--UI / UX-->
+                    <article class="feature flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">UI / UX</h2>
+                                <span class="feature-sub-title capitalize   ">user empathy</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/website-design.png" alt="UI / UX">
+                        </header>
+                        <p class="feature-text ">Unleash the alchemy of design, blending data-driven insights,
+                            psychology,
+                            and creativity to transmute raw interfaces
+                            into mesmerizing experiences that enchant and delight users.
+                        </p>
+                        <footer>
+                            <a href="ui-ux.html" class="btn ">learn more</a>
+                        </footer>
+                    </article>
+                    <!--Inspiration  -->
+                    <article class="feature flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">design & Inspiration </h2>
+                                <span class="feature-sub-title capitalize   ">Visions Unleashed</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/creative-thinking.png  "
+                                alt=" Inspiration  ">
+                        </header>
+                        <p class="feature-text ">
+                            Dive into a sea of boundless inspiration, where design ideas flow
+                            effortlessly, igniting your creative spark.
+                        </p>
+                        <footer>
+                            <a href="inspiration.html" class="btn ">Find Out</a>
+                        </footer>
+                    </article>
+                    <!-- Animation -->
+                    <article class="feature flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize "> Animation</h2>
+                                <span class="feature-sub-title capitalize   ">Animation Avenue</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/Animation.png  " alt=" Animation  ">
+                        </header>
+                        <p class="feature-text ">
+                            A vibrant realm of motion graphics and animated wonders, where imagination
+                            comes alive through captivating visuals and
+                            seamless animations.
+                        </p>
+                        <footer>
+                            <a href="Animation.html" class="btn ">Find Out</a>
+                        </footer>
+                    </article>
+                    <!--  Tutorial & Platforms-->
+                    <article class="feature flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Tutorial & Platforms </h2>
+                                <span class="feature-sub-title capitalize   ">Mastering the Art</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/tutorial.png  "
+                                alt=" Tutorial & Platforms-  ">
+                        </header>
+                        <p class="feature-text ">
+                            Fuel your design expertise with our expert-led tutorials, equipping you
+                            with the tools and
+                            techniques to craft captivating visuals that leave a lasting impression.
+                        </p>
+                        <footer>
+                            <a href="TutorialAndPlatforms.html" class="btn ">Find Out</a>
+                        </footer>
+                    </article>
+                    <!--  Templates & Themes-->
+                    <article class="feature flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize "> Templates & Themes</h2>
+                                <span class="feature-sub-title capitalize   ">Handy Reseources</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/themes.png " alt=" Reseources  ">
+                        </header>
+                        <p class="feature-text ">
+                            Navigate through our comprehensive set of tools and references to streamline your coding
+                            journey and elevate your
+                            projects.
+                        </p>
+                        <footer>
+                            <a href="TemplatesAndThemes.html" class="btn ">Find Out</a>
+                        </footer>
+                    </article>
+                </div><!-- closing tag for section-feature-content div -->
+                <footer> <!-- "More..." Link -->
+                    <a href="sdrh-section.html" class="btn-more">More...</a>
+                </footer>
+            </div><!-- closing tag for container div -->
+        </div><!-- closing tag for developers-resourses-hub section -->
+    </section>
+    <!-- SECTION DEVELOPER RESOURCES HUB END -->
+
+    <!-- SECTION DOWNLOAD CENTER START-->
+    <section id="free-download" class="download-center-section">
+
+        <header class="section-title-content white-space ">
+            <i class="fa-solid fa-cloud-arrow-down section-icon"></i>
+            <h2 class='section-title uppercase'>Free Application Download Center</h2>
+            <div class=' section-title-line'></div>
+            <p class="section-title-descreption capitalize pt-1">
+                Ignite Your Development Journey with a Symphony of UI/UX Brilliance, Pristine Code Artistry, Colorful
+                Inspirations, and Limitless Possibilities. <br>
+                Explore a Kaleidoscope of Design Assets, Unleash Powerful Development Tools, Immerse in Enlightening
+                Tutorials, and Connect with a Vibrant Community.
+            </p>
+        </header>
+
+        <div class="container">
+            <div class="section-feature-content grid-300-fit ">
+                <!--Figma-->
+                <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                    <header class="feature-header flex">
+                        <div class="feature-header-content">
+                            <h2 class="feature-header-title rem-2 capitalize ">Figma</h2>
+                            <span class="feature-sub-title capitalize   ">Free Application</span>
+                        </div>
+                        <img class="feature-icon-img" src="assets/img/icons/figma.jpg" alt="Figma">
+                    </header>
+                    <p class="feature-text ">
+                        Figma is a collaborative web application for interface design, with additional offline features
+                        enabled by desktop
+                        applications for macOS and Windows.
+                    </p>
+                    <footer>
+                        <footer>
+                            <a href="https://www.figma.com/downloads/" target="_blank" class="btn ">Download</a>
+                        </footer>
+                    </footer>
+                </article>
+                <!--VS code -->
+                <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                    <header class="feature-header flex">
+                        <div class="feature-header-content">
+                            <h2 class="feature-header-title rem-2 capitalize ">VS code </h2>
+                            <span class="feature-sub-title capitalize   ">Free Application</span>
+                        </div>
+                        <img class="feature-icon-img" src="assets/img/icons/Microsoft-vs.jpg" alt="VSCODE">
+                    </header>
+                    <p class="feature-text ">
+                        Visual Studio Code is a streamlined code editor with support for development operations like
+                        debugging, task running,
+                        and version control.
+                    </p>
+                    <footer>
+                        <a href="https://code.visualstudio.com/download" target="_blank" class="btn ">Download</a>
+                    </footer>
+                </article>
+                <!--adobe XD -->
+                <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                    <header class="feature-header flex">
+                        <div class="feature-header-content">
+                            <h2 class="feature-header-title rem-2 capitalize ">adobe XD </h2>
+                            <span class="feature-sub-title capitalize   ">Free Application</span>
+                        </div>
+                        <img class="feature-icon-img" src="assets/img/icons/adobe-xd.jpg" alt="A XD">
+                    </header>
+                    <p class="feature-text ">is a vector design tool for web and mobile applications, developed and
+                        published by Adobe Inc. It is available for macOS
+                        and Windows, and there are versions for iOS and Android.
+                    </p>
+                    <footer>
+                        <a href="https://helpx.adobe.com/xd/get-started.html" target="_blank" class="btn ">Download</a>
+                    </footer>
+                </article>
+                <!--XAMPP -->
+                <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                    <header class="feature-header flex">
+                        <div class="feature-header-content">
+                            <h2 class="feature-header-title rem-2 capitalize ">XAMPP </h2>
+                            <span class="feature-sub-title capitalize   ">Free Application</span>
+                        </div>
+                        <img class="feature-icon-img" src="assets/img/icons/xamp.jpg" alt="Xampp">
+                    </header>
+                    <p class="feature-text ">XAMPP is a completely free, easy to install Apache distribution containing
+                        MariaDB, PHP, and Perl. The XAMPP open source
+                        package has been set up to be incredibly easy to install and to use.
+                    </p>
+                    <footer>
+                        <a href="https://www.apachefriends.org/download.html" target="_blank" class="btn ">Download</a>
+                    </footer>
+                </article>
+                <!--MAMP -->
+                <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                    <header class="feature-header flex">
+                        <div class="feature-header-content">
+                            <h2 class="feature-header-title rem-2 capitalize ">MAMP </h2>
+                            <span class="feature-sub-title capitalize   ">Free Application</span>
+                        </div>
+                        <img class="feature-icon-img" src="assets/img/icons/mamp.jpg" alt="Mamp">
+                    </header>
+                    <p class="feature-text ">MAMP is a free, local server environment that can be installed under macOS
+                        and Windows with just a few clicks. MAMP
+                        provides them with all the tools they need to run WordPress on their desktop PC for testing or
+                        development purposes,
+                    </p>
+                    <footer>
+                        <a href="https://www.mamp.info/en/downloads/" target="_blank" class="btn ">Download</a>
+                    </footer>
+                </article>
+                <!--Sublime Text -->
+                <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                    <header class="feature-header flex">
+                        <div class="feature-header-content">
+                            <h2 class="feature-header-title rem-2 capitalize ">Sublime Text </h2>
+                            <span class="feature-sub-title capitalize   ">Free Application</span>
+                        </div>
+                        <img class="feature-icon-img" src="assets/img/icons/Sublime-text.jpg" alt="Sublime text">
+                    </header>
+                    <p class="feature-text ">is a shareware text and source code editor available for Windows, macOS,
+                        and Linux. It natively supports many
+                        programming languages and markup languages.
+                    </p>
+                    <footer>
+                        <a href="https://www.sublimetext.com/3" target="_blank" class="btn ">Download</a>
+                    </footer>
+                </article>
+                <!--Spacemacs -->
+                <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                    <header class="feature-header flex">
+                        <div class="feature-header-content">
+                            <h2 class="feature-header-title rem-2 capitalize ">Spacemacs</h2>
+                            <span class="feature-sub-title capitalize   ">Free Application</span>
+                        </div>
+                        <img class="feature-icon-img" src="assets/img/icons/fiSpacemacs.jpg" alt="Spacemacs">
+                    </header>
+                    <p class="feature-text ">Discoverable. Innovative real-time display of available key bindings.
+                        Simple query system to quickly find available
+                        layers, packages and more.
+                    </p>
+                    <footer>
+                        <a href="https://www.spacemacs.org/" target="_blank" class="btn ">Download</a>
+                    </footer>
+                </article>
+                <!--Notepad++ -->
+                <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                    <header class="feature-header flex">
+                        <div class="feature-header-content">
+                            <h2 class="feature-header-title rem-2 capitalize ">Notepad++</h2>
+                            <span class="feature-sub-title capitalize   ">Free Application</span>
+                        </div>
+                        <img class="feature-icon-img" src="assets/img/icons/Notepad-plus.jpg" alt="Notepad++">
+                    </header>
+                    <p class="feature-text ">Notepad++ is a free (as in “free speech” and also as in “free beer”) source
+                        code editor and Notepad replacement that
+                        supports several languages. Running in the MS Windows environment, its use is governed by GNU
+                        General Public License.
+                    </p>
+                    <footer>
+                        <a href="https://notepad-plus-plus.org/downloads/" target="_blank" class="btn ">Download</a>
+                    </footer>
+                </article>
+            </div><!-- closing tag for section-feature-content div -->
+            <footer> <!-- "More..." Link -->
+                <a href="free-download.html" class="btn-more">More...</a>
+            </footer>
+        </div><!-- closing tag for container div -->
+        </div><!-- closing tag for developers-resourses-hub section -->
+    </section>
+    <!-- SECTION DOWNLOAD CENTER END-->
+
+    <!-- SECTION SEO GUIDING START   -->
+    <section id="section-seo" class="seo-section relative">
+        <div class="sectionBlock ">
+            <div class="shadow-dark ">
+                <div class="mixin-feature-section container  absolute">
+                    <div class="textContainer  ">
+                        <h2 class="textContainer-header uppercase ">SEO guide</h2>
+                        <h3 class="textContainer-sup-header capitalize ">Optimizing web content for search engines to
+                            boost
+                            online visibility.
+                        </h3>
+                        <p class="textContainer-description">
+                            Web SEO, or Search Engine Optimization, is the strategic practice of enhancing a website's
+                            visibility <br> on search engine
+                            results pages. It involves optimizing content, improving site structure, and employing <br>
+                            various techniques to attract
+                            organic traffic, ultimately boosting the site's online presence and accessibility <br> to
+                            users
+                            searching for relevant
+                            information.
+                        </p>
+                        <a href="seo.html" class="seo-btn  rem-1 capitalize"> find out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION SEO GUIDING END   -->
+
+    <!-- SECTION SPEED AND TEST START-->
+    <section id="speed-test" class="speed-test-section">
+
+        <header class="section-title-content white-space ">
+            <i class="fa-solid fa-gauge-simple-high  section-icon"></i>
+            <h2 class='section-title uppercase'>SPEED & TEST</h2>
+            <div class=' section-title-line'></div>
+            <p class="section-title-descreption capitalize pt-1">
+                Your go-to resource for speeding up websites and conducting thorough testing. <br> Unlock a range of
+                tools
+                and insights to
+                optimize performance and enhance user experience.
+            </p>
+        </header>
+
+        <div class="container">
+            <div class="section-feature-content grid-300-fit ">
+
+
+
+
+                <!--HTML Validator by W3C -->
+                <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                    <header class="feature-header flex">
+                        <div class="feature-header-content">
+                            <h2 class="feature-header-title rem-2 capitalize ">HTML Validator by W3C</h2>
+                            <span class="feature-sub-title capitalize   ">Free Application</span>
+                        </div>
+                        <img class="feature-icon-img" src="assets/img/icons/w3c.png" alt="HTML Validato">
+                    </header>
+                    <p class="feature-text ">
+                        This validator checks the markup validity of Web documents in HTML, XHTML,
+                        SMIL, MathML, etc. If you wish to validate
+                        specific content such as RSS/Atom feeds or CSS stylesheets, MobileOK content, or to find broken
+                        links...
+                    </p>
+                    <footer>
+                        <a href="https://validator.w3.org" target="_blank" class="btn ">Find Out</a>
+                    </footer>
+                </article>
+
+
+
+
+
+
+                <!-- CSS Validator by W3C -->
+                <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                    <header class="feature-header flex">
+                        <div class="feature-header-content">
+                            <h2 class="feature-header-title rem-2 capitalize ">CSS Validator by W3C</h2>
+                            <span class="feature-sub-title capitalize   ">Free Application</span>
+                        </div>
+                        <img class="feature-icon-img" src="assets/img/icons/w3c.png" alt="CSS Validator">
+                    </header>
+                    <p class="feature-text ">
+                        The W3C CSS Validator checks for CSS1, CSS2, CSS3, and CSS4 properties.
+                        Some browsers use vendor extensions to simulate CSS3 and CSS4 properties.
+                        Vendor extensions can create warnings in the W3 CSS validation prosess.
+                    </p>
+                    <footer>
+                        <a href="https://jigsaw.w3.org/css-validator/" target="_blank" class="btn ">Find Out</a>
+                    </footer>
+                </article>
+                <!--Google PageSpeed Insights -->
+                <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                    <header class="feature-header flex">
+                        <div class="feature-header-content">
+                            <h2 class="feature-header-title rem-2 capitalize ">Google PageSpeed Insights</h2>
+                            <span class="feature-sub-title capitalize   ">Free Application</span>
+                        </div>
+                        <img class="feature-icon-img" src="assets/img/icons/googledev.png" alt="Google PageSpeed ">
+                    </header>
+                    <p class="feature-text ">
+                        PageSpeed Insights (PSI) reports on the user experience of a page on both
+                        mobile and desktop devices, and provides
+                        suggestions on how that page may be improved. PSI provides both lab and field data about a page.
+                    </p>
+                    <footer>
+                        <a href="https://pagespeed.web.dev/" target="_blank" class="btn ">Find Out</a>
+                    </footer>
+                </article>
+                <!--Squoosh -->
+                <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                    <header class="feature-header flex">
+                        <div class="feature-header-content">
+                            <h2 class="feature-header-title rem-2 capitalize ">Squoosh</h2>
+                            <span class="feature-sub-title capitalize   ">Free Application</span>
+                        </div>
+                        <img class="feature-icon-img" src="assets/img/icons/squoosh.png" alt="Squoosh">
+                    </header>
+                    <p class="feature-text ">
+                        content="Squoosh is the ultimate image optimizer that allows you to compress
+                        and compare images with different codecs in
+                        your browser."
+                    </p>
+                    <footer>
+                        <a href="https://squoosh.app/" target="_blank" class="btn ">Find Out</a>
+                    </footer>
+                </article>
+                <!--Optimizilla -->
+                <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                    <header class="feature-header flex">
+                        <div class="feature-header-content">
+                            <h2 class="feature-header-title rem-2 capitalize ">Optimizilla</h2>
+                            <span class="feature-sub-title capitalize   ">Free Application</span>
+                        </div>
+                        <img class="feature-icon-img" src="assets/img/icons/optimizilla.png" alt="Optimizilla">
+                    </header>
+                    <p class="feature-text ">
+                        This online image optimizer uses a smart combination of the best optimization
+                        and lossy compression algorithms to shrink
+                        JPEG, GIF and PNG images to the minimum possible size while keeping the required level of
+                        quality.
+                    </p>
+                    <footer>
+                        <a href="https://imagecompressor.com/" target="_blank" class="btn ">Find Out</a>
+                    </footer>
+                </article>
+                <!--Real favicon Generator -->
+                <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                    <header class="feature-header flex">
+                        <div class="feature-header-content">
+                            <h2 class="feature-header-title rem-2 capitalize ">Real favicon Generator</h2>
+                            <span class="feature-sub-title capitalize   ">Free Application</span>
+                        </div>
+                        <img class="feature-icon-img" src="assets/img/icons/favicongenerator.png"
+                            alt="Real favicon Generato">
+                    </header>
+                    <p class="feature-text ">
+                        The ultimate favicon generator. Design your icons platform per platform and
+                        make them look great everywhere. Including
+                        in Google results pages.
+                    </p>
+                    <footer>
+                        <a href="https://realfavicongenerator.net/" target="_blank" class="btn ">Find Out</a>
+                    </footer>
+                </article>
+                <!--The Front-End Checklist -->
+                <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                    <header class="feature-header flex">
+                        <div class="feature-header-content">
+                            <h2 class="feature-header-title rem-2 capitalize ">The Front-End Checklist</h2>
+                            <span class="feature-sub-title capitalize   ">Free Application</span>
+                        </div>
+                        <img class="feature-icon-img" src="assets/img/icons/frontendchecklist.jpg"
+                            alt="The Front-End Checklis">
+                    </header>
+                    <p class="feature-text ">
+                        The Front-End Checklist Application is perfect for modern websites and
+                        meticulous developers! Follow the rules and
+                        deliver the best of your work in a generated report!.
+                    </p>
+                    <footer>
+                        <a href="https://frontendchecklist.io/" target="_blank" class="btn ">Find Out</a>
+                    </footer>
+                </article>
+                <!--Web Usability Checklist -->
+                <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                    <header class="feature-header flex">
+                        <div class="feature-header-content">
+                            <h2 class="feature-header-title rem-2 capitalize ">Web Usability Checklist</h2>
+                            <span class="feature-sub-title capitalize   ">Free Application</span>
+                        </div>
+                        <img class="feature-icon-img" src="assets/img/icons/usabilitychecklist.png"
+                            alt="Web Usability Checklist">
+                    </header>
+                    <p class="feature-text ">
+                        Our website usability checklist will ensure your site meets the needs and expectations of its
+                        users: your leads and
+                        loyal customers.
+                    </p>
+                    <footer>
+                        <a href="https://portstbd.com/website-usability-checklist/" target="_blank" class="btn ">Find
+                            Out</a>
+                    </footer>
+                </article>
+
+            </div><!-- closing tag for section-feature-content div -->
+            <footer> <!-- "More..." Link -->
+                <a href="speed-test.html" class="btn-more">More...</a>
+            </footer>
+        </div><!-- closing tag for container div -->
+        </div><!-- closing tag for developers-resourses-hub section -->
+    </section>
+    <!-- SECTION SPEED AND TEST END-->
+
+    <!-- SECTION FREELANCE START  -->
+    <section id="section-freelance" class="freelance-section relative">
+        <div class="sectionBlock ">
+            <div class="shadow-dark ">
+                <div class="featureSection container flex absolute">
+                    <div class="textContainer">
+                        <h2 class="textContainer-header uppercase ">freelance guide</h2>
+                        <h3 class="textContainer-sup-header capitalize ">freelancing guide to get the best reselutions
+                        </h3>
+                        <p class="textContainer-description">
+                            (User Interface/User Experience) encompasses the design and interaction aspects <br>
+                            of digital products or services. It focuses on creating intuitive, visually appealing i <br>
+                            nterfaces that optimize user satisfaction, engagement, and overall usability.
+                        </p>
+                        <a href="freelance.html" class="freelance-btn rem-1 capitalize"> find more</a>
+                    </div>
+                    <div class="imageContainer">
+                        <img class="content-media" src="assets/img/Background/freelance-png.png" alt=" Section Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION FREELANCE END  -->
+
+    <!--  SECTION CONTACT US START  -->
+    <section id="contact" class="contact-us  relative">
+        <div class="shadow-dark">
+            <div class="contact-us-content container  absolute ">
+                <div class="subscripe-form ">
+                    <form action="subscribe.php" method="post">
+                        <caption>
+                            <h2 class="form-title rem-2">SUBSCRIBE TO NEWSLETTERS</h2>
+                            <!--                             <h3>Don't miss an update to this site!</h3>
+ --> <!-- <h4>Get the latest content to your inbox every month. No spam, we hate it too.</h4> -->
+                            <!--                    <div class="form-name">
+                                <label for="name"></label>
+                                <input type="text" id="name" name="name" required placeholder="Full Name:">
+                            </div> -->
+                            <!--                             <div class="form-email">
+                                <label for="email"></label>
+                                <input type="email" id="email" name="email" required placeholder="E mail:">
+                            </div>
+                            <button class="btn  send-btn" type="submit">Subscribe</button> -->
+                        </caption>
+                    </form>
+
+                    <div class="social-media">
+                        <h2 class="social-media-sup-title capitalize"> Contact DinLink at <span><a class="mail-address"
+                                    href="mailto:info@dinlink.com">info@dinlink.com</a></span>
+                        </h2>
+                        <ul class="social-media-icons ">
+                            <li class="facebook"><a href=""> <i class="fa-brands fa-facebook-f social-icon"></i></a>
+                            </li>
+                            <li class="instagram"><a href=""><i class="fa-brands fa-instagram  social-icon"></i></a><img
+                                    src="" alt="">
+                            </li>
+                            <li class="linkedin"><a href=""><i
+                                        class="fa-brands fa-linkedin-in  social-icon"></i></a><img src="" alt="">
+                            </li>
+                            <li class="x"><a href=""><i class="fa-brands fa-x-twitter  social-icon"></i></a><img src=""
+                                    alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  SECTION CONTACT US END  -->
+
+    <!-- SECTION FOOTER START-->
+    <footer id="footer-line" class="footer">
+        <div class="container flex">
+            <span class="copy-right ">All Copy Right Reserved &copy; Dinlink.se 2024</span>
+            <span class="author "><a href="http://jonashousa.com/" target="_blank">DESIGNED BY JONAS HOUSA</a></span>
+        </div>
+        <!--SCROLL TO TOP BOTTOM START-->
+        <a href="#" id="scroll-to-top-link" class="scroll-to-top" onclick="scrollToTop(); return false; "
+            aria-label="Scroll to top"><i class="fa-solid fa-arrow-up-from-bracket"></i>
+        </a>
+        <!--SCROLL TO TOP BOTTOM END-->
+    </footer>
+    <!-- SECTION FOOTER END-->
+
+    <!-- JAVASCRIPT LINKS  -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/slides.js"></script>
+    <script src="assets/js/smoothScrollPage.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.7.3/smooth-scrollbar.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</body>
+
+</html>

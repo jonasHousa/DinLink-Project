@@ -1,0 +1,255 @@
+///////////////////////////////////////////////////////////////////////////////////
+///    BACKGROUND VIDEO SETTING
+///////////////////////////////////////////////////////////////////////////////////
+#video-section {
+    position: relative;
+    overflow: hidden;
+    height: 85vh;
+
+    #video-bg {
+        object-fit: cover;
+        width: 100%;
+        height: 100vh;
+        z-index: -1;
+    }
+
+    .shadow-dark {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////
+///    BACKGROUND IMAGE SETTING
+///////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////  SECTION SHOWCASE HERO 
+#section-showcase-hero {
+    background: url(../img/Background/section-hero-bg-1.jpg) no-repeat center / cover fixed;
+}
+
+//////////////////////////////////////  SECTION DESIGN GUIDING
+#section-design-guide {
+    background: url(../img/Background/design-guiding-bg-1.jpg) no-repeat center center / cover fixed;
+}
+
+//////////////////////////////////////  SECTION AI GUIDE
+#section-ai-section {
+    background: url(../img/Background/section-ai-bg-2.jpg) no-repeat center top / cover fixed;
+}
+
+#ai-section {
+    background: url(../img/Background/section-ai-bg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////  SECTION SEO 
+#section-seo {
+    background: url(../img/Background/section-seo-bg-1.jpg) no-repeat top center / cover fixed;
+    height: 100vh;
+}
+
+#seo {
+    background: url(../img/Background/section-seo-bg-2.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////  DEVELOPERS TOOLS  PAGE
+#developer-tools {
+    background: url(../img/Background/developers-toolbox-bg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////  DOWNLOAD CENTER
+#download-section {
+    background: url(../img/Background/section-download-bg-1.jpg) no-repeat center top / cover fixed;
+}
+
+#free-download {
+    background-color: white;
+}
+
+//////////////////////////////////////  SPEED AND TEST
+#speed-test-section {
+    background: url(../img/Background/section-speed-and-test-bg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////  FREELANE
+#section-freelance {
+    background: url(../img/Background/freelance-bg-1.jpg) no-repeat top center / cover fixed;
+}
+
+#freelance {
+    background: url(../img/Background/section-freelance-bg-2.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////  SECTION CONTACT US
+#contact {
+    background: url(../img/Background/section-contact-bg-1.jpg) no-repeat center center / cover fixed;
+}
+
+//////////////////////////////////////  HTML SECTION
+#html-section {
+    background: url(../img/Background/section-html-pg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////  CSS SECTION
+#css-section {
+    background: url(../img/Background/section-css-pg-1.jpg) no-repeat center top / cover fixed;
+}
+
+///////////////////////////////////////  JAVASCRIPT SECTION
+#js-section {
+    background: url(../img/Background//section-javascript-pg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////  NODE.JSSECTION
+#nodejs-section {
+    background: url(../img/Background/section-nodejs-bg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////  WORDPRESS SECTION
+#wordpress-section {
+    background: url(../img/Background/section-wordpress-bg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////  PHP SECTION
+#php-section {
+    background: url(../img/Background/section-php-pg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////  REACT SECTION
+#react-section {
+    background: url(../img/Background/section-react-bg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////  API SECTION
+#api-section {
+    background: url(../img/Background/section-api-bg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////  DATABASE  SECTION
+#database-section {
+    background: url(../img/Background/section-database-bg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////  DESIGN RULES  SECTION
+#dsign-rules-guiding-section {
+    background: url(../img/Background/section-design-rules-bg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////  DESIGN GUIDING SECTION  
+#dsign-guiding-guiding-section {
+    background: url(../img/Background/section-design-guiding-bg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////  DESIGN GUIDING SECTION  
+#dsign-cinversion-section {
+    background: url(../img/Background/section-design-conversion-bg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////  UI UX SECTION
+#ui-ux-section {
+    background: url(../img/Background/section-ui-ux-bg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////  CLEAN CODE SECTION
+#clean-code-section {
+    background: url(../img/Background/section-clean-code-pg-1.avif) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////  FONTS SECTION
+#fonts-section {
+    background: url(../img/Background/section-fonts-bg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////  ICONS SECTION
+#icons-section {
+    background: url(../img/Background/section-icon-bg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////   COLORS SECTION
+#colors-section {
+    background: url(../img/Background/section-color-bg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////   IMAGE SECTION
+#image-section {
+    background: url(../img/Background/section-image-bg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////  DESIGN INSPIRATION SECTION
+#design-Inspiration {
+    background: url(../img/Background/section-design-inspiration-bg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////   TUTORIAL & PLATFORMS SECTION
+#Tutorial-Platforms {
+    background: url(../img/Background/section-tutorial-platfoms-bg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////   TEMPLATES & THEMES SECTION
+#Themes-Templates {
+    background: url(../img/Background/templates-themes-bg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////   E-Book SECTION
+#e-book {
+    background: url(../img/Background/section-e-book-bg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////  HOSTING & SERVERS SECTION
+#hosting-servers {
+    background: url(../img/Background/section-webhosting-server-bg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////   COMMUNITY SECTION
+#community {
+    background: url(../img/Background/section-Community-bg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////  EXTENSION SECTION
+#extensions {
+    background: url(../img/Background/section-extention-bg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////  RESPONSIVE DESIGN SECTION
+#Responsive-Design {
+    background: url(../img/Background/section-responsive-design-bg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////  COLLECTION TOOLKIT SECTION
+#collection-toolkit {
+    background: url(../img/Background/collection-toolkit-bg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////  CHEAT SHEETS SECTION
+#cheat-sheets {
+    background: url(../img/Background/section-seat-sheet-bg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////  CONVERSION TOOLBOX SECTION
+#convert-section {
+    background: url(../img/Background/section-conversion-bg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////  DEVELOPER ROADMAPS SECTION
+#roadmaps-section {
+    background: url(../img/Background/section-road-map-bg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////  cPanel & WHM SECTION
+#cpanel-whm {
+    background: url(../img/Background/section-cpanel-whm-bg-1.png) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////   ECOMMERCE SECTION
+#ecommerce-section {
+    background: url(../img/Background/section-ecommerce-bg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////  DESIGN MINTOR HUB
+#design-mintor-hub {
+    background: url(../img/Background/section-design-mentor-bg-1.jpg) no-repeat center top / cover fixed;
+}
+
+//////////////////////////////////////  404 PAGE NOT FOUND
+#page-not-found {
+    background: url(../img/Background/section-page-not-found-1.jpg) no-repeat center top / cover fixed;
+}

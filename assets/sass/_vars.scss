@@ -1,0 +1,40 @@
+///////////////////////////////////////////////////////////////////
+///    VARIABEL'S
+///////////////////////////////////////////////////////////////////
+
+
+
+///////////////////////////////////////////////////////////////////
+///    COLOS'S
+///////////////////////////////////////////////////////////////////
+$black-color: black;
+$white-color: white;
+$text-color: #868484;
+$gray-light-color: #e9e7e8;
+$sup-heading-color: #e5672d;
+$main-nav-hover-color: #ff8c00;
+$sup-main-nav-color: $white-color;
+$selection-color: $main-nav-hover-color;
+$feat-background-color-dark-light: #f7f7f7;
+$logo-color: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+$main-line-color: linear-gradient(90deg, #641a80, #8c2981, #b5367a, #de4968, #f66e5c, #fe9f6d);
+$btn-hover-color: linear-gradient(90deg, #de4968, #f66e5c);
+$btn-background-hover-color-orange: linear-gradient(90deg, #de4968, #f66e5c, #fe9f6d);
+
+.orange {
+    color: orange;
+}
+
+///////////////////////////////////////////////////////////////////
+///    FONT'S
+///////////////////////////////////////////////////////////////////
+$body-font: "Roboto", sans-serif;
+
+.white-pg {
+    background-color: white;
+}
+
+///////////////////////////////////////////////////////////////////
+///    SHADOW
+///////////////////////////////////////////////////////////////////
+$shadow-1: rgba(0, 0, 0, 0.24) 0px 3px 8px;

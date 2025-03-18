@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Set viewport properties for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define the title of the web page -->
+    <title>DinLink | Animation Guide </title>
+    <!-- Provide a brief description for search engines -->
+    <meta name="description" content="Dinlink: Your go-to resource for web developers seeking the best tools! Discover curated collections of fonts, icons,
+                images, and more to enhance your projects. Elevate your web development with handpicked tools for seamless design and
+                functionality. Explore the ultimate toolkit at Dinlink and supercharge your creativity today! ">
+    <!-- Specify keywords for search engines (may have limited impact) -->
+    <meta name="keywords"
+        content="Web development tools, Font resources for developers, Icon collections, High-quality images for websites, design resources, Web design assets,Developer toolkit, Creative assets for websites, Design resources for developers, Best web development tools, Iconography for websites, Professional fonts for web projects, Image libraries for developers, UI design elements, Code optimization tools, Responsive design resources, Code editors, Version control systems, Task runners, Build tools, Content management systems, Design collaboration platforms, Programming languages, Frameworks, Frontend development tools, Backend development tools, Database management systems, Color palettes, UI design patterns, Prototyping tools, Wireframing tools, Typography resources, Icon sets, Vector graphics, User-centered design, Information architecture, Interaction design, Usability testing, User research, Accessibility guidelines, WCAG standards, Tutorials, Online courses, Web development communities, Blogs, Articles, Books, Freelancing tips, Remote work tools, Productivity techniques, Portfolio building, Career development">
+    <!-- Additional meta tags -->
+    <meta property="og:title" content="DinLink | Your Ultimate Web Development Toolkit">
+    <!-- Open Graph description: Used by social media platforms when the page is shared -->
+    <meta property="og:description"
+        content="Discover curated collections of fonts, icons, images, and more for web developers. Elevate your projects with the best web development tools and resources. Explore the ultimate toolkit at DinLink and supercharge your creativity today! #WebDevelopment #DesignResources #UIUX #Creativity">
+    <!-- Open Graph image: Used by social media platforms when the page is shared -->
+    <meta property="og:image" content="https://dinlink.se/image.jpg">
+    <!-- Robots meta tag: Specifies whether search engines should index and follow the page -->
+    <meta name="robots" content="index, follow">
+    <!-- Canonical link tag: Specifies the preferred URL of the page  MUST CHANGE IN EACH PAGE -->
+    <link rel="canonical" href="https://dinlink.se/Animation.html">
+    <!-- Alternate link tag: Specifies alternate language versions of the page -->
+    <link rel="alternate" hreflang="en" href="https://example.com/en">
+    <!-- Favicon for the website -->
+    <link rel="icon" type="image/x-icon" href="/FAVICON.jpg">
+    <!-- Link to custom stylesheets for page styling CSS -->
+    <link rel="stylesheet" href="assets/sass/dinlink-style.css">
+    <link rel="stylesheet" href="assets/sass/dinlink-Media-query.css">
+    <link rel="stylesheet" href="assets/sass/dinlink-global-elements.css">
+    <!-- Link to font icon library -->
+    <link rel="stylesheet" href="assets/fonts/fontIcon/css/all.css">
+    <!-- Link to Google Fonts for custom typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+    <!-- SECTION HEADER START -->
+    <section id="header" class="header sticky">
+        <div class="header-content container flex">
+            <a href="/index.html" id='logo' class="logo bold" title="DinLink | Your Ultimate Web Development Toolkit">
+                <h1>DinLink</h1>
+            </a>
+            <!-- First Nav -->
+            <nav class="first-nav main-nav capitalize flex">
+                <ul class=" sidebarNavigation    fw-500">
+                    <div class="side-menu-header ">
+                        <h2 class="side-menu-header-heading">menu</h2>
+                        <a href="#" onclick="hideSidebar()"><i
+                                class="fa-solid fa-xmark sidebarHamburgerMenuHide "></i></a>
+                    </div>
+
+                    <li class=" dropdown relative">
+                        <a href="#">guiding corner</a>
+                        <ul class="submenu">
+                            <li><a href="/design-rules-guide.html"> Design Rules</a></li>
+                            <li><a href="/design-guiding.html"> Design Guide</a></li>
+                            <li><a href="/Design-Conversion-guide.html"> Design Conversion</a></li>
+                            <li><a href="/ui-ux.html"> UI / UX</a></li>
+                            <li><a href="/clean-code.html"> Clean Code</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/ai-tools.html">AI tools</a></li>
+                    <li><a href="/sdrh-section.html">Developers tools</a></li>
+                    <li><a href="/free-download.html">download Center</a></li>
+                    <li><a href="/seo.html">SEO</a></li>
+                    <li><a href="/speed-test.html">Speed & Test</a></li>
+                    <li><a href="/freelance.html">freelance</a></li>
+                    <li><a href="#footer-line">contact dinlink</a></li>
+                </ul>
+
+                <ul class="navigation flex fw-500">
+                    <li class="hideOnMobile dropdown relative">
+                        <a href="#">guiding corner</a>
+                        <ul class="submenu">
+                            <li><a href="/design-rules-guide.html"> Design Rules</a></li>
+                            <li><a href="/design-guiding.html"> Design Guide</a></li>
+                            <li><a href="/Design-Conversion-guide.html"> Design Conversion</a></li>
+                            <li><a href="/ui-ux.html"> UI / UX</a></li>
+                            <li><a href="/clean-code.html"> Clean Code</a></li>
+                        </ul>
+                    </li>
+                    <li class="hideOnMobile"><a href="/ai-tools.html">AI tools</a></li>
+                    <li class="hideOnMobile"><a href="/sdrh-section.html">Developers tools</a></li>
+                    <li class="hideOnMobile"><a href="/free-download.html">download Center</a></li>
+                    <li class="hideOnMobile"><a href="/seo.html">SEO</a></li>
+                    <li class="hideOnMobile"><a href="/speed-test.html">Speed & Test</a></li>
+                    <li class="hideOnMobile"><a href="/freelance.html">freelance</a></li>
+                    <li class="hideOnMobile"><a href="#footer-line">contact dinlink</a></li>
+                </ul>
+                <div onclick=" showSidebar()"><a href="#"><i class="fa-solid fa-bars sidebarHamburgerMenuShow"></i></a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Secondary Nav -->
+        <div class="  secondary-nav relative">
+            <div class="container  ">
+                <nav class="secondary-menu  flex capitalize ">
+
+                    <nav class="breadcrumb-navigation">
+                        <ul class="path-breadcrumb-navigation flex">
+                            <li><a href="sdrh-section.html" class="category capitalizes">Developer's Toolbox &gt;</a>
+                                <!-- Use &gt; for greater-than symbol --></li>
+                            <li><a href="#" class="subcategory capitalize">Animation </a></li>
+                        </ul>
+                    </nav>
+
+                    <ul class=" navigation flex fw-500">
+                        <li><a href="/html.html">HTML</a></li>
+                        <li><a href="/css.html">CSS</a></li>
+                        <li><a href="/javascript.html">JS</a></li>
+                        <li><a href="/nodejs.html">NODEJS</a></li>
+                        <li><a href="/wordpress.html">WORDPRESS</a></li>
+                        <li><a href="/php.html">PHP</a></li>
+                        <li><a href="/react.html">REACT</a></li>
+                        <li><a href="/api.html">API</a></li>
+                        <li><a href="/database.html">DATABASE</a></li>
+                    </ul>
+                </nav>
+
+                <div class="sidebar-secondary-nav">
+                    <div class="container">
+                        <div class="custom-dropdown">
+                            <select class="side-bar-secondary-navigation" onchange="navigateSidebar(this)">
+                                <option value="" selected disabled hidden>Developer Playground</option>
+                                <option value=""></option>
+                                <option value="/html.html">HTML</option>
+                                <option value="/css.html">CSS</option>
+                                <option value="/javascript.html">JS</option>
+                                <option value="/nodejs.html">NODEJS</option>
+                                <option value="/wordpress.html">WORDPRESS</option>
+                                <option value="/php.html">PHP</option>
+                                <option value="/react.html">REACT</option>
+                                <option value="/api.html">API</option>
+                                <option value="/database.html">DATABASE</option>
+                                <option value=""></option>
+
+                            </select>
+                            <span class="custom-dropdown-icon">&#9660;</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- SECTION HEADER END -->
+
+    <!--SECTION ANIMATION SHOW CASE START -->
+    <section id="video-section" class="multi-section-showcase  relative">
+        <article class="video-container">
+
+            <video autoplay muted loop id="video-bg">
+                <source src="assets/video/animation-pg-1.mp4" type="video/mp4">
+                <!-- Add additional source elements for different video formats -->
+            </video>
+            <div class="sectionBlock ">
+                <div class="shadow-dark">
+                    <div class="mixin-feature-section  container  absolute">
+                        <div class="sectionBlock">
+                            <div class="shadow-dark-light">
+                                <div class="mixin-feature-section  container  absolute">
+                                    <div class="textContainer">
+                                        <h2 class="textContainer-header uppercase">Animation</h2>
+                                        <h3 class="textContainer-sup-header capitalize">Animation Alchemy: Transforming
+                                            Web
+                                            Experiences
+                                        </h3>
+                                        <p class="textContainer-description">Elevate your web projects with dynamic
+                                            animations. From
+                                            subtle transitions to eye-catching effects, bring your designs to life and
+                                            captivate
+                                            your
+                                            audience.</p>
+                                        <a href="#html-content" class="container-btn rem-1 capitalize">Find Out</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </article>
+    </section>
+    <!--SECTION ANIMATION SHOW CASE END -->
+
+    <!-- SECTION CONTENT START -->
+    <section id="section-content" class="section-content-containers">
+        <header class="section-title-content white-space">
+            <i class="fa-solid fa-money-bill-trend-up  section-icon"></i>
+            <h2 class='section-title uppercase'> Dynamic Motion</h2>
+            <div class=' section-title-line'></div>
+            <p class="section-title-descreption capitalize pt-1">
+                Enhance user experiences with fluid animations. <br>Elevate your designs with seamless transitions and
+                interactive elements,
+                captivating visitors at every interaction.
+            </p>
+        </header>
+
+        <article class="section-content-containers-content">
+            <div class="container">
+                <div class="section-feature-content grid-300-fit ">
+
+                    <!--  w3school-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">w3school </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/w3.png  " alt=" w3school  ">
+                        </header>
+                        <p class="feature-text ">
+                            Well organized and easy to understand Web building tutorials with lots of examples of how to
+                            use HTML, CSS, JavaScript,
+                            SQL, Python, PHP, Bootstrap, Java, XML and more.
+                        </p>
+                        <footer>
+                            <a href="   https://www.w3schools.com/css/css3_animations.asp  " class="btn "
+                                target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!-- mdn -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">mdn </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/mdn.png  " alt=" mdn  ">
+                        </header>
+                        <p class="feature-text ">
+                            CSS animations make it possible to animate transitions from one CSS style configuration to
+                            another.
+                        </p>
+                        <footer>
+                            <a href="   https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations  "
+                                class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  css Tricks-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize "> css Tricks-</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/css-tricks-3.png  "
+                                alt=" css Tricks-  ">
+                        </header>
+                        <p class="feature-text ">
+                            The animation property in CSS can be used to animate many other CSS properties such as
+                            color, background-color, height,
+                            or width.
+                        </p>
+                        <footer>
+                            <a href="   https://css-tricks.com/almanac/properties/a/animation/  " class="btn "
+                                target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  hubspot-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">hubspot </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/HubSpot.jpg  " alt="  hubspot ">
+                        </header>
+                        <p class="feature-text ">
+                            24 Creative and Unique CSS Animation Examples to Inspire Your Own
+                        </p>
+                        <footer>
+                            <a href="   https://blog.hubspot.com/website/css-animation-examples  " class="btn "
+                                target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  GeeksforGeeks-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">GeeksforGeeks </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/geeksforgeeks.png  "
+                                alt="  GeeksforGeeks ">
+                        </header>
+                        <p class="feature-text ">
+                            A Computer Science portal for geeks. It contains well written, well thought and well
+                            explained computer science and
+                            programming articles, quizzes and practice/competitive programming/company interview
+                            Questions. </p>
+                        <footer>
+                            <a href=" https://www.geeksforgeeks.org/css-animations/ " class="btn " target="_blank">Find
+                                Out</a>
+                        </footer>
+                    </article>
+
+                    <!--GreenSock -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize "> GreenSock</h2>
+                                <span class="premium capitalize   ">premium</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/GreenSock.png  " alt="  GreenSock ">
+                        </header>
+                        <p class="feature-text ">
+                            Power up your web animations with GreenSock. Access robust tools and resources for creating
+                            stunning, high-performance
+                            animations.
+                        </p>
+                        <footer>
+                            <a href="   https://gsap.com/core/  " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!-- Animate.css -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Animate.css </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/Animate.css.png  " alt="Animate.css   ">
+                        </header>
+                        <p class="feature-text ">
+                            Simplify animation implementation with Animate.css. Easily add pre-made CSS animations to
+                            your web projects for quick
+                            and effective motion.
+                        </p>
+                        <footer>
+                            <a href=" https://animate.style/    " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  LottieFiles-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">LottieFiles </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/LottieFiles.png  " alt="  LottieFiles ">
+                        </header>
+                        <p class="feature-text ">
+                            Enhance your web experiences with LottieFiles. Access a vast library of animated
+                            illustrations and icons to enrich your
+                            designs.
+                        </p>
+                        <footer>
+                            <a href=" https://lottiefiles.com/    " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  Three.js-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Three.js </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/Three.js.png  " alt="  Three.js ">
+                        </header>
+                        <p class="feature-text ">
+                            Push the boundaries of web animation with Three.js. Create breathtaking 3D animations and
+                            interactive experiences for
+                            the web.
+                        </p>
+                        <footer>
+                            <a href="  https://threejs.org/   " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  vanilla-tilt-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize "> vanilla tilt</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/VanillaTilt.jpg  "
+                                alt="  vanilla tilt  ">
+                        </header>
+                        <p class="feature-text ">
+                            A smooth 3D tilt javascript library forked from Tilt.js (jQuery version)
+                        </p>
+                        <footer>
+                            <a href=" https://micku7zu.github.io/vanilla-tilt.js/ " class="btn " target="_blank">Find
+                                Out</a>
+                        </footer>
+                    </article>
+
+                    <!-- Keyframes -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Keyframes </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/Keyframes.jpeg  " alt="  Keyframes ">
+                        </header>
+                        <p class="feature-text ">
+                            Streamline your CSS animations with Keyframes. Generate CSS keyframe animations effortlessly
+                            for dynamic web
+                            experiences.
+                        </p>
+                        <footer>
+                            <a href="    https://keyframes.app/animate " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  Mo.js-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Mo.js </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/Mo.js.png  " alt=" Mo.js  ">
+                        </header>
+                        <p class="feature-text ">
+                            Unleash creativity with Mo.js. Access a powerful motion graphics library to create stunning
+                            animations and effects for
+                            the web.
+                        </p>
+                        <footer>
+                            <a href="   https://mojs.github.io/  " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!-- Anime.js -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Anime.js </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/Anime.js.png  " alt=" Anime.js  ">
+                        </header>
+                        <p class="feature-text ">
+                            Create beautiful animations with Anime.js. An easy-to-use JavaScript animation library for
+                            designing stunning UI/UX.
+                        </p>
+                        <footer>
+                            <a href="    https://animejs.com/ " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  PixiJS-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">PixiJS </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/PixiJS.png  " alt="   PixiJS">
+                        </header>
+                        <p class="feature-text ">
+                            Create blazing-fast 2D web animations with PixiJS. Build immersive experiences with this
+                            powerful rendering engine.
+                        </p>
+                        <footer>
+                            <a href="  https://pixijs.com/   " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!-- Tumult Hype -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Tumult Hype </h2>
+                                <span class="premium capitalize   ">premium</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/TumultHype.jpg  " alt=" Tumult Hype  ">
+                        </header>
+                        <p class="feature-text ">
+                            Design stunning HTML5 animations with Tumult Hype. Create interactive content and animations
+                            for the web without writing
+                            code.
+                        </p>
+                        <footer>
+                            <a href="   https://tumult.com/hype/  " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!-- Vectr -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Vectr </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/Vectr.png  " alt=" Vectr  ">
+                        </header>
+                        <p class="feature-text ">
+                            Create vector graphics and animations with Vectr. A free, cross-platform vector graphics
+                            software for web and graphic
+                            design.
+                        </p>
+                        <footer>
+                            <a href="   https://vectr.com/  " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!-- SECTION CONTENT END -->
+
+    <!--  SECTION CONTACT US START  -->
+    <section id="contact" class="contact-us  relative">
+        <div class="shadow-dark">
+            <div class="contact-us-content container  absolute ">
+                <div class="subscripe-form ">
+                    <form action="subscribe.php" method="post">
+                        <caption>
+                            <h2 class="form-title rem-2">SUBSCRIBE TO NEWSLETTERS</h2>
+                            <!--                             <h3>Don't miss an update to this site!</h3>
+ --> <!-- <h4>Get the latest content to your inbox every month. No spam, we hate it too.</h4> -->
+                            <!--                    <div class="form-name">
+                                <label for="name"></label>
+                                <input type="text" id="name" name="name" required placeholder="Full Name:">
+                            </div> -->
+                            <!--                             <div class="form-email">
+                                <label for="email"></label>
+                                <input type="email" id="email" name="email" required placeholder="E mail:">
+                            </div>
+                            <button class="btn  send-btn" type="submit">Subscribe</button> -->
+                        </caption>
+                    </form>
+
+                    <div class="social-media">
+                        <h2 class="social-media-sup-title capitalize"> Contact DinLink at <span><a class="mail-address"
+                                    href="mailto:info@dinlink.com">info@dinlink.com</a></span>
+                        </h2>
+                        <ul class="social-media-icons ">
+                            <li class="facebook"><a href=""> <i class="fa-brands fa-facebook-f social-icon"></i></a>
+                            </li>
+                            <li class="instagram"><a href=""><i class="fa-brands fa-instagram  social-icon"></i></a><img
+                                    src="" alt="">
+                            </li>
+                            <li class="linkedin"><a href=""><i
+                                        class="fa-brands fa-linkedin-in  social-icon"></i></a><img src="" alt="">
+                            </li>
+                            <li class="x"><a href=""><i class="fa-brands fa-x-twitter  social-icon"></i></a><img src=""
+                                    alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  SECTION CONTACT US END  -->
+
+    <!-- SECTION FOOTER START-->
+    <footer id="footer-line" class="footer">
+        <div class="container flex">
+            <span class="copy-right ">All Copy Right Reserved &copy; Dinlink.se 2024</span>
+            <span class="author "><a href="http://jonashousa.com/" target="_blank">DESIGNED BY JONAS HOUSA</a></span>
+        </div>
+        <!--SCROLL TO TOP BOTTOM START-->
+        <a href="#" id="scroll-to-top-link" class="scroll-to-top" onclick="scrollToTop(); return false; "
+            aria-label="Scroll to top"><i class="fa-solid fa-arrow-up-from-bracket"></i>
+        </a>
+        <!--SCROLL TO TOP BOTTOM END-->
+    </footer>
+    <!-- SECTION FOOTER END-->
+
+    <!-- JAVASCRIPT LINKS  -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/slides.js"></script>
+    <script src="assets/js/smoothScrollPage.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.7.3/smooth-scrollbar.js"></script>
+
+</body>
+
+</html>

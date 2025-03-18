@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Set viewport properties for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define the title of the web page -->
+    <title>DinLink | CSS Guiding</title>
+    <!-- Provide a brief description for search engines -->
+    <meta name="description" content="Dinlink: Your go-to resource for web developers seeking the best tools! Discover curated collections of fonts, icons,
+                images, and more to enhance your projects. Elevate your web development with handpicked tools for seamless design and
+                functionality. Explore the ultimate toolkit at Dinlink and supercharge your creativity today! ">
+    <!-- Specify keywords for search engines (may have limited impact) -->
+    <meta name="keywords"
+        content="Web development tools, Font resources for developers, Icon collections, High-quality images for websites, design resources, Web design assets,Developer toolkit, Creative assets for websites, Design resources for developers, Best web development tools, Iconography for websites, Professional fonts for web projects, Image libraries for developers, UI design elements, Code optimization tools, Responsive design resources, Code editors, Version control systems, Task runners, Build tools, Content management systems, Design collaboration platforms, Programming languages, Frameworks, Frontend development tools, Backend development tools, Database management systems, Color palettes, UI design patterns, Prototyping tools, Wireframing tools, Typography resources, Icon sets, Vector graphics, User-centered design, Information architecture, Interaction design, Usability testing, User research, Accessibility guidelines, WCAG standards, Tutorials, Online courses, Web development communities, Blogs, Articles, Books, Freelancing tips, Remote work tools, Productivity techniques, Portfolio building, Career development">
+    <!-- Additional meta tags -->
+    <meta property="og:title" content="DinLink | Your Ultimate Web Development Toolkit">
+    <!-- Open Graph description: Used by social media platforms when the page is shared -->
+    <meta property="og:description"
+        content="Discover curated collections of fonts, icons, images, and more for web developers. Elevate your projects with the best web development tools and resources. Explore the ultimate toolkit at DinLink and supercharge your creativity today! #WebDevelopment #DesignResources #UIUX #Creativity">
+    <!-- Open Graph image: Used by social media platforms when the page is shared -->
+    <meta property="og:image" content="https://dinlink.se/image.jpg">
+    <!-- Robots meta tag: Specifies whether search engines should index and follow the page -->
+    <meta name="robots" content="index, follow">
+    <!-- Canonical link tag: Specifies the preferred URL of the page  MUST CHANGE IN EACH PAGE -->
+    <link rel="canonical" href="https://dinlink.se/css.html">
+    <!-- Alternate link tag: Specifies alternate language versions of the page -->
+    <link rel="alternate" hreflang="en" href="https://example.com/en">
+    <!-- Favicon for the website -->
+    <link rel="icon" type="image/x-icon" href="/FAVICON.jpg">
+    <!-- Link to custom stylesheets for page styling CSS -->
+    <link rel="stylesheet" href="assets/sass/dinlink-style.css">
+    <link rel="stylesheet" href="assets/sass/dinlink-Media-query.css">
+    <link rel="stylesheet" href="assets/sass/dinlink-global-elements.css">
+    <!-- Link to font icon library -->
+    <link rel="stylesheet" href="assets/fonts/fontIcon/css/all.css">
+    <!-- Link to Google Fonts for custom typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- SECTION HEADER START -->
+    <section id="header" class="header sticky">
+        <div class="header-content container flex">
+            <a href="/index.html" id='logo' class="logo bold" title="DinLink | Your Ultimate Web Development Toolkit">
+                <h1>DinLink</h1>
+            </a>
+            <!-- FIRST NAV -->
+            <nav class="first-nav main-nav capitalize flex">
+                <ul class=" sidebarNavigation    fw-500">
+                    <div class="side-menu-header ">
+                        <h2 class="side-menu-header-heading">menu</h2>
+                        <a href="#" onclick="hideSidebar()"><i
+                                class="fa-solid fa-xmark sidebarHamburgerMenuHide "></i></a>
+                    </div>
+
+                    <li class=" dropdown relative">
+                        <a href="#">guiding corner</a>
+                        <ul class="submenu">
+                            <li><a href="/design-rules-guide.html"> Design Rules</a></li>
+                            <li><a href="/design-guiding.html"> Design Guide</a></li>
+                            <li><a href="/Design-Conversion-guide.html"> Design Conversion</a></li>
+                            <li><a href="/ui-ux.html"> UI / UX</a></li>
+                            <li><a href="/clean-code.html"> Clean Code</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/ai-tools.html">AI tools</a></li>
+                    <li><a href="/sdrh-section.html">Developers tools</a></li>
+                    <li><a href="/free-download.html">download Center</a></li>
+                    <li><a href="/seo.html">SEO</a></li>
+                    <li><a href="/speed-test.html">Speed & Test</a></li>
+                    <li><a href="/freelance.html">freelance</a></li>
+                    <li><a href="#footer-line">contact dinlink</a></li>
+                </ul>
+
+                <ul class="navigation flex fw-500">
+                    <li class="hideOnMobile dropdown relative">
+                        <a href="#">guiding corner</a>
+                        <ul class="submenu">
+                            <li><a href="/design-rules-guide.html"> Design Rules</a></li>
+                            <li><a href="/design-guiding.html"> Design Guide</a></li>
+                            <li><a href="/Design-Conversion-guide.html"> Design Conversion</a></li>
+                            <li><a href="/ui-ux.html"> UI / UX</a></li>
+                            <li><a href="/clean-code.html"> Clean Code</a></li>
+                        </ul>
+                    </li>
+                    <li class="hideOnMobile"><a href="/ai-tools.html">AI tools</a></li>
+                    <li class="hideOnMobile"><a href="/sdrh-section.html">Developers tools</a></li>
+                    <li class="hideOnMobile"><a href="/free-download.html">download Center</a></li>
+                    <li class="hideOnMobile"><a href="/seo.html">SEO</a></li>
+                    <li class="hideOnMobile"><a href="/speed-test.html">Speed & Test</a></li>
+                    <li class="hideOnMobile"><a href="/freelance.html">freelance</a></li>
+                    <li class="hideOnMobile"><a href="#footer-line">contact dinlink</a></li>
+                </ul>
+                <div onclick=" showSidebar()"><a href="#"><i class="fa-solid fa-bars sidebarHamburgerMenuShow"></i></a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- SECOND NAV -->
+        <div class="  secondary-nav relative">
+            <div class="container  ">
+                <nav class="secondary-menu  flex capitalize ">
+
+                    <nav class="breadcrumb-navigation">
+                        <ul class="path-breadcrumb-navigation flex">
+                            <li><a href="index.html" class="category capitalizes">Home &gt;</a>
+                                <!-- Use &gt; for greater-than symbol --></li>
+                            <li><a href="#" class="subcategory capitalize"> CSS</a></li>
+                        </ul>
+                    </nav>
+
+                    <ul class=" navigation flex fw-500">
+                        <li><a href="/html.html">HTML</a></li>
+                        <li><a href="/css.html">CSS</a></li>
+                        <li><a href="/javascript.html">JS</a></li>
+                        <li><a href="/nodejs.html">NODEJS</a></li>
+                        <li><a href="/wordpress.html">WORDPRESS</a></li>
+                        <li><a href="/php.html">PHP</a></li>
+                        <li><a href="/react.html">REACT</a></li>
+                        <li><a href="/api.html">API</a></li>
+                        <li><a href="/database.html">DATABASE</a></li>
+                    </ul>
+                </nav>
+
+                <div class="sidebar-secondary-nav">
+                    <div class="container">
+                        <div class="custom-dropdown">
+                            <select class="side-bar-secondary-navigation" onchange="navigateSidebar(this)">
+                                <option value="" selected disabled hidden>Developer Playground</option>
+                                <option value=""></option>
+                                <option value="/html.html">HTML</option>
+                                <option value="/css.html">CSS</option>
+                                <option value="/javascript.html">JS</option>
+                                <option value="/nodejs.html">NODEJS</option>
+                                <option value="/wordpress.html">WORDPRESS</option>
+                                <option value="/php.html">PHP</option>
+                                <option value="/react.html">REACT</option>
+                                <option value="/api.html">API</option>
+                                <option value="/database.html">DATABASE</option>
+                                <option value=""></option>
+
+                            </select>
+                            <span class="custom-dropdown-icon">&#9660;</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- SECTION HEADER END -->
+
+    <!--SECTION CSS SHOW CASE START -->
+    <section id="css-section" class="multi-section-showcase  relative">
+        <div class="sectionBlock ">
+            <div class="shadow-dark ">
+                <div class="mixin-feature-section  container  absolute">
+                    <div class="textContainer  ">
+                        <h2 class="textContainer-header uppercase ">CSS </h2>
+                        <h3 class="textContainer-sup-header capitalize ">Your Hub for Styling Excellence
+                        </h3>
+                        <p class="textContainer-description">
+                            Navigate through a comprehensive CSS resource hub offering tutorials, tools, and insights
+                            for developers at every level.
+                            Unlock the full potential of CSS with our curated collection of resources designed to
+                            elevate your web styling skills.
+
+                        </p>
+                        <a href="#html-content" class="container-btn rem-1 capitalize"> find out</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SECTION CSS SHOW CASE END -->
+
+    <!-- SECTION CSS CONTENT START -->
+    <section id="section-content" class="section-content-containers">
+        <header class="section-title-content white-space">
+            <i class="fa-brands fa-css3-alt  section-icon"></i>
+            <h2 class='section-title uppercase'>CSS Hub</h2>
+            <div class=' section-title-line'></div>
+            <p class="section-title-descreption capitalize pt-1">
+                Explore the heart of CSS expertise with a curated collection of tutorials, tools, and tips. <br>From
+                beginner basics to
+                advanced techniques, unlock the full potential of CSS for your web projects.
+            </p>
+        </header>
+
+        <div class="section-content-containers-content">
+            <div class="container">
+                <div class="section-feature-content grid-300-fit ">
+                    <!--  css-tricks. -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">CSS tricks</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/css-tricks.png" alt="">
+                        </header>
+                        <p class="feature-text ">CSS-Tricks features articles, tutorials, and resources for front-end
+                            development, covering CSS, HTML, JavaScript, and
+                            more. It's known for its insightful content and helpful community.
+                        </p>
+                        <footer>
+                            <a href="https://css-tricks.com/" target="_blank" class="btn ">Find
+                                Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  ALMANAC-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">CSS ALMANAC </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/css-tricks.png  " alt="   CSS ALMANAC ">
+                        </header>
+                        <p class="feature-text ">
+                            CSS selectors are patterns used to select elements in the DOM. Properties. CSS properties
+                            style elements through their
+                            values.
+                        </p>
+                        <footer>
+                            <a href=" https://css-tricks.com/almanac/ " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  Properties-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">CSS Properties </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/css-tricks.png  "
+                                alt="CSS Properties    ">
+                        </header>
+                        <p class="feature-text ">
+                            CSS Almanac → Properties. Properties. A · accent-color · align-content · align-items ·
+                            align-self · all · animation ·
+                            appearance · aspect-ratio
+                        </p>
+                        <footer>
+                            <a href=" https://css-tricks.com/almanac/properties/ " class="btn " target="_blank">Find
+                                Out</a>
+                        </footer>
+                    </article>
+
+
+
+                    <!-- MDN Web Docs - CSS-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">MDN Web Docs - CSS</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/mdn.png" alt="">
+                        </header>
+                        <p class="feature-text ">MDN Web Docs provides comprehensive documentation and guides for CSS
+                            along
+                            with examples and references. It's a reliable
+                            resource maintained by Mozilla developers.
+                        </p>
+                        <footer>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="btn ">Find
+                                Out</a>
+                        </footer>
+                    </article>
+                    <!-- W3Schools - CSS-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">W3Schools - CSS</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/w3.png" alt="">
+                        </header>
+                        <p class="feature-text">W3Schools offers tutorials, references, and examples for CSS, HTML,
+                            JavaScript, and other web technologies. It's a
+                            popular choice for beginners due to its easy-to-follow format.
+                        </p>
+                        <footer>
+                            <a href="https://www.w3schools.com/css/" target="_blank" class="btn ">Find Out</a>
+                        </footer>
+                    </article>
+                    <!-- Codrops-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Codrops</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/codrops.png" alt="">
+                        </header>
+                        <p class="feature-text">Codrops provides a CSS reference guide covering CSS properties,
+                            selectors,
+                            units, and more. It's a comprehensive
+                            resource for developers who need detailed information about CSS specifications.
+                        </p>
+                        <footer>
+                            <a href="https://tympanus.net/codrops/css_reference/" target="_blank" class="btn ">Find
+                                Out</a>
+                        </footer>
+                    </article>
+
+
+                    <!--  CSS Grid Generator-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">CSS Grid Generator</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/grid-g.png" alt="">
+                        </header>
+                        <p class="feature-text ">built with by sarah_edo. Columns. Rows. Column Gap (in px). Row Gap (in
+                            px). Please may I have some code. Reset grid.
+                        </p>
+                        <footer>
+                            <a href="https://cssgrid-generator.netlify.app/" target="_blank" class="btn ">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  Emmet Documentation-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Emmet Documentation </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/emmet.jpeg  "
+                                alt="  Emmet Documentation ">
+                        </header>
+                        <p class="feature-text ">
+                            The Emmet Documentation is a comprehensive guide for web developers, offering insights into
+                            Emmet's syntax and advanced
+                            features. Master Emmet for streamlined HTML and CSS coding.
+                        </p>
+                        <footer>
+                            <a href="  https://docs.emmet.io/cheat-sheet/   " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+
+
+                    <!--  Flexbox Froggy-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Flexbox Froggy</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/flexboxfroggy.jpg" alt="">
+                        </header>
+                        <p class="feature-text ">Flexbox Froggy is a fun and interactive game that teaches Flexbox
+                            layout
+                            through puzzles. It's a hands-on way to learn
+                            and practice Flexbox concepts in CSS.
+                        </p>
+                        <footer>
+                            <a href="https://flexboxfroggy.com/" target="_blank" class="btn ">Find Out</a>
+                        </footer>
+                    </article>
+                    <!--  Caniuse-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Can I use</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/caniuse.png" alt="">
+                        </header>
+                        <p class="feature-text ">Up-to-date browser support tables for front-end technologies on desktop
+                            and mobile browsers.
+                        </p>
+                        <footer>
+                            <a href="https://caniuse.com/" target="_blank" class="btn ">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  CSS3 Generator-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">CSS3 Generator </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/CSS3Generator.png  "
+                                alt="  CSS3 Generator ">
+                        </header>
+                        <p class="feature-text ">
+                            Provides 10+ code generators for CSS columns, box shadows, flexbox, and a lot more.
+                        </p>
+                        <footer>
+                            <a href="https://css3generator.com/  " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+
+                    <!--30 CSS Selectors by Tutplus -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">30 CSS Selectors by Tutplus</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/tutplus.png" alt="">
+                        </header>
+                        <p class="feature-text">I find myself using this handy list of the 30 most important CSS
+                            selectors
+                            from Tutplus all the time.
+                        </p>
+                        <footer>
+                            <a href="https://webdesign.tutsplus.com/the-30-css-selectors-you-must-memorize--net-16048t"
+                                target="_blank" class="btn ">Find Out</a>
+                        </footer>
+                    </article>
+                    <!--Hate CSS -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Hate CSS</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/css-guide.png" alt="">
+                        </header>
+                        <p class="feature-text ">Excellent guide on how to write better, cleaner and more reusable CSS
+                            code.
+                        </p>
+                        <footer>
+                            <a href="https://paulcpederson.com/articles/css-for-people-who-hate-css/" target="_blank"
+                                class="btn ">Find Out</a>
+                        </footer>
+                    </article>
+                    <!--Hate CSS -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Clippy</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/clippy.png" alt="">
+                        </header>
+                        <p class="feature-text ">A small tool to help you using the new and powerful clip-path property.
+                        </p>
+                        <footer>
+                            <a href="https://bennettfeely.com/clippy/" target="_blank" class="btn ">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  CSS Type Set-->
+                    <article class="feature feature-white-btn flex-col feat">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">CSS Type Set </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/csstypeset.jpg  " alt="CSS Type Set   ">
+                        </header>
+                        <p class="feature-text ">
+                            A nice resource to experiment with your typographic styles. Just type the text and toy
+                            around with settings like font
+                            family, font size, color, letter spacing, etc., in real-time.
+                        </p>
+                        <footer>
+                            <a href=" http://csstypeset.com/index.htm " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!-- cdnjs -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">cdnjs </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/cdnjs.png  " alt="  cdnjs ">
+                        </header>
+                        <p class="feature-text ">
+                            cdnjs is a free and open-source CDN service trusted by over 12.5% of all websites, serving
+                            over
+                            200 billion requests
+                            each month, powered by Cloudflare.
+                        </p>
+                        <footer>
+                            <a href=" https://cdnjs.com/ " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  CSS FILTER Editor-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize "> CSS FILTER Editor</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/CodePen.png  "
+                                alt="  CSS FILTER Editor ">
+                        </header>
+                        <p class="feature-text ">
+                            Filtered pixel, color applied through CSS filter : The goal was to be able to create custom
+                            style sheets and allow for
+                            the coloring of icons
+                        </p>
+                        <footer>
+                            <a href=" https://codepen.io/stoumann/pen/MWeNmyb " class="btn " target="_blank">Find
+                                Out</a>
+                        </footer>
+                    </article>
+
+
+                    <!--CSS easing functions-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">CSS easing functions</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/CSSeasing.png" alt="">
+                        </header>
+                        <p class="feature-text ">An amazing collection of easing functions bo be used in CSS transitions
+                            and animations.
+                        </p>
+                        <footer>
+                            <a href="https://easings.net/" target="_blank" class="btn ">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!-- Styled Components -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Styled Components </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/StyledComponents.jpg  "
+                                alt="  Styled Components ">
+                        </header>
+                        <p class="feature-text ">CSS-in-JS library for styling React components with dynamic styles and
+                            theme support.
+                        </p>
+                        <footer>
+                            <a href=" https://styled-components.com/ " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  FANCY-BORDER-RADIUS-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">FANCY-BORDER-RADIUS </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/FANCY-BORDER-RADIUS.jpeg  "
+                                alt=" FANCY-BORDER-RADIUS  ">
+                        </header>
+                        <p class="feature-text ">
+                            In CSS, when you define eight values inside the border-radius property, you end up building
+                            organic-looking shapes. This
+                            resource automates this entire process.
+                        </p>
+                        <footer>
+                            <a href="https://9elements.github.io/fancy-border-radius/  " class="btn "
+                                target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  CSS box-shadow-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize "> CSS box shadow</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/getcssscan.jpeg  " alt=" getcssscan ">
+                        </header>
+                        <p class="feature-text ">
+                            Beautiful CSS box-shadow examples by CSS Scan
+
+                        </p>
+                        <footer>
+                            <a href=" https://getcssscan.com/css-box-shadow-examples " class="btn " target="_blank">Find
+                                Out</a>
+                        </footer>
+                    </article>
+
+                    <!--CSS Cursors List  -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">CSS Cursors List </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/CodePen.png  "
+                                alt=" CSS Cursors List  ">
+                        </header>
+                        <p class="feature-text ">
+                            CSS Cursors List by CodePen.
+                        </p>
+                        <footer>
+                            <a href="  https://codepen.io/benlinton/pen/JXzZBp" class="btn " target="_blank">Find
+                                Out</a>
+                        </footer>
+                    </article>
+
+
+                    <!--  Glassmorphism-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Glassmorphism </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/Glassmorphism.jpg  "
+                                alt="Glassmorphism   ">
+                        </header>
+                        <p class="feature-text ">
+                            Get started with this free CSS generator based on the glassmorphism design specifications to
+                            quickly design and
+                            customize the style properties.
+                        </p>
+                        <footer>
+                            <a href="  https://ui.glass/generator/" class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!-- 10015 -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize "> 10015</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/10015.jpeg  " alt="  10015 ">
+                        </header>
+                        <p class="feature-text ">
+                            Online CSS Glassmorphism Generator is a free tool for generating CSS frosted-glass effect to
+                            HTML elements with
+                            background blur.
+                        </p>
+                        <footer>
+                            <a href=" https://10015.io/tools/css-glassmorphism-generator " class="btn "
+                                target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  w3docs-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize "> w3docs</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/w3docs.jpeg  " alt=" w3docs  ">
+                        </header>
+                        <p class="feature-text ">
+                            Learn to design and build professional website
+
+                            Here is a free tutorial that will teach you to start
+                            creating your website step by
+                            step. Get Started
+                        </p>
+                        <footer>
+                            <a href=" https://www.w3docs.com/ " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+
+                </div>
+                <!--    <a href="free-download.html" class="btn-more">More...</a>-->
+            </div>
+        </div>
+    </section>
+
+    <!--------- SECTION GRID  CONTENT START --------->
+    <section id="section-content" class="section-content-containers white-pg">
+        <header class="section-title-content white-space">
+            <i class="fa-solid fa-grip-vertical  section-icon"></i>
+            <h2 class='section-title uppercase'>Grid Master </h2>
+            <div class=' section-title-line'></div>
+            <p class="section-title-descreption capitalize pt-1">
+                Unlock the power of CSS Grid for seamless layout designs. <br> Learn advanced grid techniques and
+                create
+                stunning,
+                responsive websites with ease.
+            </p>
+        </header>
+
+        <div class="section-content-containers-content">
+            <div class="container">
+                <div class="section-feature-content grid-300-fit ">
+
+                    <!-- angrytools-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">angry tools </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/angrytools.png  " alt="  angrytools ">
+                        </header>
+                        <p class="feature-text ">
+                            Quickly design web layouts, and get HTML and CSS code. Learn CSS Grid visually and build web
+                            layouts with our
+                            interactive CSS Grid Generator.
+                        </p>
+                        <footer>
+                            <a href="  https://angrytools.com/css-grid/  " class="btn " target="_blank">Find
+                                Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  w3schools.in-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize "> w3schools.in</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/w3school.in.jpg  "
+                                alt=" w3schools.in  ">
+                        </header>
+                        <p class="feature-text ">
+                            W3Schools.com is a renowned online platform offering tutorials and references on web
+                            development
+                            technologies. Access
+                            easy-to-follow examples and explanations to enhance your skills in HTML, CSS, JavaScript,
+                            and
+                            more.
+                        </p>
+                        <footer>
+                            <a href=" https://www.w3schools.in/ " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--layoutit  -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">layoutit </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/layoutit.jpg  " alt="  layoutit ">
+                        </header>
+                        <p class="feature-text ">
+                            Quickly design web layouts, and get HTML and CSS code. Learn CSS Grid visually and build web
+                            layouts with our
+                            interactive CSS Grid Generator.
+                        </p>
+                        <footer>
+                            <a href="  https://grid.layoutit.com/   " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  CSS Grid Generator-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">CSS Grid Generator </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/grid-g.png  "
+                                alt="  CSS Grid Generator ">
+                        </header>
+                        <p class="feature-text ">
+                            built with by sarah_edo. Columns. Rows. Column Gap (in px). Row Gap (in px). Please may I
+                            have some code. Reset grid.
+                            What does this project do?
+                        </p>
+                        <footer>
+                            <a href="   https://cssgrid-generator.netlify.app/  " class="btn " target="_blank">Find
+                                Out</a>
+                        </footer>
+                    </article>
+
+                    <!-- cssportal -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">cssportal </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/cssportal.jpeg  " alt=" cssportal  ">
+                        </header>
+                        <p class="feature-text ">
+                            The CSS Grid Generator is a web-based tool designed to help users easily create CSS grid
+                            layouts for web design.
+                        </p>
+                        <footer>
+                            <a href=" https://www.cssportal.com/css-grid-generator/ " class="btn " target="_blank">Find
+                                Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  CSS Layout Generator-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize "> CSS Layout Generator</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/CSSLayoutGenerator.jpg  "
+                                alt="CSS Layout Generator  ">
+                        </header>
+                        <p class="feature-text ">
+                            A CSS Grid generator & CSS Flexbox generator. A tool for generating UI layout component
+                            code.
+                        </p>
+                        <footer>
+                            <a href=" https://layout.bradwoods.io/ " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!-- Tailwind Grid -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Tailwind Grid </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/TailwindGrid.jpeg  "
+                                alt=" Tailwind Grid  ">
+                        </header>
+                        <p class="feature-text ">
+                            Tailwind CSS grid generator is a tool that helps developers create custom Tailwind grid
+                            layouts more easily. The
+                            generator allows users to specify the number of columns, rows, the gutter size, the DIV
+                            width (span).
+                        </p>
+                        <footer>
+                            <a href="https://tailwindcss.com/docs/grid-template-columns  " class="btn "
+                                target="_blank">Find
+                                Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  Griddy-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Griddy </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/Griddy.jpg  " alt=" Griddy  ">
+                        </header>
+                        <p class="feature-text ">
+                            grid-template-rows defines how the elements will be divided into horizontal rows and how
+                            they will be sized in relation
+                            to each other. ... Defines the horizontal
+                        </p>
+                        <footer>
+                            <a href=" https://griddy.io/ " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  Vue Grid Generator-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize "> Vue Grid Generator</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/VueGridGenerator.jpeg  "
+                                alt=" Vue Grid Generator  ">
+                        </header>
+                        <p class="feature-text ">
+                            CSS Grid Layout generator · CSS · HTML · Layout. grid size. w: h: Presets: holyGrail
+                            articleList.
+                        </p>
+                        <footer>
+                            <a href=" https://vue-grid-generator.netlify.app/ " class="btn " target="_blank">Find
+                                Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  Visual Grid-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Visual Grid </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/visual-grid.jpg  " alt="  Visual Grid ">
+                        </header>
+                        <p class="feature-text ">
+                            Visual Grid Generator is the next grid generator on our list. It was created by Andreas, and
+                            the source code is
+                            available on GitHub. This generator has a clean and friendly UI.
+                        </p>
+                        <footer>
+                            <a href=" https://visual-grid-generator.netlify.app/ " class="btn " target="_blank">Find
+                                Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  css-tricks-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">CSS Tricks cheat sheet</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/css-tricks-3.png  " alt="   ">
+                        </header>
+                        <p class="feature-text ">
+                            omprehensive guide to CSS grid, focusing on all the settings both for the grid parent
+                            container and the grid child
+                            elements.
+                        </p>
+                        <footer>
+                            <a href=" https://css-tricks.com/snippets/css/complete-guide-grid/ " class="btn "
+                                target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!-- Malven Co. -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">GRID Malven Co. </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/malvenco.png  " alt=" Malven Co.  ">
+                        </header>
+                        <p class="feature-text ">
+                            Malven Co. GRID: A simple visual cheatsheet for CSS Grid Layout
+                            Learn all about the properties available in CSS Grid Layout through simple visual examples.
+                        </p>
+                        <footer>
+                            <a href=" https://grid.malven.co/ " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+        </div><!-- closing tag for section-feature-content div -->
+        </div><!-- closing tag for container div -->
+        </div>
+    </section>
+    <!--------- SECTION GRID  CONTENT END --------->
+
+    <!--------- SECTION FLEX  CONTENT START --------->
+    <section id="section-content" class="section-content-containers  ">
+        <header class="section-title-content white-space">
+            <i class="fa-solid fa-grip  section-icon"></i>
+            <h2 class='section-title uppercase'>Flex Flow</h2>
+            <div class=' section-title-line'></div>
+            <p class="section-title-descreption capitalize pt-1">
+                Master the art of Flexbox for flexible and dynamic layouts. <br> Dive deep into Flexbox properties and
+                create
+                visually
+                appealing web designs effortlessly.
+            </p>
+        </header>
+
+        <div class="section-content-containers-content">
+            <div class="container">
+                <div class="section-feature-content grid-300-fit ">
+
+                    <!--  Flexbox Playground-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Flexbox Playground </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/FlexboxPlayground.jpg  "
+                                alt=" Flexbox Playground  ">
+                        </header>
+                        <p class="feature-text ">
+                            Flexbox Playground A web app for exploring Flexbox Reset to Defaults View Markup Container.
+                            Items. Edit properties of
+                            the flex container here.
+                        </p>
+                        <footer>
+                            <a href="   https://flexbox.tech/  " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!-- IP Location -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize "> IP Location</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/IPLocation.png  " alt=" IP Location  ">
+                        </header>
+                        <p class="feature-text ">
+                            CSS Flexbox provides a flexible and intuitive way to create various layouts, including
+                            responsive designs, equal-height
+                            columns, vertical centering, and distribution of space.
+                        </p>
+                        <footer>
+                            <a href=" https://tools.iplocation.net/css-flexbox-generator    " class="btn "
+                                target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  FLEX  Malven Co.-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">FLEX Malven Co. </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/malvenco.png  "
+                                alt=" FLEX  Malven Co.  ">
+                        </header>
+                        <p class="feature-text ">
+                            The Flexible Box Layout module makes it easier to design flexible responsive layout
+                            structures without using float or
+                            positioning.
+                        </p>
+                        <footer>
+                            <a href=" https://flexbox.malven.co/ " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!-- angry tools -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">angry tools </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/angrytools.png  " alt=" angry tools  ">
+                        </header>
+                        <p class="feature-text ">
+                            CSS Flexbox layout generator to create responsive container and flex items that adjust its
+                            position as per available
+                            space.
+                        </p>
+                        <footer>
+                            <a href="   https://angrytools.com/css-flex/  " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  getbootstrap-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize "> get bootstrap flex</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/bootstrap.jpeg  "
+                                alt=" get bootstrap flex  ">
+                        </header>
+                        <p class="feature-text ">
+                            Quickly manage the layout, alignment, and sizing of grid columns, navigation, components,
+                            and more with a full suite of
+                            responsive flexbox utilities.
+                        </p>
+                        <footer>
+                            <a href="  https://getbootstrap.com/docs/4.3/utilities/flex/" class="btn "
+                                target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  CSS tricks-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">CSS tricks</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/css-tricks-3.png  "
+                                alt=" CSS tricks-  ">
+                        </header>
+                        <p class="feature-text ">
+                            guide to CSS flexbox layout. This complete guide explains everything about flexbox, focusing
+                            on all the different
+                            possible properties for the parent element
+                        </p>
+                        <footer>
+                            <a href="  https://css-tricks.com/snippets/css/a-guide-to-flexbox/   " class="btn "
+                                target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!-- MDN Web Docs -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">MDN Web Docs </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/mdn.png  " alt="  MDN Web Docs ">
+                        </header>
+                        <p class="feature-text ">
+                            To create a flex container, set the area's display property to flex . When we do this, the
+                            direct children of that
+                            container become flex items.
+                        </p>
+                        <footer>
+                            <a href="   https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox  "
+                                class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  flexboxfroggy-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize "> flexbox froggy</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/flexboxfroggy.jpeg  "
+                                alt="flexbox froggy   ">
+                        </header>
+                        <p class="feature-text ">
+                            Froggy, a game where you help Froggy and friends by writing CSS code! Guide this frog to the
+                            lilypad on the right by
+                            using the justify-content
+                        </p>
+                        <footer>
+                            <a href="   https://flexboxfroggy.com/  " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!-- FLEXBOX DUCKY -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize "> FLEXBOX DUCKY</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/FLEXBOXDUCKY.jpg  "
+                                alt=" FLEXBOX DUCKY  ">
+                        </header>
+                        <p class="feature-text ">
+                            Flexbox Ducky, a game where you help Ducky and friends by writing CSS code! Guide this duck
+                            to the lilypad on the right
+                            by using the justify-content property
+                        </p>
+                        <footer>
+                            <a href="    https://courses.cs.washington.edu/courses/cse154/flexboxducky/ " class="btn "
+                                target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  Flexbox Defense-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize "> Flexbox Defense</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/FlexboxDefense.jpeg  "
+                                alt="Flexbox Defense   ">
+                        </header>
+                        <p class="feature-text ">
+                            Flexbox Defense combines the excitement of tower defense games with CSS Flexbox learning. In
+                            this game, you defend your
+                            castle by strategically placing towers along a path using Flexbox properties.
+                        </p>
+                        <footer>
+                            <a href="    http://www.flexboxdefense.com/ " class="btn " target="_blank">Find Out</a>
+                        </footer>
+                    </article>
+
+                    <!--  codepen Flexbox-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">codepen Flexbox</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/CodePen.png  "
+                                alt="  codepen Flexbox- ">
+                        </header>
+                        <p class="feature-text ">
+                            Properties for the flex container
+
+                        </p>
+                        <footer>
+                            <a href=" https://codepen.io/enxaneta/full/adLPwv " class="btn " target="_blank">Find
+                                Out</a>
+                        </footer>
+                    </article>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------- SECTION FLEX  CONTENT END --------->
+
+    <!--  SECTION CONTACT US START  -->
+    <section id="contact" class="contact-us  relative">
+        <div class="shadow-dark">
+            <div class="contact-us-content container  absolute ">
+                <div class="subscripe-form ">
+                    <form action="subscribe.php" method="post">
+                        <caption>
+                            <h2 class="form-title rem-2">SUBSCRIBE TO NEWSLETTERS</h2>
+                            <!--                             <h3>Don't miss an update to this site!</h3>
+ --> <!-- <h4>Get the latest content to your inbox every month. No spam, we hate it too.</h4> -->
+                            <!--                    <div class="form-name">
+                                <label for="name"></label>
+                                <input type="text" id="name" name="name" required placeholder="Full Name:">
+                            </div> -->
+                            <!--                             <div class="form-email">
+                                <label for="email"></label>
+                                <input type="email" id="email" name="email" required placeholder="E mail:">
+                            </div>
+                            <button class="btn  send-btn" type="submit">Subscribe</button> -->
+                        </caption>
+                    </form>
+
+                    <div class="social-media">
+                        <h2 class="social-media-sup-title capitalize"> Contact DinLink at <span><a class="mail-address"
+                                    href="mailto:info@dinlink.com">info@dinlink.com</a></span>
+                        </h2>
+                        <ul class="social-media-icons ">
+                            <li class="facebook"><a href=""> <i class="fa-brands fa-facebook-f social-icon"></i></a>
+                            </li>
+                            <li class="instagram"><a href=""><i class="fa-brands fa-instagram  social-icon"></i></a><img
+                                    src="" alt="">
+                            </li>
+                            <li class="linkedin"><a href=""><i
+                                        class="fa-brands fa-linkedin-in  social-icon"></i></a><img src="" alt="">
+                            </li>
+                            <li class="x"><a href=""><i class="fa-brands fa-x-twitter  social-icon"></i></a><img src=""
+                                    alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  SECTION CONTACT US END  -->
+
+    <!-- SECTION FOOTER START-->
+    <footer id="footer-line" class="footer">
+        <div class="container flex">
+            <span class="copy-right ">All Copy Right Reserved &copy; Dinlink.se 2024</span>
+            <span class="author "><a href="http://jonashousa.com/" target="_blank">DESIGNED BY JONAS HOUSA</a></span>
+        </div>
+        <!--SCROLL TO TOP BOTTOM START-->
+        <a href="#" id="scroll-to-top-link" class="scroll-to-top" onclick="scrollToTop(); return false; "
+            aria-label="Scroll to top"><i class="fa-solid fa-arrow-up-from-bracket"></i>
+        </a>
+        <!--SCROLL TO TOP BOTTOM END-->
+    </footer>
+    <!-- SECTION FOOTER END-->
+
+    <!-- JAVASCRIPT LINKS  -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/slides.js"></script>
+    <script src="assets/js/smoothScrollPage.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.7.3/smooth-scrollbar.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</body>
+
+</html>

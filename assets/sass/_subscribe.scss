@@ -1,0 +1,70 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+///  SUBSCRIBE TO NEWSLETTERS PHP PAGE SETTING
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+.subscribe {
+    background: url(../img/Background/contact-bg-4.jpg) no-repeat center center / cover fixed;
+    height: 78vh;
+
+    .subscribe-content {
+        background-color: rgba(0, 0, 0, 0.2);
+        width: 50%;
+        padding: 70px 30px;
+        border-radius: 10px;
+        top: 50%;
+        left: 28%;
+        transform: translate(-50%, -50%);
+
+        .subscripe-form {
+
+
+            .social-media {
+                .social-media-sup-title {
+                    color: $white-color;
+                    font-size: 0.8rem;
+                    margin-top: 10px;
+                    font-weight: 400;
+
+                    .mail-address {
+                        color: $main-nav-hover-color;
+                    }
+                }
+
+                .social-media-icons {
+                    display: flex;
+                    gap: 10px;
+                    margin-top: 5px;
+
+                    .facebook:hover .social-icon {
+                        color: #3b5998;
+                        /* Change to Facebook color on hover */
+                    }
+
+                    .instagram:hover .social-icon {
+                        color: #e4405f;
+                        /* Change to Instagram color on hover */
+                    }
+
+                    .linkedin:hover .social-icon {
+                        color: #0077b5;
+                        /* Change to LinkedIn color on hover */
+                    }
+
+                    .x:hover .social-icon {
+                        color: #000;
+                        /* Change to Twitter color on hover */
+                    }
+
+                    .social-icon {
+                        font-size: 1.2rem;
+                        padding: 15px;
+                        background-color: #edf0f3;
+                        color: $text-color;
+                        border-radius: 10px;
+                        width: 50px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

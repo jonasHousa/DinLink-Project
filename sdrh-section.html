@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Set viewport properties for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define the title of the web page -->
+    <title>DinLink | DEVELOPER'S TOOLBOX</title>
+    <!-- Provide a brief description for search engines -->
+    <meta name="description" content="Dinlink: Your go-to resource for web developers seeking the best tools! Discover curated collections of fonts, icons,
+                images, and more to enhance your projects. Elevate your web development with handpicked tools for seamless design and
+                functionality. Explore the ultimate toolkit at Dinlink and supercharge your creativity today! ">
+    <!-- Specify keywords for search engines (may have limited impact) -->
+    <meta name="keywords"
+        content="Web development tools, Font resources for developers, Icon collections, High-quality images for websites, design resources, Web design assets,Developer toolkit, Creative assets for websites, Design resources for developers, Best web development tools, Iconography for websites, Professional fonts for web projects, Image libraries for developers, UI design elements, Code optimization tools, Responsive design resources, Code editors, Version control systems, Task runners, Build tools, Content management systems, Design collaboration platforms, Programming languages, Frameworks, Frontend development tools, Backend development tools, Database management systems, Color palettes, UI design patterns, Prototyping tools, Wireframing tools, Typography resources, Icon sets, Vector graphics, User-centered design, Information architecture, Interaction design, Usability testing, User research, Accessibility guidelines, WCAG standards, Tutorials, Online courses, Web development communities, Blogs, Articles, Books, Freelancing tips, Remote work tools, Productivity techniques, Portfolio building, Career development">
+    <!-- Additional meta tags -->
+    <meta property="og:title" content="DinLink | Your Ultimate Web Development Toolkit">
+    <!-- Open Graph description: Used by social media platforms when the page is shared -->
+    <meta property="og:description"
+        content="Discover curated collections of fonts, icons, images, and more for web developers. Elevate your projects with the best web development tools and resources. Explore the ultimate toolkit at DinLink and supercharge your creativity today! #WebDevelopment #DesignResources #UIUX #Creativity">
+    <!-- Open Graph image: Used by social media platforms when the page is shared -->
+    <meta property="og:image" content="https://dinlink.se/image.jpg">
+    <!-- Robots meta tag: Specifies whether search engines should index and follow the page -->
+    <meta name="robots" content="index, follow">
+    <!-- Canonical link tag: Specifies the preferred URL of the page  MUST CHANGE IN EACH PAGE -->
+    <link rel="canonical" href="https://dinlink.se/sdrh-section.html">
+    <!-- Alternate link tag: Specifies alternate language versions of the page -->
+    <link rel="alternate" hreflang="en" href="https://example.com/en">
+    <!-- Favicon for the website -->
+    <link rel="icon" type="image/x-icon" href="/FAVICON.jpg">
+    <!-- Link to custom stylesheets for page styling CSS -->
+    <link rel="stylesheet" href="assets/sass/dinlink-style.css">
+    <link rel="stylesheet" href="assets/sass/dinlink-Media-query.css">
+    <link rel="stylesheet" href="assets/sass/dinlink-global-elements.css">
+    <!-- Link to font icon library -->
+    <link rel="stylesheet" href="assets/fonts/fontIcon/css/all.css">
+    <!-- Link to Google Fonts for custom typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- SECTION HEADER START -->
+    <section id="header" class="header sticky">
+        <div class="header-content container flex">
+            <a href="/index.html" id='logo' class="logo bold" title="DinLink | Your Ultimate Web Development Toolkit">
+                <h1>DinLink</h1>
+            </a>
+            <!-- FIRST NAV -->
+            <nav class="first-nav main-nav capitalize flex">
+                <ul class=" sidebarNavigation    fw-500">
+                    <div class="side-menu-header ">
+                        <h2 class="side-menu-header-heading">menu</h2>
+                        <a href="#" onclick="hideSidebar()"><i
+                                class="fa-solid fa-xmark sidebarHamburgerMenuHide "></i></a>
+                    </div>
+
+                    <li class=" dropdown relative">
+                        <a href="#">guiding corner</a>
+                        <ul class="submenu">
+                            <li><a href="/design-rules-guide.html"> Design Rules</a></li>
+                            <li><a href="/design-guiding.html"> Design Guide</a></li>
+                            <li><a href="/Design-Conversion-guide.html"> Design Conversion</a></li>
+                            <li><a href="/ui-ux.html"> UI / UX</a></li>
+                            <li><a href="/clean-code.html"> Clean Code</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/ai-tools.html">AI tools</a></li>
+                    <li><a href="/sdrh-section.html">Developers tools</a></li>
+                    <li><a href="/free-download.html">download Center</a></li>
+                    <li><a href="/seo.html">SEO</a></li>
+                    <li><a href="/speed-test.html">Speed & Test</a></li>
+                    <li><a href="/freelance.html">freelance</a></li>
+                    <li><a href="#footer-line">contact dinlink</a></li>
+                </ul>
+
+                <ul class="navigation flex fw-500">
+                    <li class="hideOnMobile dropdown relative">
+                        <a href="#">guiding corner</a>
+                        <ul class="submenu">
+                            <li><a href="/design-rules-guide.html"> Design Rules</a></li>
+                            <li><a href="/design-guiding.html"> Design Guide</a></li>
+                            <li><a href="/Design-Conversion-guide.html"> Design Conversion</a></li>
+                            <li><a href="/ui-ux.html"> UI / UX</a></li>
+                            <li><a href="/clean-code.html"> Clean Code</a></li>
+                        </ul>
+                    </li>
+                    <li class="hideOnMobile"><a href="/ai-tools.html">AI tools</a></li>
+                    <li class="hideOnMobile"><a href="/sdrh-section.html">Developers tools</a></li>
+                    <li class="hideOnMobile"><a href="/free-download.html">download Center</a></li>
+                    <li class="hideOnMobile"><a href="/seo.html">SEO</a></li>
+                    <li class="hideOnMobile"><a href="/speed-test.html">Speed & Test</a></li>
+                    <li class="hideOnMobile"><a href="/freelance.html">freelance</a></li>
+                    <li class="hideOnMobile"><a href="#footer-line">contact dinlink</a></li>
+                </ul>
+                <div onclick=" showSidebar()"><a href="#"><i class="fa-solid fa-bars sidebarHamburgerMenuShow"></i></a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- SECOND NAV -->
+        <div class="  secondary-nav relative">
+            <div class="container  ">
+                <nav class="secondary-menu  flex capitalize ">
+
+                    <nav class="breadcrumb-navigation">
+                        <ul class="path-breadcrumb-navigation flex">
+                            <li><a href="index.html" class="category capitalizes">Home &gt;</a>
+                                <!-- Use &gt; for greater-than symbol --></li>
+                            <li><a href="#" class="subcategory capitalize">Developer's Toolbox </a></li>
+                        </ul>
+                    </nav>
+
+                    <ul class=" navigation flex fw-500">
+                        <li><a href="/html.html">HTML</a></li>
+                        <li><a href="/css.html">CSS</a></li>
+                        <li><a href="/javascript.html">JS</a></li>
+                        <li><a href="/nodejs.html">NODEJS</a></li>
+                        <li><a href="/wordpress.html">WORDPRESS</a></li>
+                        <li><a href="/php.html">PHP</a></li>
+                        <li><a href="/react.html">REACT</a></li>
+                        <li><a href="/api.html">API</a></li>
+                        <li><a href="/database.html">DATABASE</a></li>
+                    </ul>
+                </nav>
+
+                <div class="sidebar-secondary-nav">
+                    <div class="container">
+                        <div class="custom-dropdown">
+                            <select class="side-bar-secondary-navigation" onchange="navigateSidebar(this)">
+                                <option value="" selected disabled hidden>Developer Playground</option>
+                                <option value=""></option>
+                                <option value="/html.html">HTML</option>
+                                <option value="/css.html">CSS</option>
+                                <option value="/javascript.html">JS</option>
+                                <option value="/nodejs.html">NODEJS</option>
+                                <option value="/wordpress.html">WORDPRESS</option>
+                                <option value="/php.html">PHP</option>
+                                <option value="/react.html">REACT</option>
+                                <option value="/api.html">API</option>
+                                <option value="/database.html">DATABASE</option>
+                                <option value=""></option>
+
+                            </select>
+                            <span class="custom-dropdown-icon">&#9660;</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- SECTION HEADER END -->
+
+    <!--SECTION DEVELOPER'S TOOLBOX  SHOW CASE START -->
+    <section id="developer-tools" class="multi-section-showcase  relative">
+        <article class="sectionBlock ">
+            <div class="shadow-dark ">
+                <div class="mixin-feature-section  container  absolute">
+                    <div class="textContainer  ">
+                        <h2 class="textContainer-header uppercase ">Developer's Toolbox: </h2>
+                        <h3 class="textContainer-sup-header capitalize ">Crafting Digital Masterpieces with Tools,
+                            Icons, Fonts, and More
+                        </h3>
+                        <p class="textContainer-description">
+                            Dive into "DevCraft", your comprehensive guide to crafting digital masterpieces. Explore a
+                            curated collection of
+                            developer tools, icon sets, font libraries, and image resources to enhance your projects and
+                            unleash your creativity.
+                        </p>
+                        <a href="#html-content" class="container-btn rem-1 capitalize"> find out</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!--SECTION DEVELOPER'S TOOLBOX  SHOW CASE END -->
+
+    <!-- SECTION DEVELOPER'S TOOLBOX START  -->
+    <section id="section-content" class="section-content-containers ">
+        <header class="section-title-content white-space">
+            <i class=" fa-solid fa-gear section-icon"></i>
+            <h2 class='section-title uppercase'>Developer's Toolbox</h2>
+            <div class=' section-title-line'></div>
+            <p class="section-title-descreption capitalize pt-1">
+                DevCraft" is your go-to hub for developer tools, icons, fonts, and images, empowering you to create
+                stunning digital
+                experiences with ease. <br> Explore a curated collection of resources to streamline your workflow and
+                elevate
+                your projects.
+            </p>
+        </header>
+        <div class="section-content-containers-content">
+            <div class="container">
+                <div class="section-feature-content grid-300-fit ">
+
+                    <!--FONTS-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Fonts</h2>
+                                <span class="feature-sub-title capitalize   ">Font Oasis</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/font.png" alt="Font">
+                        </header>
+                        <p class="feature-text ">
+                            Fonts are diverse styles of typefaces that can be categorized into serif,
+                            sans-serif, script, decorative, and display
+                            fonts, each with its own unique characteristics and purposes in web and graphic design.
+                        </p>
+                        <footer>
+                            <footer>
+                                <a href="/fonts.html" class="btn ">learn more</a>
+                            </footer>
+                        </footer>
+                    </article>
+                    <!--ICONS-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Icon</h2>
+                                <span class="feature-sub-title capitalize   ">Iconic Insights</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/gift.png" alt="Icon">
+                        </header>
+                        <p class="feature-text ">
+                            Icons are small, visual representations that convey meaning and enhance
+                            user experience by providing intuitive and recognizable symbols for actions, categories, and
+                            concepts on websites and applications.
+                        </p>
+                        <footer>
+                            <footer>
+                                <a href="icons.html" class="btn ">learn more</a>
+                            </footer>
+                        </footer>
+                    </article>
+                    <!--COLOR-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Color</h2>
+                                <span class="feature-sub-title capitalize   ">color vortex</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/paint-palette.png" alt="Color">
+                        </header>
+                        <p class="feature-text ">Experience the harmonious symphony of colors, where colors blend in
+                            perfect unity, creating mesmerizing designs that
+                            resonate with visual brilliance.
+                        </p>
+                        <footer>
+                            <a href="color.html" class="btn ">learn more</a>
+                        </footer>
+                    </article>
+                    <!--IMAGES-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">images</h2>
+                                <span class="feature-sub-title capitalize   ">visual vistas</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/gallery.png" alt="Image">
+                        </header>
+                        <p class="feature-text ">Images are visual representations that captivate, communicate, and
+                            evoke
+                            emotions, enriching content and enhancing the
+                            overall visual appeal of websites and designs.
+                        </p>
+                        <footer>
+                            <a href="images.html" class="btn ">learn more</a>
+                        </footer>
+                    </article>
+                    <!--VIDEO-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">video</h2>
+                                <span class="feature-sub-title capitalize   ">visual symphony</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/old-video-camera.png" alt="Video">
+                        </header>
+                        <p class="feature-text ">Videos are dynamic multimedia elements that bring content to life,
+                            engaging and captivating audiences through moving
+                            images, sound, and storytelling.
+                        </p>
+                        <footer>
+                            <a href="videos.html" class="btn ">learn more</a>
+                        </footer>
+                    </article>
+                    <!--UI / UX-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">UI / UX</h2>
+                                <span class="feature-sub-title capitalize   ">user empathy</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/website-design.png" alt="UI / UX">
+                        </header>
+                        <p class="feature-text ">Unleash the alchemy of design, blending data-driven insights,
+                            psychology,
+                            and creativity to transmute raw interfaces
+                            into mesmerizing experiences that enchant and delight users.
+                        </p>
+                        <footer>
+                            <a href="ui-ux.html" class="btn ">learn more</a>
+                        </footer>
+                    </article>
+                    <!--Inspiration  -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">design & Inspiration </h2>
+                                <span class="feature-sub-title capitalize   ">Visions Unleashed</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/creative-thinking.png  "
+                                alt=" Inspiration  ">
+                        </header>
+                        <p class="feature-text ">
+                            Dive into a sea of boundless inspiration, where design ideas flow
+                            effortlessly, igniting your creative spark.
+                        </p>
+                        <footer>
+                            <a href="inspiration.html" class="btn ">Find Out</a>
+                        </footer>
+                    </article>
+                    <!-- Animation -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize "> Animation</h2>
+                                <span class="feature-sub-title capitalize   ">Animation Avenue</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/Animation.png  " alt=" Animation  ">
+                        </header>
+                        <p class="feature-text ">
+                            A vibrant realm of motion graphics and animated wonders, where imagination
+                            comes alive through captivating visuals and
+                            seamless animations.
+                        </p>
+                        <footer>
+                            <a href="Animation.html" class="btn ">Find Out</a>
+                        </footer>
+                    </article>
+                    <!--  Tutorial & Platforms-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Tutorial & Platforms </h2>
+                                <span class="feature-sub-title capitalize   ">Mastering the Art</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/tutorial.png  "
+                                alt=" Tutorial & Platforms-  ">
+                        </header>
+                        <p class="feature-text ">
+                            Fuel your design expertise with our expert-led tutorials, equipping you
+                            with the tools and
+                            techniques to craft captivating visuals that leave a lasting impression.
+                        </p>
+                        <footer>
+                            <a href="TutorialAndPlatforms.html" class="btn ">Find Out</a>
+                        </footer>
+                    </article>
+                    <!--  Templates & Themes-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize "> Templates & Themes</h2>
+                                <span class="feature-sub-title capitalize   ">Handy Reseources</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/themes.png " alt=" Reseources  ">
+                        </header>
+                        <p class="feature-text ">
+                            Navigate through our comprehensive set of tools and references to streamline your coding
+                            journey and elevate your
+                            projects.
+                        </p>
+                        <footer>
+                            <a href="TemplatesAndThemes.html" class="btn ">Find Out</a>
+                        </footer>
+                    </article>
+                    <!-- E-book -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">E-book </h2>
+                                <span class="feature-sub-title capitalize   ">Digital Library</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/book.png  " alt="  E-bok">
+                        </header>
+                        <p class="feature-text ">
+                            Discover a tranquil oasis of e-books, where literary gems await to nourish
+                            your mind, transport you to new worlds, and
+                            ignite your imagination.
+                        </p>
+                        <footer>
+                            <a href="e-books.html" class="btn ">Find Out</a>
+                        </footer>
+                    </article>
+                    <!--  Community-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize "> Community</h2>
+                                <span class="feature-sub-title capitalize   ">The Power of Togetherness</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/Community.png  " alt=" Community  ">
+                        </header>
+                        <p class="feature-text ">
+                            Discover a supportive digital space where ideas are shared, friendships are
+                            forged, and inspiration flourishes.
+                        </p>
+                        <footer>
+                            <a href="Community.html" class="btn ">Find Out</a>
+                        </footer>
+                    </article>
+                    <!-- Web Hosting -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">web Hosting & tools</h2>
+                                <span class="feature-sub-title capitalize   ">Elite Hosts</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/hosting.png  " alt="Web Hosting   ">
+                        </header>
+                        <p class="feature-text ">
+                            Find reliable web hosting and streamlined site uploading tools for effortless website
+                            deployment. Elevate your online
+                            presence with seamless performance and accessibility.
+                        </p>
+                        <footer>
+                            <a href="WebHosting.html" class="btn ">Find Out</a>
+                        </footer>
+                    </article>
+                    <!--  Extensions-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Extensions </h2>
+                                <span class="feature-sub-title capitalize   ">Extension Extravaganza</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/Extensions.png " alt="  Extensions ">
+                        </header>
+                        <p class="feature-text ">
+                            Hop aboard the Extension Express and discover our top picks, guiding you to the most
+                            essential and innovative browser
+                            extensions for turbocharging your web development workflow.
+                        </p>
+                        <footer>
+                            <a href="Extensions.html" class="btn ">Find Out</a>
+                        </footer>
+                    </article>
+                    <!-- Responsive Design  -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize "> Responsive Design</h2>
+                                <span class="feature-sub-title capitalize   ">Harmony in Motion</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/responsive-d.png  " alt="   ">
+                        </header>
+                        <p class="feature-text ">
+                            Unleash the magic of responsive design and witness your website gracefully
+                            adapt across devices, captivating users withseamless visual harmony.
+                        </p>
+                        <footer>
+                            <a href="  Responsive-Design.html" class="btn ">Find Out</a>
+                        </footer>
+                    </article>
+                    <!-- Collection Toolkit  -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Collection Toolkit </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/CollectionToolkit.png "
+                                alt="  Collection Toolkit ">
+                        </header>
+                        <p class="feature-text ">
+                            Explore our Collection Toolkit—a curated selection of essential resources and tools for
+                            developers, designed to
+                            streamline your workflow and enhance productivity.
+                        </p>
+                        <footer>
+                            <a href="Collection-toolkit.html" class="btn ">Find Out</a>
+                        </footer>
+                    </article>
+                    <!-- Cheat Sheets -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Cheat Sheets </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/Cheat Sheets.png  "
+                                alt=" Cheat Sheets  ">
+                        </header>
+                        <p class="feature-text ">
+                            Streamline your coding with our concise Cheat Sheets for web developers. Quick access to
+                            essential syntax and best
+                            practices in a handy format.
+                        </p>
+                        <footer>
+                            <a href="  Cheat-Sheets.html" class="btn ">Find Out</a>
+                        </footer>
+                    </article>
+                    <!--Conversion Toolbox   -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Conversion Toolbox </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/Conversion.png  "
+                                alt="Conversion Toolbox    ">
+                        </header>
+                        <p class="feature-text ">
+                            Discover our curated selection of transformative tools for web developers and designers.
+                            Streamline your workflow with
+                            efficient conversion solutions, empowering you to achieve your digital goals seamlessly.
+                        </p>
+                        <footer>
+                            <a href="Conversion-Toolbox.html  " class="btn ">Find Out</a>
+                        </footer>
+                    </article>
+                    <!--  Developer Roadmaps -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">Developer Roadmaps </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/road-map.png  "
+                                alt="  Developer Roadmaps  ">
+                        </header>
+                        <p class="feature-text ">
+                            Developer Roadmaps
+                            roadmap.sh is a community effort to create roadmaps, guides and other educational content to
+                            help guide developers in
+                            picking up a path and guide their learnings.
+                        </p>
+                        <footer>
+                            <a href=" Roadmaps.html" class="btn ">Find Out</a>
+                        </footer>
+                    </article>
+                    <!-- CPanel & WHM -->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize ">cPanel & WHM </h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/cpanel-whm.png  " alt="  CPanel & WHM ">
+                        </header>
+                        <p class="feature-text ">
+                            Master server and website management with concise SPanel and WHM guides. Streamline
+                            operations and optimize performance
+                            effortlessly.
+                        </p>
+                        <footer>
+                            <a href=" cpanel-whm-guiding.html " class="btn">Find Out</a>
+                        </footer>
+                    </article>
+                    <!--  Ecommerce-->
+                    <article class="feature feature-white-btn flex-col feat feature-card-effect">
+                        <header class="feature-header flex">
+                            <div class="feature-header-content">
+                                <h2 class="feature-header-title rem-2 capitalize "> Ecommerce</h2>
+                                <span class="feature-sub-title capitalize   ">Free Application</span>
+                            </div>
+                            <img class="feature-icon-img" src="assets/img/icons/ecommerce.png  " alt=" Ecommerce  ">
+                        </header>
+                        <p class="feature-text ">
+                            Discover essential tools and free platforms in our Ecommerce section, tailored for
+                            developers and designers. Streamline
+                            your online store development journey and enhance ecommerce projects affordably.
+                        </p>
+                        <footer>
+                            <a href=" Ecommerce.html " class="btn">Find Out</a>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION DEVELOPER'S TOOLBOX  END -->
+
+    <!--  SECTION CONTACT US START  -->
+    <section id="contact" class="contact-us  relative">
+        <div class="shadow-dark">
+            <div class="contact-us-content container  absolute ">
+                <div class="subscripe-form ">
+                    <form action="subscribe.php" method="post">
+                        <caption>
+                            <h2 class="form-title rem-2">SUBSCRIBE TO NEWSLETTERS</h2>
+                            <!--                             <h3>Don't miss an update to this site!</h3>
+ --> <!-- <h4>Get the latest content to your inbox every month. No spam, we hate it too.</h4> -->
+                            <!--                    <div class="form-name">
+                                <label for="name"></label>
+                                <input type="text" id="name" name="name" required placeholder="Full Name:">
+                            </div> -->
+                            <!--                             <div class="form-email">
+                                <label for="email"></label>
+                                <input type="email" id="email" name="email" required placeholder="E mail:">
+                            </div>
+                            <button class="btn  send-btn" type="submit">Subscribe</button> -->
+                        </caption>
+                    </form>
+
+                    <div class="social-media">
+                        <h2 class="social-media-sup-title capitalize"> Contact DinLink at <span><a class="mail-address"
+                                    href="mailto:info@dinlink.com">info@dinlink.com</a></span>
+                        </h2>
+                        <ul class="social-media-icons ">
+                            <li class="facebook"><a href=""> <i class="fa-brands fa-facebook-f social-icon"></i></a>
+                            </li>
+                            <li class="instagram"><a href=""><i class="fa-brands fa-instagram  social-icon"></i></a><img
+                                    src="" alt="">
+                            </li>
+                            <li class="linkedin"><a href=""><i
+                                        class="fa-brands fa-linkedin-in  social-icon"></i></a><img src="" alt="">
+                            </li>
+                            <li class="x"><a href=""><i class="fa-brands fa-x-twitter  social-icon"></i></a><img src=""
+                                    alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  SECTION CONTACT US END  -->
+
+    <!-- SECTION FOOTER START-->
+    <footer id="footer-line" class="footer">
+        <div class="container flex">
+            <span class="copy-right ">All Copy Right Reserved &copy; Dinlink.se 2024</span>
+            <span class="author "><a href="http://jonashousa.com/" target="_blank">DESIGNED BY JONAS HOUSA</a></span>
+        </div>
+        <!--SCROLL TO TOP BOTTOM START-->
+        <a href="#" id="scroll-to-top-link" class="scroll-to-top" onclick="scrollToTop(); return false; "
+            aria-label="Scroll to top"><i class="fa-solid fa-arrow-up-from-bracket"></i>
+        </a>
+        <!--SCROLL TO TOP BOTTOM END-->
+    </footer>
+    <!-- SECTION FOOTER END-->
+
+    <!-- JAVASCRIPT LINKS  -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/slides.js"></script>
+    <script src="assets/js/smoothScrollPage.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.7.3/smooth-scrollbar.js"></script>
+
+
+</body>
+
+</html>
